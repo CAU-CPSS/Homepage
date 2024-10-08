@@ -1,2 +1,5 @@
-# Homepage
-The hompage of CPSS Lab.
+# CAU-CPSS
+
+The homepage of CPSS Lab. at Chung-Ang University.
+
+
