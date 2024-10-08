@@ -1,8 +1,3 @@
-/*
-	App by FreeHTML5.co
-	Twitter: http://twitter.com/fh5co
-	URL: http://freehtml5.co
-*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
 * {
   margin: 0px;
@@ -32,11 +27,27 @@ html {
   color: #234197 !important;
 }
 
+/* TODO: Main Background */
 #fh5co-hero-wrapper {
-  height: 800px;
+  position: relative;
+  height: 700px; /* TODO: 800 */
   width: 100%;
-  background: url("../img/banner-bg.jpg") no-repeat center;
-  border-radius: 0 0 50% 50% / 4%;
+  background-color: black;
+  background-image: url("../img/cpss-main.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* 또는 contain */
+}
+
+#fh5co-hero-wrapper::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000;
 }
 
 .main-navbar-nav .navbar-brand {
@@ -101,7 +112,7 @@ html {
   letter-spacing: 2px;
 }
 .fh5co-hero-inner > p {
-  width: 400px;
+  width: 600px;
   font-size: 14px;
   color: #fff;
   margin-top: 30px;
@@ -241,6 +252,15 @@ html {
   height: 300px;
 }
 
+#research {
+  color: #275ba3;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .fh5co-features-outer {
   width: 100%;
   height: auto;
@@ -249,15 +269,15 @@ html {
 .fh5co-features-outer .col-sm-6 {
   margin-top: 80px;
 }
-.fh5co-features-outer .col-sm-6 img {
+.fh5co-features-outer .col-sm-6 {
   height: 550px;
 }
 .fh5co-features-outer .sm-6-content {
-  margin-top: 250px;
+  margin-top: 150px;
   position: relative;
 }
 .fh5co-features-outer .sm-6-content h1 {
-  color: #648cff;
+  color: #275ba3;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
@@ -293,7 +313,7 @@ html {
 }
 .fh5co-features-outer .col-sm-6 .span-free {
   color: #fff;
-  background: #6ca3ff;
+  background: #275ba3;
   padding: 18px;
   width: 35px;
   display: inline-block;
@@ -328,7 +348,7 @@ html {
 }
 .fh5co-features-outer .col-sm-6 .span-percent {
   color: #fff;
-  background: #6ca3ff;
+  background: #275ba3;
   padding: 18px;
   width: 35px;
   display: inline-block;
@@ -413,7 +433,7 @@ html {
   margin-top: 100px;
 }
 .fh5co-reviews-outer > h1 {
-  color: #648cff;
+  color: #275ba3;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 600;
@@ -469,8 +489,18 @@ html {
   float: left;
 }
 
+.research1 {
+  width: 150%;
+  height: 150%;
+}
+
 .img-float-right {
   float: right;
+}
+
+.research2 {
+  width: 90%;
+  height: 90%;
 }
 
 .footer-outer {
