@@ -25,6 +25,12 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<script defer src="js/jquery.min.js"></script>
+	<script defer src="js/bootstrap.js"></script>
+	<script defer src="js/owl.carousel.js"></script>
+	<script defer src="js/wow.min.js"></script>
+	<script defer src="js/main.js"></script>
 </head>
 <body>
 
@@ -32,26 +38,24 @@
 <div id="page-wrap">
 
 
-	<!-- ==========================================================================================================
-													   HERO
-		 ========================================================================================================== -->
+	<!-- ============================== About ============================== -->
 
-	<div id="fh5co-hero-wrapper">
+	<div id="cpss-about-wrapper">
 		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
-			<!-- TODO: 페이지 이름 변경 -->
-			<a class="navbar-brand" href="">CPSS Lab.</a> 
+			<a class="navbar-brand" href="">CPSS Lab</a>
+			<!-- for mobile navigations -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+			<!-- Nav bars -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-items-center ml-auto mr-auto">
-					<!-- TODO: 카테고리 이름 변경 -->
 					<li class="nav-item active">
 						<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="$('#fh5co-features').goTo();return false;">Research</a>
+						<a class="nav-link" href="#" onclick="document.getElementById('cpss-research').scrollIntoView({ behavior: 'smooth' })">Research</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="./members.html">Members</a>
@@ -67,38 +71,43 @@
 		<!-- 메인 페이지 -->
 		
 		
-		<div class="container fh5co-hero-inner">
-			<!-- 폰트 바꾸면 수정 -->
-			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">Cyber-Physical System <br> Security Lab in CAU</h1>
-			<p class="animated fadeIn wow" data-wow-delay="0.45s"><b>중앙대학교 산업보안학과 사이버 물리 시스템 보안 연구실</b></p>
+		<div class="container cpss-about-inner">
+			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">
+				Cyber-Physical System<br>
+				Security Lab in CAU<br>
+			</h1>
+			<!-- https://seb.kr/w/사이버_물리_시스템 : 띄어쓰기 참고 -->
+			<h2 class="animated fadeIn wow" data-wow-delay="0.45s">
+				중앙대학교 산업보안학과<br>
+				사이버 물리시스템 보안 연구실
+			</h2>
 			<p class="animated fadeIn wow" data-wow-delay="0.67s">AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을 연구합니다.<br>
 				학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.<br>
 				주요 연구분야: OS, On-Device, Embedded, Real-time system, Security
-				<br><br>
-				<b>╔═════ ∘◦ ☆ ◦∘ ══════╗</b><br>
-				<b>&nbsp; 🎉 석·박사 절⭐찬 모집중 🎊</b><br> <!-- TODO: -->
-				<b>╚═════ ∘◦ ❉ ◦∘ ══════╝</b>
 			</p>
+			<h3 class="animated fadeIn" data-wow-delay="0.8s">
+				╔════════════ ∘◦ ☆ ◦∘ ═════════════╗<br>
+				🎉 석·박사 절⭐찬 모집중 🎊<br>
+				╚════════════ ∘◦ ❉ ◦∘ ═════════════╝
+			</h3>
 			<!-- 움직이는 무언가 -->
-			<!--img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src="img/phone-image.png" alt="Smartphone"-->
+			<!--img class="cpss-about-smartphone animated fadeInRight wow" data-wow-delay="1s" src="img/phone-image.png" alt="Smartphone"-->
 		</div>
 	
-	</div> <!-- first section wrapper -->
+	</div>
 
 
-	<!-- ==========================================================================================================
-													  FEATURES
-		 ========================================================================================================== -->
+	<!-- ============================= Research ============================= -->
 
 	<div class="curved-bg-div wow animated fadeIn" data-wow-delay="0.15s"></div>
-	<div id="fh5co-features" class="fh5co-features-outer">
+	<div id="cpss-research" class="cpss-research-outer">
 		<div class="container">
 			<h1 id="research">Research</h1>
-			<div class="row fh5co-features-grid-columns">
+			<div class="row cpss-research-grid-columns">
 
 				<div class="col-sm-6 in-order-1 wow animated fadeInLeft" data-wow-delay="0.22s">
 					<div class="col-sm-image-container">
-						<img class="img-float-left research1" src="img/research-1.jpg" alt="cyber-physical systems">
+						<img class="img-float-left img-research" src="img/research/squircle-1.png" alt="cyber-physical systems">
 					</div>
 				</div>
 
@@ -139,12 +148,14 @@
 				</div>
 
 				<div class="col-sm-6 in-order-4 wow animated fadeInRight" data-wow-delay="0.22s">
-					<img class="img-float-right research2" src="img/research-2.jpeg" alt="autonomous car">
+					<div class="col-sm-image-container">
+						<img class="img-float-right img-research" src="img/research/squircle-2.png" alt="autonomous car">
+					</div>
 				</div>
 
 				<div class="col-sm-6 in-order-5 wow animated fadeInLeft" data-wow-delay="0.22s">
 					<div class="col-sm-image-container">
-						<img class="img-float-left" src="img/research-3.png" alt="embedded">
+						<img class="img-float-left img-research" src="img/research/squircle-3.png" alt="embedded">
 					</div>
 				</div>
 				<div class="col-sm-6 in-order-6 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
@@ -273,11 +284,5 @@
 
 
 </div> <!-- main page wrapper -->
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/main.js"></script>
 </body>
 </html>

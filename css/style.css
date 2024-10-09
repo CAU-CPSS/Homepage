@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Font: Montserrat for English, IBM Plex Sans KR for Korean */
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Montserrat", "IBM Plex Sans KR", "sans-serif";
 }
 
 html {
@@ -28,7 +31,7 @@ html {
 }
 
 /* TODO: Main Background */
-#fh5co-hero-wrapper {
+#cpss-about-wrapper {
   position: relative;
   height: 700px; /* TODO: 800 */
   width: 100%;
@@ -39,7 +42,7 @@ html {
   background-size: cover; /* 또는 contain */
 }
 
-#fh5co-hero-wrapper::before {
+#cpss-about-wrapper::before {
   content: "";
   opacity: 0.5;
   position: absolute;
@@ -52,7 +55,7 @@ html {
 
 .main-navbar-nav .navbar-brand {
   font-size: 38px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   position: relative;
   top: -5px;
   font-weight: 500;
@@ -101,31 +104,63 @@ html {
   transition: all .2s ease;
 }
 
-.fh5co-hero-inner {
+.cpss-about-inner {
   margin-top: 110px;
   position: relative;
 }
-.fh5co-hero-inner > h1 {
+.cpss-about-inner > h1 {
   color: #fff;
   font-weight: 300;
   font-size: 55px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
-.fh5co-hero-inner > p {
-  width: 600px;
-  font-size: 14px;
+.cpss-about-inner > h2 {
   color: #fff;
+  font-weight: 100;
+  font-size: 27px;
+  margin-top: 20px;
+}
+.cpss-about-inner > p {
+  color: #fff;
+  width: 800px;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.9em;
+}
+.cpss-about-inner > h3 {
+  text-align: center;
+  color: #fff;
+  width: 600px;
+  font-weight: 400;
+  font-size: 16px;
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 2em;
+} .cpss-about-inner > h3:hover {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  
+  background: linear-gradient(to right, #ff3a6b, #29a9ff , #48ff00, #df3eff, #8173ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 1.5s ease-in infinite;
+  background-size: 400% 100%;
+} @keyframes rainbow_animation {
+  0%,100% { background-position: 0 0; }
+  50% { background-position: 100% 0; }
 }
-.fh5co-hero-inner .download-btn-first {
+
+.cpss-about-inner .download-btn-first {
   font-size: 15px;
   padding: 10px 15px;
   font-weight: 700;
   color: #234197;
 }
-.fh5co-hero-inner .features-btn-first {
+.cpss-about-inner .features-btn-first {
   font-size: 15px;
   padding: 8px 13px;
   font-weight: 400;
@@ -133,7 +168,7 @@ html {
   color: #fff;
   margin-left: 10px;
 }
-.fh5co-hero-inner .fh5co-hero-smartphone {
+.cpss-about-inner .cpss-about-smartphone {
   position: absolute;
   right: 0px;
   top: 120px;
@@ -253,7 +288,7 @@ html {
 }
 
 #research {
-  color: #275ba3;
+  color: #2e65a7;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 600;
@@ -261,40 +296,41 @@ html {
   text-align: center;
 }
 
-.fh5co-features-outer {
+.cpss-research-outer {
   width: 100%;
   height: auto;
-  margin-top: -180px;
+  margin-top: -230px;
+  padding-top: 60px;
 }
-.fh5co-features-outer .col-sm-6 {
+.cpss-research-outer .col-sm-6 {
   margin-top: 80px;
 }
-.fh5co-features-outer .col-sm-6 {
+.cpss-research-outer .col-sm-6 {
   height: 550px;
 }
-.fh5co-features-outer .sm-6-content {
+.cpss-research-outer .sm-6-content {
   margin-top: 150px;
   position: relative;
 }
-.fh5co-features-outer .sm-6-content h1 {
-  color: #275ba3;
+.cpss-research-outer .sm-6-content h1 {
+  color: #2e65a7;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.fh5co-features-outer .sm-6-content p {
+.cpss-research-outer .sm-6-content p {
   color: #111;
   font-weight: 500;
   font-size: 14.5px;
   line-height: 1.8em;
   width: 450px;
 }
-.fh5co-features-outer .col-sm-6 .col-sm-image-container {
+.cpss-research-outer .col-sm-6 .col-sm-image-container {
   position: relative;
-  width: 300px;
+  width: 350px;
 }
-.fh5co-features-outer .col-sm-6 .span-new {
+.cpss-research-outer .col-sm-6 .span-new {
   color: #fff;
   background: #fcec64;
   padding: 18px;
@@ -311,9 +347,9 @@ html {
   right: 0;
   top: 140px;
 }
-.fh5co-features-outer .col-sm-6 .span-free {
+.cpss-research-outer .col-sm-6 .span-free {
   color: #fff;
-  background: #275ba3;
+  background: #2e65a7;
   padding: 18px;
   width: 35px;
   display: inline-block;
@@ -328,7 +364,7 @@ html {
   bottom: -430px;
   font-weight: 700;
 }
-.fh5co-features-outer .col-sm-6 .span-data {
+.cpss-research-outer .col-sm-6 .span-data {
   color: #7e8c91;
   background: #b8faee;
   padding: 20px;
@@ -346,9 +382,9 @@ html {
   right: -2px;
   font-weight: 700;
 }
-.fh5co-features-outer .col-sm-6 .span-percent {
+.cpss-research-outer .col-sm-6 .span-percent {
   color: #fff;
-  background: #275ba3;
+  background: #2e65a7;
   padding: 18px;
   width: 35px;
   display: inline-block;
@@ -363,7 +399,7 @@ html {
   bottom: -430px;
   font-weight: 700;
 }
-.fh5co-features-outer .col-sm-6 .circle {
+.cpss-research-outer .col-sm-6 .circle {
   color: #c3cfe5;
   border: 1px solid #ededed;
   background: #fff;
@@ -380,7 +416,7 @@ html {
   font-weight: 600;
   box-shadow: 0 0 0 5px #f9f9f9;
 }
-.fh5co-features-outer .col-sm-6 .circle-first {
+.cpss-research-outer .col-sm-6 .circle-first {
   width: 35px;
   display: inline-block;
   line-height: 30px;
@@ -393,7 +429,7 @@ html {
   margin-left: 0px;
   font-weight: 600;
 }
-.fh5co-features-outer .col-sm-6 .circle-middle {
+.cpss-research-outer .col-sm-6 .circle-middle {
   width: 35px;
   display: inline-block;
   line-height: 30px;
@@ -406,7 +442,7 @@ html {
   margin-left: 50px;
   font-weight: 600;
 }
-.fh5co-features-outer .col-sm-6 .circle-last {
+.cpss-research-outer .col-sm-6 .circle-last {
   width: 35px;
   display: inline-block;
   line-height: 30px;
@@ -433,7 +469,7 @@ html {
   margin-top: 100px;
 }
 .fh5co-reviews-outer > h1 {
-  color: #275ba3;
+  color: #2e65a7;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 600;
@@ -489,18 +525,14 @@ html {
   float: left;
 }
 
-.research1 {
-  width: 150%;
-  height: 150%;
+.img-research {
+  width: 100%;
+  height: 100%;
 }
+
 
 .img-float-right {
   float: right;
-}
-
-.research2 {
-  width: 90%;
-  height: 90%;
 }
 
 .footer-outer {
@@ -616,7 +648,7 @@ html {
     overflow-x: hidden;
   }
 
-  .fh5co-hero-inner .fh5co-hero-smartphone {
+  .cpss-about-inner .cpss-about-smartphone {
     position: absolute;
     right: 50px;
     top: 200px;
@@ -636,7 +668,7 @@ html {
     overflow-x: hidden;
   }
 
-  .fh5co-hero-inner .fh5co-hero-smartphone {
+  .cpss-about-inner .cpss-about-smartphone {
     position: absolute;
     right: -15px;
     top: 200px;
@@ -648,15 +680,15 @@ html {
     overflow-x: hidden;
   }
 
-  #fh5co-hero-wrapper {
+  #cpss-about-wrapper {
     height: 95vh;
   }
 
-  .fh5co-hero-inner {
+  .cpss-about-inner {
     margin-top: 30px;
   }
 
-  .fh5co-hero-inner .fh5co-hero-smartphone {
+  .cpss-about-inner .cpss-about-smartphone {
     position: absolute;
     left: 0;
     right: 0;
@@ -698,11 +730,11 @@ html {
     margin-top: 0px;
   }
 
-  .fh5co-features-outer {
+  .cpss-research-outer {
     margin-top: -100px;
   }
 
-  .fh5co-features-outer .sm-6-content p {
+  .cpss-research-outer .sm-6-content p {
     width: 100%;
   }
 
@@ -716,7 +748,7 @@ html {
   }
 }
 @media screen and (max-width: 993px) {
-  .fh5co-features-grid-columns .col-sm-6 {
+  .cpss-research-grid-columns .col-sm-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 100%;
     width: 100%;
@@ -725,7 +757,7 @@ html {
     text-align: center;
   }
 
-  .fh5co-features-outer .col-sm-6 .col-sm-image-container {
+  .cpss-research-outer .col-sm-6 .col-sm-image-container {
     position: relative;
     width: 295px !important;
     text-align: center;
@@ -760,20 +792,20 @@ html {
     float: none;
   }
 
-  .fh5co-features-outer .col-sm-6 .span-percent, .fh5co-features-outer .col-sm-6 .span-free {
+  .cpss-research-outer .col-sm-6 .span-percent, .cpss-research-outer .col-sm-6 .span-free {
     left: -15px;
     bottom: 140px;
   }
 
-  .fh5co-features-outer .col-sm-6 .span-new {
+  .cpss-research-outer .col-sm-6 .span-new {
     right: -10px;
   }
 
-  .fh5co-features-outer .col-sm-6 .span-data {
+  .cpss-research-outer .col-sm-6 .span-data {
     right: -15px;
   }
 
-  .fh5co-features-outer .col-sm-6 .circle {
+  .cpss-research-outer .col-sm-6 .circle {
     position: static;
     display: inline-block;
     margin: 25px 5px;
@@ -783,14 +815,14 @@ html {
     margin-top: 60px;
   }
 
-  .fh5co-features-grid-columns {
+  .cpss-research-grid-columns {
     display: flex;
     flex-direction: column;
   }
-  .fh5co-features-grid-columns .in-order-4 {
+  .cpss-research-grid-columns .in-order-4 {
     order: 1;
   }
-  .fh5co-features-grid-columns .in-order-3 {
+  .cpss-research-grid-columns .in-order-3 {
     order: 2;
   }
 
@@ -815,14 +847,14 @@ html {
   }
 }
 @media screen and (max-width: 800px) {
-  .fh5co-hero-inner > h1 {
+  .cpss-about-inner > h1 {
     color: #fff;
     font-weight: 300;
     font-size: 45px;
     letter-spacing: 2px;
   }
 
-  #fh5co-hero-wrapper {
+  #cpss-about-wrapper {
     height: 800px;
   }
 
@@ -839,7 +871,7 @@ html {
     text-align: center;
   }
 
-  .fh5co-hero-inner .fh5co-hero-smartphone {
+  .cpss-about-inner .cpss-about-smartphone {
     height: 420px;
     top: 310px;
   }
@@ -958,23 +990,23 @@ html {
   }
 }
 @media screen and (max-width: 520px) {
-  #fh5co-hero-wrapper {
+  #cpss-about-wrapper {
     height: 900px;
   }
 
-  .fh5co-hero-inner > h1 {
+  .cpss-about-inner > h1 {
     font-size: 40px;
   }
 
-  .fh5co-hero-inner > p {
+  .cpss-about-inner > p {
     width: 100%;
   }
 
-  .fh5co-hero-inner {
+  .cpss-about-inner {
     text-align: center;
   }
 
-  .fh5co-hero-inner .fh5co-hero-smartphone {
+  .cpss-about-inner .cpss-about-smartphone {
     height: 450px;
     top: 420px;
     margin-top: 70px;
