@@ -42,7 +42,7 @@ html {
   background-size: cover; /* 또는 contain */
 }
 
-#cpss-about-wrapper, .cpss-other-wrapper {
+.cpss-other-wrapper {
   position: relative;
   height: 300px; /* TODO: 800 */
   width: 100%;
