@@ -1,7 +1,7 @@
 // @ts-check
 
 document.addEventListener("htmx:afterOnLoad", () => {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace('#', '');
     document.querySelectorAll(".nav-link").forEach(link => link.closest(".nav-item")?.classList.remove("active"));
 
     /**
@@ -29,7 +29,7 @@ document.addEventListener("htmx:afterOnLoad", () => {
     }
 
     const researchLink = document.getElementById("nav-research");
-    
+
     if (researchLink) {
         researchLink.addEventListener("click", (event) => {
             event.preventDefault();

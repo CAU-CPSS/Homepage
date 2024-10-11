@@ -44,7 +44,7 @@ html {
 
 .cpss-other-wrapper {
   position: relative;
-  height: 300px;
+  height: 500px;
   width: 100%;
   background-color: black;
   background-image: url("../img/cpss-main.jpeg");
@@ -154,7 +154,7 @@ a.dropdown-item:hover {
 }
 .cpss-about-inner > h1 {
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 55px;
   letter-spacing: 1.5px;
 }
@@ -167,20 +167,21 @@ a.dropdown-item:hover {
 
 .cpss-about-inner > h3 {
   color: #fff;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 17px;
   margin-top: 20px;
 }
 
 .cpss-about-inner > p {
   color: #fff;
   width: 800px;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 17px;
   margin-top: 25px;
   margin-bottom: 30px;
   line-height: 1.9em;
 }
+
 .cpss-about-inner > h4 {
   text-align: center;
   color: #fff;
@@ -339,7 +340,7 @@ a.dropdown-item:hover {
   height: 300px;
 }
 
-#research {
+.titles {
   color: #2e65a7;
   text-transform: uppercase;
   font-size: 40px;
@@ -381,6 +382,7 @@ a.dropdown-item:hover {
 .cpss-research-outer .col-sm-6 .col-sm-image-container {
   position: relative;
   width: 350px;
+  padding-left: 30px;
 }
 .cpss-research-outer .col-sm-6 .span-new {
   color: #fff;
@@ -511,16 +513,16 @@ a.dropdown-item:hover {
 /* ==========================================================================================================
 										REVIEWS
    ========================================================================================================== */
-.fh5co-reviews-outer {
+.cpss-member-outer {
   width: 100%;
-  height: 400px;
+  height: auto;
   padding: 70px;
   margin-top: 100px;
 }
-.fh5co-reviews-outer .fh5co-reviews-inner {
+.cpss-member-outer .fh5co-reviews-inner {
   margin-top: 100px;
 }
-.fh5co-reviews-outer > h1 {
+.cpss-member-outer > h1 {
   color: #2e65a7;
   text-transform: uppercase;
   font-size: 30px;
@@ -528,17 +530,41 @@ a.dropdown-item:hover {
   margin-bottom: 10px;
   text-align: center;
 }
-.fh5co-reviews-outer > small {
+.cpss-member-outer > small {
   text-align: center;
   display: block;
 }
-.fh5co-reviews-outer .testimonial-desc {
+.cpss-member-outer .testimonial-desc {
   clear: both;
   padding-top: 30px;
   font-weight: 500;
 }
-.fh5co-reviews-outer .testimonial-2 {
+.cpss-member-outer .testimonial-2 {
   margin-left: 50px;
+}
+
+
+#cpss-accomplishment > ul {
+  width: 1000px;
+  margin: 60px auto 300px auto;
+  
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+#cpss-accomplishment ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px; /* Add spacing between items */
+}
+
+#cpss-accomplishment ul li::before {
+  content: "•"; /* Custom bullet symbol */
+  color: #2A9D8F; /* Color for bullet point */
+  font-size: 1.2em; /* Larger bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* ==========================================================================================================
@@ -578,8 +604,8 @@ a.dropdown-item:hover {
 }
 
 .img-research {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
 }
 
 
@@ -882,7 +908,7 @@ a.dropdown-item:hover {
     order: 2;
   }
 
-  .fh5co-reviews-outer {
+  .cpss-member-outer {
     padding: 0;
   }
 
@@ -974,11 +1000,11 @@ a.dropdown-item:hover {
     height: 300px;
   }
 
-  .fh5co-reviews-outer {
+  .cpss-member-outer {
     height: auto;
   }
 
-  .fh5co-reviews-outer .fh5co-reviews-inner {
+  .cpss-member-outer .fh5co-reviews-inner {
     margin-top: 50px;
   }
 
