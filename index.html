@@ -4,7 +4,7 @@
 	author: @karu-rress
 -->
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<title>CPSS Lab @ CAU</title>
@@ -34,6 +34,7 @@
 	<script defer src="js/owl.carousel.js"></script>
 	<script defer src="js/wow.min.js"></script>
 	<script defer src="js/main.js"></script>
+	<script defer src="js/htmls.js"></script>
 </head>
 <body>
 
@@ -44,37 +45,7 @@
 	<!-- ============================== About ============================== -->
 
 	<div id="cpss-about-wrapper">
-		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
-			<a class="navbar-brand" href="">CPSS Lab</a>
-			<!-- for mobile navigations -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<!-- Nav bars -->
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-items-center ml-auto mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="document.getElementById('cpss-research').scrollIntoView({ behavior: 'smooth' })">Research</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#">Members</a>
-						<ul class="dropdown-menu">
-							<li><a href="#" hx-boost="true" class="dropdown-item">Professor</a></li>
-							<li><a href="#" hx-boost="true" class="dropdown-item">Researchers</a></li>
-							<li><a href="#" hx-boost="true" class="dropdown-item">Alumni</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./publications.html">Publications</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
+		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light" hx-get="html/nav.html" hx-trigger="load"></nav>
 		<!-- 메인 페이지 -->
 		
 		
