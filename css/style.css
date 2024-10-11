@@ -44,7 +44,7 @@ html {
 
 .cpss-other-wrapper {
   position: relative;
-  height: 300px; /* TODO: 800 */
+  height: 300px;
   width: 100%;
   background-color: black;
   background-image: url("../img/cpss-main.jpeg");

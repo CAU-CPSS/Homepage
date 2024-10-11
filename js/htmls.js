@@ -13,7 +13,7 @@ document.addEventListener("htmx:afterOnLoad", () => {
             nav_link = document.getElementById("nav-about");
             break;
         case '/professor.html':
-        case '/researchers.html':
+        case '/members.html':
         case '/alumni.html':
             nav_link = document.getElementById("nav-members");
             break;
