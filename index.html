@@ -26,6 +26,8 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- https://htmx.org/ -->
+	<script src="https://unpkg.com/htmx.org@2.0.3"></script>
 	<script async src="js/cookie.js"></script>
 	<script defer src="js/jquery.min.js"></script>
 	<script defer src="js/bootstrap.js"></script>
@@ -61,9 +63,9 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link" href="#">Members</a>
 						<ul class="dropdown-menu">
-							<li><a href="#" class="dropdown-item">Professor</a></li>
-							<li><a href="#" class="dropdown-item">Researchers</a></li>
-							<li><a href="#" class="dropdown-item">Alumni</a></li>
+							<li><a href="#" hx-boost="true" class="dropdown-item">Professor</a></li>
+							<li><a href="#" hx-boost="true" class="dropdown-item">Researchers</a></li>
+							<li><a href="#" hx-boost="true" class="dropdown-item">Alumni</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
