@@ -64,13 +64,6 @@ html {
   background-color: #000;
 }
 
-.main-navbar-nav .navbar-brand {
-  font-size: 38px;
-  letter-spacing: 3px;
-  position: relative;
-  font-weight: 500;
-}
-
 .main-navbar-nav {
   color: #fff !important;
 }
@@ -86,18 +79,9 @@ html {
   -ms-transition: all .33s ease;
   transition: all .33s ease;
 }
-.main-navbar-nav .active {
-  color: #fff !important;
-  opacity: 1 !important;
-}
+
 .main-navbar-nav a {
   color: #fff !important;
-}
-.main-navbar-nav .nav-link {
-  opacity: 1 !important;
-  margin: 0 35px;
-  font-size: 14.5px;
-  font-weight: 500;
 }
 
 .nav-item {
@@ -909,16 +893,6 @@ a.dropdown-item:hover {
 
   .cpss-member-outer {
     padding: 0;
-  }
-
-  .navbar-light .navbar-toggler {
-    color: #fff !important;
-    border-color: #c7c7c7 !important;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    margin: 0;
-    width: 100%;
   }
 
   .social-icons-header i:first-of-type {

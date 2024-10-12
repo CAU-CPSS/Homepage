@@ -1,51 +1,30 @@
-<!--
-	Homepage of CPSS Lab. at Chung-Ang University
+<svelte:head>
+    <title>CPSS Lab @ CAU</title> 
+</svelte:head>
 
-	author: @karu-rress
--->
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<title>CPSS Lab @ CAU</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Cyber-Physical System Security Lab in Chung-Ang University." />
-	<meta name="keywords" content="industrial security, cyber-physical system, security" />
-	<meta name="author" content="karu-rress" />
+<style>
+    /* Bootstrap */
+    @import '/src/css_old/bootstrap.css';
+    
+    /* Owl Carousel */
+    @import '/src/css_old/owl.carousel.css';
+    @import '/src/css_old/owl.theme.default.min.css';
 
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    /* Animate.css */
+    @import '/src/css_old/animate.css';
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    /* Custom CSS */
+    @import '/src/css_old/style.css';
+</style>
 
-	<!-- https://htmx.org/ -->
-	<script src="https://unpkg.com/htmx.org@2.0.3"></script>
-	<script async src="js/cookie.js"></script>
-	<script defer src="js/jquery.min.js"></script>
-	<script defer src="js/bootstrap.js"></script>
-	<script defer src="js/owl.carousel.js"></script>
-	<script defer src="js/wow.min.js"></script>
-	<script defer src="js/main.js"></script>
-	<script defer src="js/htmls.js"></script>
-</head>
-<body>
-
+<script>
+    import Navbar from '../lib/Navbar.svelte';
+</script>
 
 <div id="page-wrap">
-
-
 	<!-- ============================== About ============================== -->
-
 	<div id="cpss-about-wrapper">
-		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light" hx-get="html/nav.html" hx-trigger="load"></nav>
+		<Navbar />
 		<!-- 메인 페이지 -->
 		
 		
@@ -59,7 +38,7 @@
 			<h3 class="animated fadeIn wow" data-wow-delay="0.6s">중앙대학교 사이버물리시스템 보안 연구실</h3>
 			<p class="animated fadeIn wow" data-wow-delay="0.67s">AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을 연구합니다.<br>
 				학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.<br>
-				주요 연구분야: OS, On-Device, Embedded, Real-time system, Security
+				주요 연구분야: OS, On-device, Embedded, Real-time system, Security
 			</p>
 			<h4 class="animated fadeIn" data-wow-delay="0.8s">
 				╔═════════ ∘◦ ☆ ◦∘ ══════════╗<br>
@@ -210,5 +189,3 @@
 	</footer>
 
 </div> <!-- main page wrapper -->
-</body>
-</html>
