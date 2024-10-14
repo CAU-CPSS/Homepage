@@ -30,18 +30,6 @@ html {
   color: #234197 !important;
 }
 
-/* TODO: Main Background */
-#cpss-about-wrapper {
-  position: relative;
-  height: 700px; /* TODO: 800 */
-  width: 100%;
-  background-color: black;
-  background-image: url("../img/cpss-main.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; /* 또는 contain */
-}
-
 .cpss-other-wrapper {
   position: relative;
   height: 500px;
@@ -316,7 +304,6 @@ a.dropdown-item:hover {
 										FEATURES
    ========================================================================================================== */
 .curved-bg-div {
-  background: url("../img/curved-bgg.jpg") no-repeat;
   background-position: 0px -140px;
   background-size: cover;
   width: 100%;

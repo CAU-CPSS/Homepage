@@ -3,7 +3,11 @@
   import { writable } from "svelte/store";
 
   const activeNav = writable("");
-  // TODO: dropdown open을 하나의 writable로 관리할지..
+  const isOpen = writable(false);
+  
+  function toggleNavbar() {
+    isOpen.update((value) => !value); // Toggle the state
+  }
 
   onMount(() => {
     const currentPath = window.location.pathname;
@@ -52,16 +56,20 @@
   <button
     class="navbar-toggler"
     type="button"
+    on:click={toggleNavbar}
     data-toggle="collapse"
     data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent"
-    aria-expanded="false"
+    aria-expanded={$isOpen}
     aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div
+    class="collapse navbar-collapse {$isOpen ? 'show' : ''}"
+    id="navbarSupportedContent"
+  >
     <ul class="navbar-nav ml-auto mr-auto">
       {#each ["nav-about", "nav-research", "nav-members", "nav-publications"] as item}
         <li
@@ -104,10 +112,6 @@
 <style>
   /* Bootstrap */
   @import "/src/css_old/bootstrap.css";
-
-  /* Owl Carousel */
-  @import "/src/css_old/owl.carousel.css";
-  @import "/src/css_old/owl.theme.default.min.css";
 
   /* Animate.css */
   @import "/src/css_old/animate.css";
