@@ -6,14 +6,14 @@ function xorStrings(str, key) {
     return result;
 }
 
-key1 = atob('andsZWU=');
-key2 = atob('dGpkZ2hrczk5NA==');
-key3 = atob('ZXN0aGVy');
-key4 = atob('a2FydS1ycmVzcw==');
-key5 = atob('c2hwYXJr');
+const key1 = atob('andsZWU=');
+const key2 = atob('dGpkZ2hrczk5NA==');
+const key3 = atob('ZXN0aGVy');
+const key4 = atob('a2FydS1ycmVzcw==');
+const key5 = atob('c2hwYXJr');
 
 function encrypt(plainText) {
-    cipher = btoa(plainText)
+    let cipher = btoa(plainText)
     cipher = xorStrings(cipher, key1);
 
     cipher = btoa(cipher)
@@ -32,7 +32,7 @@ function encrypt(plainText) {
 }
 
 function decrypt(cipherText) {
-    plain = xorStrings(cipherText, key5);
+    let plain = xorStrings(cipherText, key5);
     plain = atob(plain)
 
     plain = xorStrings(plain, key4);
