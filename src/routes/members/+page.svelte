@@ -9,8 +9,8 @@
   <div id="cpss-other-wrapper">
     <Navbar />
     <div class="container cpss-about-inner">
-      <h1 class="animated fadeIn wow" data-wow-delay="0.4s">Members</h1>
-      <h2 class="animated fadeIn wow" data-wow-delay="0.45s">CAU CPSS Lab</h2>
+      <h1 class="animated fadeIn wow" data-wow-delay="0.28s">Members</h1>
+      <h2 class="animated fadeIn wow" data-wow-delay="0.35s">CAU CPSS Lab</h2>
     </div>
   </div>
 
@@ -18,7 +18,7 @@
   <div class="cpss-member-outer">
     <div class="container">
       <h1 class="titles">Professor</h1>
-      <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
+      <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.35s">
         <img
           class="card-photo"
           src="/src/assets/images/card/professor.jpg"
@@ -41,7 +41,7 @@
 
       <h1 class="titles">Students</h1>
       <div class="row justify-content-center">
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
+        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.55s">
           <img
             class="card-photo"
             src="/src/assets/images/card/phd_shp.jpg"
@@ -63,7 +63,7 @@
             </div>
           </div>
         </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
+        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.62s">
           <img
             class="card-photo"
             src="/src/assets/images/card/phd_ysc.jpg"

@@ -18,5 +18,9 @@
 		"typescript": "^5.0.0",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"wowjs": "^1.1.3"
+	}
 }
