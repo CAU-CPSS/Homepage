@@ -1,6 +1,8 @@
 <script>
   import Navbar from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
+
+  // TODO: JSON으로 만들어서 svelete for문 써도 될듯
 </script>
 
 <div id="page-wrap">
@@ -13,8 +15,9 @@
   </div>
 
   <!-- CARDs -->
-  <div id="fh5co-reviews" class="cpss-member-outer">
-    <div class="container fh5co-reviews-inner">
+  <div class="cpss-member-outer">
+    <div class="container">
+      <h1 class="titles">Professor</h1>
       <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
         <img
           class="card-photo"
@@ -22,23 +25,21 @@
           alt="Professor"
         />
         <div class="card-body">
-          <span class="card-name">Jaewoo Lee</span><br />
+          <span class="card-name">Jaewoo Lee <a href="https://sites.google.com/view/jaewoo/home" title="Visit the personal page" target="_blank">🔗</a></span><br />
           <span class="card-position">Professor</span>
-
-          <p class="card-degree">University of Pennsylvania, 공학박사</p>
-          <p class="testimonial-desc">
-            중앙대학교 산업보안학과 조교수(2018-), 대학원 융합보안학과,
-            특수대학원 보안대학원 (모빌리티 보안 트랙)
-            <br />
-            운영체제 보안, 네트워크 보안, 첨단 보안 분야 연구 (블럭체인 보안, 빅데이터
-            보안, 모빌리티 보안, 사이버-물리 시스템 안전 및 보안)
-            <br />
-            공학박사 (University of Pennsylvania 2017, Ph.D in Computer and Information
-            Science) 공학석사(서울대학교 2008, 컴퓨터공학) 공학사(서울대학교 2006,
-            컴퓨터공학)
-          </p>
+          <!-- TODO: Professor | Assistant Professor -->
+          <p class="card-degree">Industrial Security, Chung-Ang Univ.</p>
+          <div class="card-description">
+            <b>Ph.D. in Computer and Information Science</b>, Univ. of Pennsylvania
+            <br /><br />
+            <b>Interests:</b> OS Security | Network Security | Blockchain
+            Security<br />
+            | Big-Data Security | Mobility Security | Cyber-Physical Safety & Security
+          </div>
         </div>
       </div>
+
+      <h1 class="titles">Students</h1>
       <div class="row justify-content-center">
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
           <img
@@ -50,11 +51,16 @@
             <span class="card-name">Sunghwan Park</span><br />
             <span class="card-position">Ph.D. candidate</span>
 
-            <p class="card-degree">Convergence Security, Chung-Ang Univ.</p>
-            <p class="testimonial-desc">
-              P2P data propagation algorithm, Distributed System, Federated
-              Learning
-            </p>
+            <p class="card-degree">Convergence Security, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li>Federated Learning</li>
+                <li>Security & Privacy for ML</li>
+                <li>Cyber-Physical System</li>
+                <li>Real-time System</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
@@ -67,25 +73,37 @@
             <span class="card-name">Yeseul Chang</span><br />
             <span class="card-position">Ph.D. candidate</span>
 
-            <p class="card-degree">Convergence Security, Chung-Ang Univ.</p>
-            <p class="testimonial-desc">
-              SW products planning, Sales marketing
-            </p>
+            <p class="card-degree">Convergence Security, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li>Cyber Security</li>
+                <li>Data Analysis</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
+      <h1 class="titles">Undergraduates</h1>
+      <div class="row justify-content-center">
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
           <img
             class="card-photo"
-            src="/src/assets/images/card/ur_shp.jpg"
+            src="/src/assets/images/card/ur_shp.png"
             alt="Professor"
           />
           <div class="card-body">
             <span class="card-name">Sangho Park</span><br />
             <span class="card-position">Undergraduate researcher</span>
 
-            <p class="card-degree">School of Economics</p>
-            <p class="testimonial-desc">Artificial Intelligence</p>
+            <p class="card-degree">Business Administration, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li><i>TO BE ADDED</i></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
@@ -98,10 +116,14 @@
             <span class="card-name">Sunwoo Na</span><br />
             <span class="card-position">Undergraudate researcher</span>
 
-            <p class="card-degree">School of Computer Science & Engineering</p>
-            <p class="testimonial-desc">
-              Programming Languages, Internet of Things
-            </p>
+            <p class="card-degree">Computer Science & Engineering, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li>Programming Languages</li>
+                <li>Internet of Things</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +148,8 @@
   .container .card {
     max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
     display: flex;
     flex-direction: row;
@@ -136,6 +159,16 @@
     max-width: 80%;
     display: flex;
     flex-direction: row;
+  }
+
+  .card-photo {
+    max-width: 150px;
+    width: 150px;
+    height: auto;
+
+    /* TODO: refine width/height */
+    margin: 20px auto;
+    padding: 10px 0px 10px 0px;
   }
 
   .card-name {
@@ -149,9 +182,15 @@
     font-weight: 500;
   }
 
-  .card-photo {
-    max-width: 150px;
+  .card-description ul {
+    padding-left: 20px;
+  }
+
+  /**/
+
+  .cpss-member-outer {
+    width: 100%;
     height: auto;
-    margin: 20px auto;
+    padding: 70px;
   }
 </style>

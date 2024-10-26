@@ -4,9 +4,9 @@
 
   const activeNav = writable("");
   const isOpen = writable(false);
-  
+
   function toggleNavbar() {
-    isOpen.update((value) => !value); // Toggle the state
+    isOpen.update((v) => !v); // Toggle the state
   }
 
   onMount(() => {
@@ -17,12 +17,12 @@
       case "/":
         nav_link = "nav-about";
         break;
-      case "/professor":
+      // case "/professor":
       case "/members":
       case "/alumni":
         nav_link = "nav-members";
         break;
-      case "/publications.html":
+      case "/publications":
         nav_link = "nav-publications";
         break;
       default:
@@ -40,14 +40,13 @@
    */
   function handleResearchClick(event) {
     event.preventDefault();
-    // is index page
-    if (window.location.pathname === "/") {
-      document
-        .getElementById("cpss-research")
-        ?.scrollIntoView({ behavior: "smooth" });
-    } else {
-      window.location.href = "index.html#cpss-research";
+    if (window.location.pathname !== "/") {
+      window.location.href = "/#cpss-research";
     }
+
+    document
+      .getElementById("cpss-research")
+      ?.scrollIntoView({ behavior: "smooth" });
   }
 </script>
 

@@ -474,35 +474,6 @@ a.dropdown-item:hover {
 /* ==========================================================================================================
 										REVIEWS
    ========================================================================================================== */
-.cpss-member-outer {
-  width: 100%;
-  height: auto;
-  padding: 70px;
-  margin-top: 100px;
-}
-.cpss-member-outer .fh5co-reviews-inner {
-  margin-top: 100px;
-}
-.cpss-member-outer > h1 {
-  color: #2e65a7;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.cpss-member-outer > small {
-  text-align: center;
-  display: block;
-}
-.cpss-member-outer .testimonial-desc {
-  clear: both;
-  padding-top: 30px;
-  font-weight: 500;
-}
-.cpss-member-outer .testimonial-2 {
-  margin-left: 50px;
-}
 
 
 #cpss-accomplishment > ul {
