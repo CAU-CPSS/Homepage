@@ -1,8 +1,92 @@
 <script>
   import Navbar from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
+  import { writable } from "svelte/store";
+  import Layout from "../+layout.svelte";
 
-  // TODO: JSON으로 만들어서 svelete for문 써도 될듯
+  const graduates = [
+    {
+      name: "송용택",
+      position: "Master(2019)",
+      degree: "Convergence Security, CAU",
+      description: "SK Infosec",
+    },
+    {
+      name: "최동준",
+      position: "Master(2020)",
+      degree: "Convergence Security, CAU",
+      description: "Air Force Officer",
+    },
+    {
+      name: "서예령",
+      position: "Master(2021)",
+      degree: "Convergence Security, CAU",
+      description: "Security Manager in Yungjin Pharm. Co., Ltd.",
+    },
+    {
+      name: "이선우",
+      position: "Master(2022)",
+      degree: "Convergence Security, CAU",
+      description: "BLANK",
+    },
+    {
+      name: "이승욱",
+      position: "Master(2022)",
+      degree: "Convergence Security, CAU",
+      description: "RaonSecure",
+    },
+    {
+      name: "김지후",
+      position: "Master(2023)",
+      degree: "Convergence Security, CAU",
+      description: "NONE",
+    },
+    {
+      name: "임지혜",
+      position: "Master(2023)",
+      degree: "Convergence Security, CAU",
+      description: "Posco",
+    },
+    {
+      name: "김영준",
+      position: "Master(2023)",
+      degree: "Convergence Security, CAU",
+      description: "Korea Local Information Research & Development Institute",
+    },
+    {
+      name: "강한바다",
+      position: "Master(2023)",
+      degree: "Convergence Security, CAU",
+      description: "Korea Local Information Research & Development Institute",
+    },
+  ];
+
+  const undergraduates = [
+    {
+      name: "최병준",
+      position: "Bachelor(2020)",
+      degree: "???, CAU",
+      description: "KAIST GSIS",
+    },
+    {
+      name: "현석훈",
+      position: "Bachelor(2022)",
+      degree: "???, CAU",
+      description: "KAIST GSIS",
+    },
+    {
+      name: "장영욱",
+      position: "Bachelor(2022)",
+      degree: "Industrial Security, CAU",
+      description: "EMPTY",
+    },
+    {
+      name: "이승현",
+      position: "Bachelor(2022)",
+      degree: "Industrial Security, CAU",
+      description: "EMPTY",
+    },
+  ]
 </script>
 
 <div id="page-wrap">
@@ -19,198 +103,44 @@
     <div class="container">
       <h1 class="titles">Graduate Alumni</h1>
       <div class="row justify-content-center graduate-cards">
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.4s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">송용택</span><br />
-            <span class="card-position">Master(2019)</span>
 
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">SK Infosec</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.55s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">최동준</span><br />
-            <span class="card-position">Master(2020)</span>
+        {#each graduates as graduate, i} <!-- 숫자 조정 ... 애니메이션이 답답함 -->
+          <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.4 + i*0.07}s`}>
+            <img
+              class="card-photo"
+              src="/src/assets/images/card/puang.png"
+              alt="Professor"
+            />
+            <div class="card-body">
+              <span class="card-name">{graduate.name}</span><br />
+              <span class="card-position">{graduate.position}</span>
 
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">Air Force Officer</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.69s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">서예령</span><br />
-            <span class="card-position">Master(2021)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">
-              Security Manager in Yungjin Pharm. Co., Ltd.
+              <p class="card-degree">{graduate.degree}</p>
+              <div class="card-description">{graduate.description}</div>
             </div>
           </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.78s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">이선우</span><br />
-            <span class="card-position">Master(2022)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">BLANK</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.85s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">이승욱</span><br />
-            <span class="card-position">Master(2022)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">RaonSecure</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.92s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">김지후</span><br />
-            <span class="card-position">Master(2023)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">NONE</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">임지혜</span><br />
-            <span class="card-position">Master(2023)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">Posco</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">김영준</span><br />
-            <span class="card-position">Master(2023)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">
-              Korea Local Information Research & Development Institute
-            </div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">강한바다</span><br />
-            <span class="card-position">Master(2023)</span>
-
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">
-              Korea Local Information Research & Development Institute
-            </div>
-          </div>
-        </div>
+        {/each}
       </div>
 
       <h1 class="titles">Undergraduate Alumni</h1>
       <div class="row justify-content-center">
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">최병준</span><br />
-            <span class="card-position">Bachelor(2020)</span>
 
-            <p class="card-degree">???, CAU</p>
-            <div class="card-description">KAIST GSIS</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">현석훈</span><br />
-            <span class="card-position">Bachelor(2022)</span>
+        {#each undergraduates as undergraduate, i}
+          <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.15 + i*0.07}s`}>
+            <img
+              class="card-photo"
+              src="/src/assets/images/card/puang.png"
+              alt="Professor"
+            />
+            <div class="card-body">
+              <span class="card-name">{undergraduate.name}</span><br />
+              <span class="card-position">{undergraduate.position}</span>
 
-            <p class="card-degree">???, CAU</p>
-            <div class="card-description">KAIST GSIS</div>
+              <p class="card-degree">{undergraduate.degree}</p>
+              <div class="card-description">{undergraduate.description}</div>
+            </div>
           </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">장영욱</span><br />
-            <span class="card-position">Bachelor(2022)</span>
-
-            <p class="card-degree">Industrial Security, CAU</p>
-            <div class="card-description">EMPTY</div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/src/assets/images/card/puang.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">이승현</span><br />
-            <span class="card-position">Bachelor(2022)</span>
-
-            <p class="card-degree">Industrial Security, CAU</p>
-            <div class="card-description">EMPTY</div>
-          </div>
-        </div>
+        {/each}
       </div>
     </div>
   </div>
