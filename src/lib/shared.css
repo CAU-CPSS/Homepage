@@ -1,0 +1,10 @@
+#cpss-other-wrapper {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background-color: black;
+    background-image: url("/src/assets/images/cpss-main.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* 또는 contain */
+  }

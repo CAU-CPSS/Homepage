@@ -1,5 +1,6 @@
 <script>
-  import Navbar from "../lib/Navbar.svelte";
+  import Navbar from "$lib/Navbar.svelte";
+  import Footer from "$lib/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -198,42 +199,7 @@
 		</ul-->
   </div>
 
-  <!-- ==========================================================================================================
-                                               SECTION 7 - SUB FOOTER
-    ========================================================================================================== -->
-
-  <footer class="footer-outer">
-    <div class="container footer-inner">
-      <div class="footer-three-grid wow fadeIn animated" data-wow-delay="0.66s">
-        <div class="column-1-3">
-          <h1>CPSS Lab.</h1>
-        </div>
-        <div class="column-2-3">
-          <!-- TODO: 위치랑 저시기 그 뭐냐 수정 -->
-          <!-- Address 포함 -->
-
-          <p style="color: white;">
-            TEL. (02) 820-5935<br />
-            <a
-              href="https://www.cau.ac.kr"
-              target="_blank"
-              style="color: white;">중앙대학교</a
-            > 이재우 교수님 연구실
-          </p>
-        </div>
-        <div class="column-3-3"></div>
-      </div>
-
-      <span class="border-bottom-footer"></span>
-
-      <p class="copyright">
-        &copy; 2024 CPSS Lab. All rights reserved. Created by <a
-          href="https://github.com/karu-rress"
-          target="_blank">karu-rress</a
-        > &amp; esther.
-      </p>
-    </div>
-  </footer>
+  <Footer />
 </div>
 
 <!-- main page wrapper -->

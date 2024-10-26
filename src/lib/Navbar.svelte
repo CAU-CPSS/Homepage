@@ -90,14 +90,14 @@
           </a>
           {#if item === "nav-members"}
             <ul class="dropdown-menu">
-              <!-- <li><a id="nav-professor" href="/professor.html" hx-boost="true" class="dropdown-item">Professor</a></li> -->
+              <!-- <li><a id="nav-professor" href="/professor" hx-boost="true" class="dropdown-item">Professor</a></li> -->
               <li>
-                <a id="nav-members" href="/members.html" class="dropdown-item"
+                <a id="nav-members" href="/members" class="dropdown-item"
                   >Members</a
                 >
               </li>
               <li>
-                <a id="nav-alumni" href="/alumni.html" class="dropdown-item"
+                <a id="nav-alumni" href="/alumni" class="dropdown-item"
                   >Alumni</a
                 >
               </li>
