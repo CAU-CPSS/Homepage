@@ -471,33 +471,6 @@ a.dropdown-item:hover {
   font-weight: 600;
 }
 
-/* ==========================================================================================================
-										REVIEWS
-   ========================================================================================================== */
-
-
-#cpss-accomplishment > ul {
-  width: 1000px;
-  margin: 60px auto 300px auto;
-  
-  list-style: none; /* Remove default bullet points */
-  padding: 0;
-}
-
-#cpss-accomplishment ul li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px; /* Add spacing between items */
-}
-
-#cpss-accomplishment ul li::before {
-  content: "•"; /* Custom bullet symbol */
-  color: #2A9D8F; /* Color for bullet point */
-  font-size: 1.2em; /* Larger bullet */
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 /* ==========================================================================================================
 										BOTTOM

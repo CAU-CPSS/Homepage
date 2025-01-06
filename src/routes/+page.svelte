@@ -80,7 +80,7 @@
           <div class="col-sm-image-container">
             <img
               class="img-float-left img-research"
-              src="/src/assets/images/research/squircle-1.png"
+              src="/images/research/squircle-1.png"
               alt="cyber-physical systems"
             />
           </div>
@@ -141,7 +141,7 @@
           <div class="col-sm-image-container">
             <img
               class="img-float-right img-research"
-              src="/src/assets/images/research/squircle-2.png"
+              src="/images/research/squircle-2.png"
               alt="autonomous car"
             />
           </div>
@@ -154,7 +154,7 @@
           <div class="col-sm-image-container">
             <img
               class="img-float-left img-research"
-              src="/src/assets/images/research/squircle-3.png"
+              src="/images/research/squircle-3.png"
               alt="embedded"
             />
           </div>
@@ -220,9 +220,31 @@
     height: 700px; /* TODO: 800 */
     width: 100%;
     background-color: black;
-    background-image: url("/src/assets/images/cpss-main.jpeg");
+    background-image: url("/images/cpss-main.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* 또는 contain */
+  }
+
+  #cpss-accomplishment > ul {
+    width: 1000px;
+    margin: 60px auto 300px auto;
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+  }
+
+  #cpss-accomplishment ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  #cpss-accomplishment ul li::before {
+    content: "•"; /* Custom bullet symbol */
+    color: #2A9D8F; /* Color for bullet point */
+    font-size: 1.2em; /* Larger bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 </style>

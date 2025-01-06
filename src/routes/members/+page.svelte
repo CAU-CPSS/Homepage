@@ -21,11 +21,14 @@
       <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.35s">
         <img
           class="card-photo"
-          src="/src/assets/images/card/professor.jpg"
+          src="/images/card/professor.jpg"
           alt="Professor"
         />
         <div class="card-body">
-          <span class="card-name">Jaewoo Lee <a href="https://sites.google.com/view/jaewoo/home" title="Visit the personal page" target="_blank">🔗</a></span><br />
+          <span class="card-name">Jaewoo Lee
+            <a href="https://sites.google.com/view/jaewoo/home" title="Personal page" target="_blank">🔗</a>
+            <a href="https://scholar.google.co.kr/citations?user=lShsfKEAAAAJ" title="Google Scholar" target="_blank">🎓</a>
+          </span><br />
           <span class="card-position">Professor</span>
           <!-- TODO: Professor | Assistant Professor -->
           <p class="card-degree">Industrial Security, Chung-Ang Univ.</p>
@@ -44,7 +47,7 @@
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.55s">
           <img
             class="card-photo"
-            src="/src/assets/images/card/phd_shp.jpg"
+            src="/images/card/phd_shp.jpg"
             alt="Professor"
           />
           <div class="card-body">
@@ -66,7 +69,7 @@
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.62s">
           <img
             class="card-photo"
-            src="/src/assets/images/card/phd_ysc.jpg"
+            src="/images/card/phd_ysc.jpg"
             alt="Professor"
           />
           <div class="card-body">
@@ -77,7 +80,7 @@
             <div class="card-description">
               <b>Interests:</b>
               <ul>
-                <li>Cyber Security</li>
+                <li>Cybersecurity</li>
                 <li>Data Analysis</li>
               </ul>
             </div>
@@ -90,7 +93,7 @@
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
           <img
             class="card-photo"
-            src="/src/assets/images/card/ur_shp.png"
+            src="/images/card/ur_shp.png"
             alt="Professor"
           />
           <div class="card-body">
@@ -109,7 +112,7 @@
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
           <img
             class="card-photo"
-            src="/src/assets/images/card/ur-swn.jpg"
+            src="/images/card/ur-swn.jpg"
             alt="Professor"
           />
           <div class="card-body">

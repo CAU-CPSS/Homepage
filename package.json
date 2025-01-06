@@ -20,7 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^3.0.6",
+		"@sveltejs/adapter-static": "^3.0.8",
 		"animate.css": "^4.1.1",
 		"wowjs": "^1.1.3"
 	}

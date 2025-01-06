@@ -108,7 +108,7 @@
           <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.4 + i*0.07}s`}>
             <img
               class="card-photo"
-              src="/src/assets/images/card/puang.png"
+              src="/images/card/puang.png"
               alt="Professor"
             />
             <div class="card-body">
@@ -129,7 +129,7 @@
           <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.15 + i*0.07}s`}>
             <img
               class="card-photo"
-              src="/src/assets/images/card/puang.png"
+              src="/images/card/puang.png"
               alt="Professor"
             />
             <div class="card-body">
