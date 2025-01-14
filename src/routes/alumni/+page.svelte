@@ -65,13 +65,13 @@
     {
       name: "최병준",
       position: "Bachelor(2020)",
-      degree: "???, CAU",
+      degree: "Industrial Security, CAU",
       description: "KAIST GSIS",
     },
     {
       name: "현석훈",
       position: "Bachelor(2022)",
-      degree: "???, CAU",
+      degree: "Industrial Security, CAU",
       description: "KAIST GSIS",
     },
     {

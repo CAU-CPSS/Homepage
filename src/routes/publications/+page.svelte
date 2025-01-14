@@ -8,7 +8,7 @@
       {
         code: "(J13)",
         people:
-          "Heemin Kim, Byeong-Chan Kim, Sumi Lee, Minjung Kang, Hyunjee Nam, Sunghwan Park, Il-Youp Kwak, Jaewoo Lee",
+          "Heemin Kim, Byeong-Chan Kim, Sumi Lee, Minjung Kang, Hyunjee Nam, Sunghwan Park, Il-Youp Kwak, <b>Jaewoo Lee</b>",
         title:
           "RAPID: Robust multi-pAtch masker using channel-wise Pooled varIance with two-stage patch Detection",
         details:

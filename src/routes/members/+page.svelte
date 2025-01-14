@@ -112,7 +112,7 @@
         <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
           <img
             class="card-photo"
-            src="/images/card/ur-swn.jpg"
+            src="/images/card/ur_shp.png"
             alt="Professor"
           />
           <div class="card-body">
@@ -125,6 +125,63 @@
               <ul>
                 <li>Programming Languages</li>
                 <li>Internet of Things</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
+          <img
+            class="card-photo"
+            src="/images/card/ur_shp.png"
+            alt="Professor"
+          />
+          <div class="card-body">
+            <span class="card-name">Junyoung Park</span><br />
+            <span class="card-position">Undergraduate researcher</span>
+
+            <p class="card-degree">Art & Technology, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li><i>TO BE ADDED</i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
+          <img
+            class="card-photo"
+            src="/images/card/ur_shp.png"
+            alt="Professor"
+          />
+          <div class="card-body">
+            <span class="card-name">Yoonseo Han</span><br />
+            <span class="card-position">Undergraudate researcher</span>
+
+            <p class="card-degree">Industrial Security, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li><i>TO BE ADDED</i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
+          <img
+            class="card-photo"
+            src="/images/card/ur_shp.png"
+            alt="Professor"
+          />
+          <div class="card-body">
+            <span class="card-name">Seongyong Ju</span><br />
+            <span class="card-position">Undergraduate researcher</span>
+
+            <p class="card-degree">Industrial Security, CAU</p>
+            <div class="card-description">
+              <b>Interests:</b>
+              <ul>
+                <li><i>TO BE ADDED</i></li>
               </ul>
             </div>
           </div>
@@ -148,11 +205,15 @@
 
   @import "$lib/shared.css";
 
+  .titles {
+    margin-top: 80px;
+  }
+
   .container .card {
     max-width: 80%;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 
     display: flex;
     flex-direction: row;
