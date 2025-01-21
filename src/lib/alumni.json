@@ -1,0 +1,123 @@
+{
+    "graduates": [
+        {
+            "name": "송용택",
+            "degree": "Master(2019)",
+            "major": "Security Convergence, CAU",
+            "status": "SK Infosec",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "최동준",
+            "degree": "Master(2020)",
+            "major": "Security Convergence, CAU",
+            "status": "Air Force Officer",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "서예령",
+            "degree": "Master(2021)",
+            "major": "Security Convergence, CAU",
+            "status": "Security Manager in Yungjin Pharm. Co., Ltd.",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "이선우",
+            "degree": "Master(2022)",
+            "major": "Security Convergence, CAU",
+            "status": "BLANK",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "이승욱",
+            "degree": "Master(2022)",
+            "major": "Security Convergence, CAU",
+            "status": "RaonSecure",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "김지후",
+            "degree": "Master(2023)",
+            "major": "Security Convergence, CAU",
+            "status": "NONE",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "임지혜",
+            "degree": "Master(2023)",
+            "major": "Security Convergence, CAU",
+            "status": "Posco",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "김영준",
+            "degree": "Master(2023)",
+            "major": "Security Convergence, CAU",
+            "status": "Korea Local Information Research & Development Institute",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "강한바다",
+            "degree": "Master(2023)",
+            "major": "Security Convergence, CAU",
+            "status": "Korea Local Information Research & Development Institute",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        }
+    ],
+    "undergraduates": [
+        {
+            "name": "최병준",
+            "degree": "Bachelor(2020)",
+            "major": "Industrial Security, CAU",
+            "status": "KAIST GSIS",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "현석훈",
+            "degree": "Bachelor(2022)",
+            "major": "Industrial Security, CAU",
+            "status": "KAIST GSIS",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "장영욱",
+            "degree": "Bachelor(2022)",
+            "major": "Industrial Security, CAU",
+            "status": "EMPTY",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "이승현",
+            "degree": "Bachelor(2022)",
+            "major": "Industrial Security, CAU",
+            "status": "EMPTY",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "students": [
+        {
+            "name": "Sunghwan Park",
+            "degree": "Ph.D. candidate",
+            "major": "Security Convergence, CAU",
+            "interests": [
+                "Federated Learning",
+                "Security & Privacy for ML",
+                "Cyber-Physical System",
+                "Real-time System"
+            ],
+            "photo": "phd_shp.jpg"
+        },
+        {
+            "name": "Yeseul Chang",
+            "degree": "Ph.D. candidate",
+            "major": "Security Convergence, CAU",
+            "interests": [
+                "Cybersecurity",
+                "Data Analysis"
+            ],
+            "photo": "phd_ysc.jpg"
+        },
+        {
+            "name": "TODO",
+            "degree": "Master candidate",
+            "major": "Security Convergence, CAU",
+            "interests": [
+                "TO BE ADDED"
+            ],
+            "photo": "puang.png"
+        }
+    ],
+    "undergraduates": [
+        {
+            "name": "Sangho Park",
+            "degree": "Undergraduate researcher",
+            "major": "Business Administration, CAU",
+            "interests": [
+                "TO BE ADDED"
+            ],
+            "photo": "puang.png"
+        },
+        {
+            "name": "Sunwoo Na",
+            "degree": "Undergraduate researcher",
+            "major": "Computer Science & Engineering, CAU",
+            "interests": [
+                "Programming Languages",
+                "Internet of Things"
+            ],
+            "photo": "puang.png"
+        },
+        {
+            "name": "Junyoung Park",
+            "degree": "Undergraduate researcher",
+            "major": "Art & Technology, CAU",
+            "interests": [
+                "TO BE ADDED"
+            ],
+            "photo": "puang.png"
+        },
+        {
+            "name": "Yoonseo Han",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "TO BE ADDED"
+            ],
+            "photo": "puang.png"
+        },
+        {
+            "name": "Seongyong Ju",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "TO BE ADDED"
+            ],
+            "photo": "puang.png"
+        }
+    ]
+}
