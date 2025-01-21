@@ -1,92 +1,14 @@
+<script context="module">
+  import alumni from "$lib/alumni.json";
+
+  export const graduates = alumni.graduates;
+  export const undergraduates = alumni.undergraduates;
+</script>
 <script>
   import Navbar from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
   import { writable } from "svelte/store";
   import Layout from "../+layout.svelte";
-
-  const graduates = [
-    {
-      name: "송용택",
-      position: "Master(2019)",
-      degree: "Convergence Security, CAU",
-      description: "SK Infosec",
-    },
-    {
-      name: "최동준",
-      position: "Master(2020)",
-      degree: "Convergence Security, CAU",
-      description: "Air Force Officer",
-    },
-    {
-      name: "서예령",
-      position: "Master(2021)",
-      degree: "Convergence Security, CAU",
-      description: "Security Manager in Yungjin Pharm. Co., Ltd.",
-    },
-    {
-      name: "이선우",
-      position: "Master(2022)",
-      degree: "Convergence Security, CAU",
-      description: "BLANK",
-    },
-    {
-      name: "이승욱",
-      position: "Master(2022)",
-      degree: "Convergence Security, CAU",
-      description: "RaonSecure",
-    },
-    {
-      name: "김지후",
-      position: "Master(2023)",
-      degree: "Convergence Security, CAU",
-      description: "NONE",
-    },
-    {
-      name: "임지혜",
-      position: "Master(2023)",
-      degree: "Convergence Security, CAU",
-      description: "Posco",
-    },
-    {
-      name: "김영준",
-      position: "Master(2023)",
-      degree: "Convergence Security, CAU",
-      description: "Korea Local Information Research & Development Institute",
-    },
-    {
-      name: "강한바다",
-      position: "Master(2023)",
-      degree: "Convergence Security, CAU",
-      description: "Korea Local Information Research & Development Institute",
-    },
-  ];
-
-  const undergraduates = [
-    {
-      name: "최병준",
-      position: "Bachelor(2020)",
-      degree: "Industrial Security, CAU",
-      description: "KAIST GSIS",
-    },
-    {
-      name: "현석훈",
-      position: "Bachelor(2022)",
-      degree: "Industrial Security, CAU",
-      description: "KAIST GSIS",
-    },
-    {
-      name: "장영욱",
-      position: "Bachelor(2022)",
-      degree: "Industrial Security, CAU",
-      description: "EMPTY",
-    },
-    {
-      name: "이승현",
-      position: "Bachelor(2022)",
-      degree: "Industrial Security, CAU",
-      description: "EMPTY",
-    },
-  ]
 </script>
 
 <div id="page-wrap">
@@ -106,17 +28,12 @@
 
         {#each graduates as graduate, i} <!-- 숫자 조정 ... 애니메이션이 답답함 -->
           <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.4 + i*0.07}s`}>
-            <img
-              class="card-photo"
-              src="/images/card/puang.png"
-              alt="Professor"
-            />
             <div class="card-body">
               <span class="card-name">{graduate.name}</span><br />
-              <span class="card-position">{graduate.position}</span>
+              <span class="card-degree">{graduate.degree}</span>
 
-              <p class="card-degree">{graduate.degree}</p>
-              <div class="card-description">{graduate.description}</div>
+              <p class="card-major">{graduate.major}</p>
+              <div class="card-status">{graduate.status}</div>
             </div>
           </div>
         {/each}
@@ -127,17 +44,12 @@
 
         {#each undergraduates as undergraduate, i}
           <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.15 + i*0.07}s`}>
-            <img
-              class="card-photo"
-              src="/images/card/puang.png"
-              alt="Professor"
-            />
             <div class="card-body">
               <span class="card-name">{undergraduate.name}</span><br />
-              <span class="card-position">{undergraduate.position}</span>
+              <span class="card-degree">{undergraduate.degree}</span>
 
-              <p class="card-degree">{undergraduate.degree}</p>
-              <div class="card-description">{undergraduate.description}</div>
+              <p class="card-major">{undergraduate.major}</p>
+              <div class="card-status">{undergraduate.status}</div>
             </div>
           </div>
         {/each}
@@ -190,12 +102,12 @@
     margin-right: 10px;
   }
 
-  .card-position {
+  .card-degree {
     font-size: 18px;
     font-weight: 500;
   }
 
-  .card-description ul {
+  .card-status ul {
     padding-left: 20px;
   }
 

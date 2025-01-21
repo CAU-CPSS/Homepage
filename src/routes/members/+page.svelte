@@ -1,8 +1,13 @@
+<script context="module">
+  import members from "$lib/members.json";
+
+  export const students = members.students;
+  export const undergraduates = members.undergraduates;
+</script>
+
 <script>
   import Navbar from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
-
-  // TODO: JSON으로 만들어서 svelete for문 써도 될듯
 </script>
 
 <div id="page-wrap">
@@ -25,15 +30,25 @@
           alt="Professor"
         />
         <div class="card-body">
-          <span class="card-name">Jaewoo Lee
-            <a href="https://sites.google.com/view/jaewoo/home" title="Personal page" target="_blank">🔗</a>
-            <a href="https://scholar.google.co.kr/citations?user=lShsfKEAAAAJ" title="Google Scholar" target="_blank">🎓</a>
+          <span class="card-name"
+            >Jaewoo Lee
+            <a
+              href="https://sites.google.com/view/jaewoo/home"
+              title="Personal page"
+              target="_blank">🔗</a
+            >
+            <a
+              href="https://scholar.google.co.kr/citations?user=lShsfKEAAAAJ"
+              title="Google Scholar"
+              target="_blank">🎓</a
+            >
           </span><br />
-          <span class="card-position">Professor</span>
+          <span class="card-degree">Professor</span>
           <!-- TODO: Professor | Assistant Professor -->
-          <p class="card-degree">Industrial Security, Chung-Ang Univ.</p>
-          <div class="card-description">
-            <b>Ph.D. in Computer and Information Science</b>, Univ. of Pennsylvania
+          <p class="card-major">Industrial Security, Chung-Ang Univ.</p>
+          <div class="card-interests">
+            <b>Ph.D. in Computer and Information Science</b>, Univ. of
+            Pennsylvania
             <br /><br />
             <b>Interests:</b> OS Security | Network Security | Blockchain
             Security<br />
@@ -44,148 +59,52 @@
 
       <h1 class="titles">Students</h1>
       <div class="row justify-content-center">
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.55s">
-          <img
-            class="card-photo"
-            src="/images/card/phd_shp.jpg"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Sunghwan Park</span><br />
-            <span class="card-position">Ph.D. candidate</span>
 
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li>Federated Learning</li>
-                <li>Security & Privacy for ML</li>
-                <li>Cyber-Physical System</li>
-                <li>Real-time System</li>
-              </ul>
+        {#each students as student, i}
+          <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.4 + i * 0.07}s`}>
+            <img class="card-photo" src="/images/card/{student.photo}" alt="Picture of {student.name}"/>
+            <div class="card-body">
+              <span class="card-name">{student.name}</span><br />
+              <span class="card-degree">{student.degree}</span>
+
+              <p class="card-major">{student.major}</p>
+              <div class="card-interests">
+                <b>Interests:</b>
+                <ul>
+                  {#each student.interests as interest}
+                    <li>{interest}</li>
+                  {/each}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.62s">
-          <img
-            class="card-photo"
-            src="/images/card/phd_ysc.jpg"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Yeseul Chang</span><br />
-            <span class="card-position">Ph.D. candidate</span>
+        {/each}
 
-            <p class="card-degree">Convergence Security, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li>Cybersecurity</li>
-                <li>Data Analysis</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
 
       <h1 class="titles">Undergraduates</h1>
       <div class="row justify-content-center">
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/images/card/ur_shp.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Sangho Park</span><br />
-            <span class="card-position">Undergraduate researcher</span>
 
-            <p class="card-degree">Business Administration, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li><i>TO BE ADDED</i></li>
-              </ul>
+        {#each undergraduates as undergraduate, i}
+          <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.15 + i * 0.07}s`}>
+            <img class="card-photo" src="/images/card/{undergraduate.photo}" alt="Picture of {undergraduate.name}"/>
+            <div class="card-body">
+              <span class="card-name">{undergraduate.name}</span><br />
+              <span class="card-degree">{undergraduate.degree}</span>
+
+              <p class="card-major">{undergraduate.major}</p>
+              <div class="card-interests">
+                <b>Interests:</b>
+                <ul>
+                  {#each undergraduate.interests as interest}
+                    <li>{interest}</li>
+                  {/each}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/images/card/ur_shp.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Sunwoo Na</span><br />
-            <span class="card-position">Undergraudate researcher</span>
+        {/each}
 
-            <p class="card-degree">Computer Science & Engineering, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li>Programming Languages</li>
-                <li>Internet of Things</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/images/card/ur_shp.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Junyoung Park</span><br />
-            <span class="card-position">Undergraduate researcher</span>
-
-            <p class="card-degree">Art & Technology, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li><i>TO BE ADDED</i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/images/card/ur_shp.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Yoonseo Han</span><br />
-            <span class="card-position">Undergraudate researcher</span>
-
-            <p class="card-degree">Industrial Security, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li><i>TO BE ADDED</i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card col-sm-5 wow fadeIn animated" data-wow-delay="0.15s">
-          <img
-            class="card-photo"
-            src="/images/card/ur_shp.png"
-            alt="Professor"
-          />
-          <div class="card-body">
-            <span class="card-name">Seongyong Ju</span><br />
-            <span class="card-position">Undergraduate researcher</span>
-
-            <p class="card-degree">Industrial Security, CAU</p>
-            <div class="card-description">
-              <b>Interests:</b>
-              <ul>
-                <li><i>TO BE ADDED</i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -241,12 +160,12 @@
     margin-right: 10px;
   }
 
-  .card-position {
+  .card-degree {
     font-size: 18px;
     font-weight: 500;
   }
 
-  .card-description ul {
+  .card-interests ul {
     padding-left: 20px;
   }
 
