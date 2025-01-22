@@ -1,203 +1,203 @@
 {
-    "international": [
-        {
-            "code": "(J13)",
-            "people":
-              "Heemin Kim, Byeong-Chan Kim, Sumi Lee, Minjung Kang, Hyunjee Nam, Sunghwan Park, Il-Youp Kwak, Jaewoo Lee",
-            "title":
-              "RAPID: Robust multi-pAtch masker using channel-wise Pooled varIance with two-stage patch Detection",
-            "details":
-              "Journal of King Saud University - Computer and Information Sciences, Volume 36, Issue 8, 2024, SCIE"
-          },
-          {
-            "code": "(J12)",
-            "people": "Jaewoo Lee and Jinkyu Lee",
-            "title":
-              "IMC-PnG: Maximizing runtime performance and timing guarantee for imprecise mixed-criticality real-time scheduling",
-            "details": "Volume 160, 2024, SCIE"
-          },
-          {
-            "code": "(J11)",
-            "people": "Jaewoo Lee and Jinkyu Lee",
-            "title":
-              "MC-FLEX: Flexible Mixed-Criticality Real-Time Scheduling by Task-Level Mode Switch",
-            "details":
-              "IEEE Transactions on Computers (TC),vol. 71, no. 8, pp. 1889-1902, 1 Aug. 2022,  SCIE"
-          },
-          {
-            "code": "(J10)",
-            "people": "Jaewoo Lee and Hyeongboo Baek",
-            "title":
-              "Q-CSF: Quantum-aware Compositional  Scheduling Framework for Hierarchical Real-time Systems",
-            "details": "IEEE Access, vol. 9, pp. 141747-141757, 2021,  SCIE"
-          },
-          {
-            "code": "(J9)",
-            "people": "Sunghwan Park, Yeryoung Suh, and Jaewoo Lee",
-            "title":
-              "FedPSO: Federated Learning Using Particle Swarm Optimization to Reduce Communication Costs",
-            "details": "Sensors 2021, 21, 600, SCIE"
-          },
-          {
-            "code": "(J8)",
-            "people": "Sunghwan Park, Yeryoung Suh, and Jaewoo Lee",
-            "title":
-              "Clothing Classification Using CNN and Shopping Mall Search System",
-            "details": "ICIC Express Letters,  11(8), pp.773-780, Aug. 2020, SCOPUS"
-          },
-          {
-            "code": "(J7)",
-            "people":
-              "Kilho Lee, Minsu Kim, Hayeon Kim, Hoon Sung Chwa, Jaewoo Lee, Jinkyu Lee, and Insik Shin",
-            "title":
-              "JMC: Jitter-Based Mixed-Criticality Scheduling for Distributed Real-Time Systems",
-            "details":
-              "IEEE Internet of Things Journal, vol. 6, no. 4, pp. 6310-6324, Aug. 2019, SCIE (IF: 9.515)"
-          },
-          {
-            "code": "(J6)",
-            "people": "Hyeongboo Baek and Jaewoo Lee",
-            "title":
-              "Task-Level Re-Execution Framework for Improving Fault Tolerance on Symmetry Multiprocessors",
-            "details": "Symmetry, May 2019, 11(5), 651, SCIE (IF:  2.143 )"
-          },
-          {
-            "code": "(J5)",
-            "people":
-              "Jaewoo Lee, Saravanan Ramanathan, Kieu-My Phan, Arvind Easwaran, Insik Shin, and Insup Lee",
-            "title": "MC-Fluid: Multi-core Fluid-based Mixed-Criticality Scheduling",
-            "details":
-              "in the IEEE Transaction on Computers (TC) 2018, SCI (IF: 2.9)"
-          },
-          {
-            "code": "(J4)",
-            "people":
-              "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
-            "title":
-              "MC-ADAPT: Adaptive Task Dropping with Task-level Mode Switch in Mixed-Criticality Scheduling",
-            "details":
-              "ACM transaction on embedded computing systems (TECS), Volume 16 Issue 5s, Article 163, pp 1-22 (September 2017), SCIE (IF: 1.4)"
-          },
-          {
-            "code": "(J3)",
-            "people":
-              "Hyeongboo Baek, Jinkyu Lee, Jaewoo Lee, Pyung Kim, and Brent Byunghoon Kang",
-            "title":
-              "Real-Time Scheduling for Preventing Information Leakage with Preemption Overheads",
-            "details":
-              "Advances in Electrical and Computer Engineering, vol.17, no.2, pp.123-132, 2017.5.31, SCIE (IF: 0.6 )"
-          },
-          {
-            "code": "(J2)",
-            "people":
-              "Hyoengboo Baek, Jaewoo Lee(corresponding Author),  Yongjae Lee, and Hyunsoo Yoon",
-            "title":
-              "Preemptive Real-Time Scheduling Incorporating Security Constraint For Cyber Physical Systems",
-            "details":
-              "in IEICE Transactions on Information and Systems, Vol.E99-D, No.8,pp. 2121-2130,Aug. 2016, SCIE (IF: 0.4)"
-          },
-          {
-            "code": "(J1)",
-            "people": "Ohhoon Kwon, Kern Koh, Jaewoo Lee, and Hyokyung Bahn",
-            "title":
-              "FeGC: An Efficient Garbage Collection Scheme for Flash Memory Based Storage Systems",
-            "details":
-              "Journal of Systems and Software (JSS), Vol. 84, No. 9, Elsevier Science, 2011. SCIE"
-          }
-    ],
-    "conferences": [
-        {
-            "code": "(C8)",
-            "people":
-              "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
-            "title":
-              "MC-ADAPT: Adaptive Task Dropping with Task-level Mode Switch in Mixed-Criticality Scheduling,",
-            "details":
-              "in the ACM International Conference on Embedded Software (EMSOFT), 2017. (BK IF:2)"
-          },
-          {
-            "code": "(C7)",
-            "people":
-              "Jaewoo Lee, Kieu-My Phan, Xiaozhe Gu, Jiyeon Lee, Arvind Easwaran, Insik Shin and Insup Lee",
-            "title":
-              "MC-Fluid: Fluid Model-based Mixed-Criticality Scheduling on Multiprocessors",
-            "details":
-              "in IEEE International Conference on Real-Time Systems Symposium (RTSS), 2014. Best Paper Award Runner-up (BK IF:4)"
-          },
-          {
-            "code": "(C6)",
-            "people":
-              "Linh T. X. Phan, Meng Xu, Jaewoo Lee, Insup Lee and Oleg Sokolsky",
-            "title": "Overhead-Aware Compositional Analysis of Real-Time Systems",
-            "details":
-              "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2013. (BK IF:2)"
-          },
-          {
-            "code": "(C5)",
-            "people":
-              "Jaewoo Lee, Sisu Xi, Sanjian Chen, Linh T.X. Phan, Chris Gill, Insup Lee, Chenyang Lu and Oleg Sokolsky",
-            "title": "Realizing Compositional Scheduling through Virtualization",
-            "details":
-              "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2012. (BK IF:2)"
-          },
-          {
-            "code": "(C4)",
-            "people":
-              "Sanjian Chen, Linh T.X. Phan, Jaewoo Lee, Insup Lee, and Oleg Sokolsky",
-            "title":
-              "Removing Abstraction Overhead in the Composition of Hierarchical Real-Time Systems",
-            "details":
-              "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2011. (BK IF:2)"
-          },
-          {
-            "code": "(C3)",
-            "people":
-              "Eunkyoung Jee, Shaohui Wang, Jeong Ki Kim, Jaewoo Lee, Oleg Sokolsky and Insup Lee",
-            "title": "A Safety-Assured Development Approach for Real-Time Software",
-            "details":
-              "in IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2010."
-          },
-          {
-            "code": "(C2)",
-            "people": "Jaewoo Lee, Kern Koh, and Chang-Gun Lee",
-            "title":
-              "Multi-Speed DVS Algorithms for Periodic Tasks with Non-Preemptible Sections",
-            "details":
-              "in IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2007."
-          },
-          {
-            "code": "(C1)",
-            "people": "Ohhoon Kwon, Jaewoo Lee, and Kern Koh",
-            "title":
-              "EF-Greedy: A Novel Garbage Collection Policy for Flash Memory Based Embedded Systems",
-            "details":
-              "in International Conference on Computational Science (ICCS 2007),Springer Verlag, Lecture Notes on Computer Science (LNCS) Vol. 4490 (2007), pp. 913–920."
-          }
-    ],
-    "others": [
-        {
-            "code": "(O2)",
-            "people":
-              "Jaewoo Lee, Hoon Sung Chwa, Arvind Easwaran, Insik Shin, and Insup Lee",
-            "title":
-              "Towards Compositional Mixed-Criticality Real-Time Scheduling in Open Systems (Invited Paper)",
-            "details":
-              "in International Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS 2015), SIGBED Review Volume 13 Issue 3, June 2016, Pages 49-51."
-          },
-          {
-            "code": "(O1)",
-            "people":
-              "Linh T.X. Phan, Jaewoo Lee, Arvind Easwaran, Vinay Ramaswamy, Sanjian Chen, Insup Lee, and Oleg Sokolsky",
-            "title": "CARTS: A Tool for Compositional Analysis of Real-Time Systems",
-            "details": "SIGBED Review 8, 1 (March 2011), pp.38-45"
-          },
-          {
-            "code": "(O0)",
-            "people":
-              "Jaewoo Lee, Linh T.X. Phan, Sanjian Chen, Oleg Sokolsky, and Insup Lee",
-            "title":
-              "Improving Resource Utilization for Compositional Scheduling using DPRM Interfaces",
-            "details": "SIGBED Review 8, 1 (March 2011), pp.62-63."
-          }
-    ]
+  "international": [
+    {
+      "code": "(J13)",
+      "people":
+        "Heemin Kim, Byeong-Chan Kim, Sumi Lee, Minjung Kang, Hyunjee Nam, Sunghwan Park, Il-Youp Kwak, Jaewoo Lee",
+      "title":
+        "RAPID: Robust multi-pAtch masker using channel-wise Pooled varIance with two-stage patch Detection",
+      "details":
+        "Journal of King Saud University - Computer and Information Sciences, Volume 36, Issue 8, 2024, SCIE"
+    },
+    {
+      "code": "(J12)",
+      "people": "Jaewoo Lee and Jinkyu Lee",
+      "title":
+        "IMC-PnG: Maximizing runtime performance and timing guarantee for imprecise mixed-criticality real-time scheduling",
+      "details": "Volume 160, 2024, SCIE"
+    },
+    {
+      "code": "(J11)",
+      "people": "Jaewoo Lee and Jinkyu Lee",
+      "title":
+        "MC-FLEX: Flexible Mixed-Criticality Real-Time Scheduling by Task-Level Mode Switch",
+      "details":
+        "IEEE Transactions on Computers (TC),vol. 71, no. 8, pp. 1889-1902, 1 Aug. 2022, SCIE"
+    },
+    {
+      "code": "(J10)",
+      "people": "Jaewoo Lee and Hyeongboo Baek",
+      "title":
+        "Q-CSF: Quantum-aware Compositional Scheduling Framework for Hierarchical Real-time Systems",
+      "details": "IEEE Access, vol. 9, pp. 141747-141757, 2021, SCIE"
+    },
+    {
+      "code": "(J9)",
+      "people": "Sunghwan Park, Yeryoung Suh, and Jaewoo Lee",
+      "title":
+        "FedPSO: Federated Learning Using Particle Swarm Optimization to Reduce Communication Costs",
+      "details": "Sensors 2021, 21, 600, SCIE"
+    },
+    {
+      "code": "(J8)",
+      "people": "Sunghwan Park, Yeryoung Suh, and Jaewoo Lee",
+      "title":
+        "Clothing Classification Using CNN and Shopping Mall Search System",
+      "details": "ICIC Express Letters, 11(8), pp.773-780, Aug. 2020, SCOPUS"
+    },
+    {
+      "code": "(J7)",
+      "people":
+        "Kilho Lee, Minsu Kim, Hayeon Kim, Hoon Sung Chwa, Jaewoo Lee, Jinkyu Lee, and Insik Shin",
+      "title":
+        "JMC: Jitter-Based Mixed-Criticality Scheduling for Distributed Real-Time Systems",
+      "details":
+        "IEEE Internet of Things Journal, vol. 6, no. 4, pp. 6310-6324, Aug. 2019, SCIE (IF: 9.515)"
+    },
+    {
+      "code": "(J6)",
+      "people": "Hyeongboo Baek and Jaewoo Lee",
+      "title":
+        "Task-Level Re-Execution Framework for Improving Fault Tolerance on Symmetry Multiprocessors",
+      "details": "Symmetry, May 2019, 11(5), 651, SCIE (IF: 2.143)"
+    },
+    {
+      "code": "(J5)",
+      "people":
+        "Jaewoo Lee, Saravanan Ramanathan, Kieu-My Phan, Arvind Easwaran, Insik Shin, and Insup Lee",
+      "title": "MC-Fluid: Multi-core Fluid-based Mixed-Criticality Scheduling",
+      "details":
+        "in the IEEE Transaction on Computers (TC) 2018, SCI (IF: 2.9)"
+    },
+    {
+      "code": "(J4)",
+      "people":
+        "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
+      "title":
+        "MC-ADAPT: Adaptive Task Dropping with Task-level Mode Switch in Mixed-Criticality Scheduling",
+      "details":
+        "ACM transaction on embedded computing systems (TECS), Volume 16 Issue 5s, Article 163, pp 1-22 (September 2017), SCIE (IF: 1.4)"
+    },
+    {
+      "code": "(J3)",
+      "people":
+        "Hyeongboo Baek, Jinkyu Lee, Jaewoo Lee, Pyung Kim, and Brent Byunghoon Kang",
+      "title":
+        "Real-Time Scheduling for Preventing Information Leakage with Preemption Overheads",
+      "details":
+        "Advances in Electrical and Computer Engineering, vol.17, no.2, pp.123-132, 2017.5.31, SCIE (IF: 0.6)"
+    },
+    {
+      "code": "(J2)",
+      "people":
+        "Hyoengboo Baek, Jaewoo Lee(corresponding Author), Yongjae Lee, and Hyunsoo Yoon",
+      "title":
+        "Preemptive Real-Time Scheduling Incorporating Security Constraint For Cyber Physical Systems",
+      "details":
+        "in IEICE Transactions on Information and Systems, Vol.E99-D, No.8,pp. 2121-2130,Aug. 2016, SCIE (IF: 0.4)"
+    },
+    {
+      "code": "(J1)",
+      "people": "Ohhoon Kwon, Kern Koh, Jaewoo Lee, and Hyokyung Bahn",
+      "title":
+        "FeGC: An Efficient Garbage Collection Scheme for Flash Memory Based Storage Systems",
+      "details":
+        "Journal of Systems and Software (JSS), Vol. 84, No. 9, Elsevier Science, 2011. SCIE"
+    }
+  ],
+  "conferences": [
+    {
+      "code": "(C8)",
+      "people":
+        "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
+      "title":
+        "MC-ADAPT: Adaptive Task Dropping with Task-level Mode Switch in Mixed-Criticality Scheduling,",
+      "details":
+        "in the ACM International Conference on Embedded Software (EMSOFT), 2017. (BK IF:2)"
+    },
+    {
+      "code": "(C7)",
+      "people":
+        "Jaewoo Lee, Kieu-My Phan, Xiaozhe Gu, Jiyeon Lee, Arvind Easwaran, Insik Shin and Insup Lee",
+      "title":
+        "MC-Fluid: Fluid Model-based Mixed-Criticality Scheduling on Multiprocessors",
+      "details":
+        "in IEEE International Conference on Real-Time Systems Symposium (RTSS), 2014. Best Paper Award Runner-up (BK IF:4)"
+    },
+    {
+      "code": "(C6)",
+      "people":
+        "Linh T. X. Phan, Meng Xu, Jaewoo Lee, Insup Lee and Oleg Sokolsky",
+      "title": "Overhead-Aware Compositional Analysis of Real-Time Systems",
+      "details":
+        "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2013. (BK IF:2)"
+    },
+    {
+      "code": "(C5)",
+      "people":
+        "Jaewoo Lee, Sisu Xi, Sanjian Chen, Linh T.X. Phan, Chris Gill, Insup Lee, Chenyang Lu and Oleg Sokolsky",
+      "title": "Realizing Compositional Scheduling through Virtualization",
+      "details":
+        "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2012. (BK IF:2)"
+    },
+    {
+      "code": "(C4)",
+      "people":
+        "Sanjian Chen, Linh T.X. Phan, Jaewoo Lee, Insup Lee, and Oleg Sokolsky",
+      "title":
+        "Removing Abstraction Overhead in the Composition of Hierarchical Real-Time Systems",
+      "details":
+        "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2011. (BK IF:2)"
+    },
+    {
+      "code": "(C3)",
+      "people":
+        "Eunkyoung Jee, Shaohui Wang, Jeong Ki Kim, Jaewoo Lee, Oleg Sokolsky and Insup Lee",
+      "title": "A Safety-Assured Development Approach for Real-Time Software",
+      "details":
+        "in IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2010."
+    },
+    {
+      "code": "(C2)",
+      "people": "Jaewoo Lee, Kern Koh, and Chang-Gun Lee",
+      "title":
+        "Multi-Speed DVS Algorithms for Periodic Tasks with Non-Preemptible Sections",
+      "details":
+        "in IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2007."
+    },
+    {
+      "code": "(C1)",
+      "people": "Ohhoon Kwon, Jaewoo Lee, and Kern Koh",
+      "title":
+        "EF-Greedy: A Novel Garbage Collection Policy for Flash Memory Based Embedded Systems",
+      "details":
+        "in International Conference on Computational Science (ICCS 2007),Springer Verlag, Lecture Notes on Computer Science (LNCS) Vol. 4490 (2007), pp.913-920."
+    }
+  ],
+  "others": [
+    {
+      "code": "(O2)",
+      "people":
+        "Jaewoo Lee, Hoon Sung Chwa, Arvind Easwaran, Insik Shin, and Insup Lee",
+      "title":
+        "Towards Compositional Mixed-Criticality Real-Time Scheduling in Open Systems (Invited Paper)",
+      "details":
+        "in International Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS 2015), SIGBED Review Volume 13 Issue 3, June 2016, pp.49-51."
+    },
+    {
+      "code": "(O1)",
+      "people":
+        "Linh T.X. Phan, Jaewoo Lee, Arvind Easwaran, Vinay Ramaswamy, Sanjian Chen, Insup Lee, and Oleg Sokolsky",
+      "title": "CARTS: A Tool for Compositional Analysis of Real-Time Systems",
+      "details": "SIGBED Review 8, 1 (March 2011), pp.38-45."
+    },
+    {
+      "code": "(O0)",
+      "people":
+        "Jaewoo Lee, Linh T.X. Phan, Sanjian Chen, Oleg Sokolsky, and Insup Lee",
+      "title":
+        "Improving Resource Utilization for Compositional Scheduling using DPRM Interfaces",
+      "details": "SIGBED Review 8, 1 (March 2011), pp.62-63."
+    }
+  ]
 }

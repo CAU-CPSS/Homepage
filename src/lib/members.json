@@ -29,7 +29,7 @@
             "interests": [
                 "TO BE ADDED"
             ],
-            "photo": "puang.png"
+            "photo": null
         }
     ],
     "undergraduates": [
@@ -40,7 +40,7 @@
             "interests": [
                 "TO BE ADDED"
             ],
-            "photo": "puang.png"
+            "photo": null
         },
         {
             "name": "Sunwoo Na",
@@ -50,7 +50,7 @@
                 "Programming Languages",
                 "Internet of Things"
             ],
-            "photo": "puang.png"
+            "photo": "ur-swn.jpg"
         },
         {
             "name": "Junyoung Park",
@@ -59,7 +59,7 @@
             "interests": [
                 "TO BE ADDED"
             ],
-            "photo": "puang.png"
+            "photo": null
         },
         {
             "name": "Yoonseo Han",
@@ -68,7 +68,7 @@
             "interests": [
                 "TO BE ADDED"
             ],
-            "photo": "puang.png"
+            "photo": null
         },
         {
             "name": "Seongyong Ju",
@@ -77,7 +77,7 @@
             "interests": [
                 "TO BE ADDED"
             ],
-            "photo": "puang.png"
+            "photo": null
         }
     ]
 }

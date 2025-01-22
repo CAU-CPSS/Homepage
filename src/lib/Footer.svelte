@@ -21,7 +21,7 @@
     <span class="border-bottom-footer"></span>
 
     <p class="copyright">
-      &copy; 2024 CPSS Lab. All rights reserved. Designed by <a
+      &copy; 2024-2025 CPSS Lab. All rights reserved. Designed by <a
         href="https://github.com/karu-rress"
         target="_blank">karu-rress</a
       > &amp; esther.

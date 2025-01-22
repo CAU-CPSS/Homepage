@@ -59,10 +59,16 @@
 
       <h1 class="titles">Students</h1>
       <div class="row justify-content-center">
-
         {#each students as student, i}
-          <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.4 + i * 0.07}s`}>
-            <img class="card-photo" src="/images/card/{student.photo}" alt="Picture of {student.name}"/>
+          <div
+            class="card col-sm-5 wow fadeIn animated"
+            data-wow-delay={`${0.4 + i * 0.07}s`}
+          >
+            <img
+              class="card-photo"
+              src="/images/card/{student.photo ?? "puang.png"}"
+              alt="Picture of {student.name}"
+            />
             <div class="card-body">
               <span class="card-name">{student.name}</span><br />
               <span class="card-degree">{student.degree}</span>
@@ -79,15 +85,20 @@
             </div>
           </div>
         {/each}
-
       </div>
 
       <h1 class="titles">Undergraduates</h1>
       <div class="row justify-content-center">
-
         {#each undergraduates as undergraduate, i}
-          <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.15 + i * 0.07}s`}>
-            <img class="card-photo" src="/images/card/{undergraduate.photo}" alt="Picture of {undergraduate.name}"/>
+          <div
+            class="card col-sm-5 wow fadeIn animated"
+            data-wow-delay={`${0.15 + i * 0.07}s`}
+          >
+            <img
+              class="card-photo"
+              src="/images/card/{undergraduate.photo ?? "puang.png"}"
+              alt="Picture of {undergraduate.name}"
+            />
             <div class="card-body">
               <span class="card-name">{undergraduate.name}</span><br />
               <span class="card-degree">{undergraduate.degree}</span>
@@ -104,7 +115,6 @@
             </div>
           </div>
         {/each}
-
       </div>
     </div>
   </div>
@@ -142,16 +152,16 @@
     max-width: 80%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .card-photo {
-    max-width: 150px;
-    width: 150px;
-    height: auto;
+    /* 증명사진(반명함판) 3:4 비율 */
+    width: 160px;
+    height: 213px;
 
-    /* TODO: refine width/height */
-    margin: 20px auto;
-    padding: 10px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
+    align-self: center;
   }
 
   .card-name {
