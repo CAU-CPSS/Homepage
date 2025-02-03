@@ -6,7 +6,8 @@ echo "###############################################"
 echo "######## CPSS HOMEPAGE DEPLOYMENT TOOL ########"
 echo "###############################################"
 echo ""
-
+echo "NOTE: DO NOT RUN THIS TOOL AS ROOT"
+echo ""
 
 # 1. Remove directories and files
 echo "[Step 1] Removing old files..."
@@ -43,7 +44,7 @@ cp -R build/* ..
 sudo systemctl reload nginx
 
 if [ $? -ne 0 ]; then
-	echo "An error has occured while restarting NginX. Are you root?"
+	echo "An error has occured while restarting NginX."
 	exit 1
 fi
 echo "Successfully published. You are ready to go!"
