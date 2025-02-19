@@ -2,6 +2,13 @@
   import { onMount } from "svelte";
   import { writable } from "svelte/store";
 
+  const pages = [
+    "nav-about", 
+    "nav-research", 
+    "nav-members", 
+    "nav-publications"
+  ];
+
   const activeNav = writable("");
   const isOpen = writable(false);
 
@@ -17,15 +24,12 @@
       case "/":
         nav_link = "nav-about";
         break;
-      // case "/professor":
       case "/members":
       case "/alumni":
         nav_link = "nav-members";
         break;
       case "/publications":
         nav_link = "nav-publications";
-        break;
-      default:
         break;
     }
 
@@ -35,15 +39,17 @@
   });
 
   /**
-   *
+   * Called when 'Research' is clicked
    * @param {any} event
    */
   function handleResearchClick(event) {
     event.preventDefault();
+    // If in other page, change the location
     if (window.location.pathname !== "/") {
       window.location.href = "/#cpss-research";
     }
 
+    // Scroll the page to research area
     document
       .getElementById("cpss-research")
       ?.scrollIntoView({ behavior: "smooth" });
@@ -70,12 +76,10 @@
     id="navbarSupportedContent"
   >
     <ul class="navbar-nav ml-auto mr-auto">
-      {#each ["nav-about", "nav-research", "nav-members", "nav-publications"] as item}
+      {#each pages as item}
         <li
-          class="nav-item {item === $activeNav ? 'active' : ''} {item ===
-          'nav-members'
-            ? 'dropdown'
-            : ''}"
+          class="nav-item {item === $activeNav ? 'active' : ''}
+          {item === 'nav-members' ? 'dropdown' : ''}"
         >
           <a
             id={item}
@@ -91,14 +95,10 @@
             <ul class="dropdown-menu">
               <!-- <li><a id="nav-professor" href="/professor" hx-boost="true" class="dropdown-item">Professor</a></li> -->
               <li>
-                <a id="nav-members" href="/members" class="dropdown-item"
-                  >Members</a
-                >
+                <a id="nav-members" href="/members" class="dropdown-item">Members</a>
               </li>
               <li>
-                <a id="nav-alumni" href="/alumni" class="dropdown-item"
-                  >Alumni</a
-                >
+                <a id="nav-alumni" href="/alumni" class="dropdown-item">Alumni</a>
               </li>
             </ul>
           {/if}

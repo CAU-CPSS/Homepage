@@ -105,7 +105,7 @@
             "name": "장영욱",
             "degree": "Bachelor(2022)",
             "major": "Industrial Security, CAU",
-            "status": "EMPTY",
+            "status": null,
             "interests": [
                 "TO BE ADDED"
             ]
@@ -114,7 +114,25 @@
             "name": "이승현",
             "degree": "Bachelor(2022)",
             "major": "Industrial Security, CAU",
-            "status": "EMPTY",
+            "status": null,
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "소명원",
+            "degree": "Bachelor(2024)",
+            "major": "Industrial Security, CAU",
+            "status": "Lotte Data Communication Company",
+            "interests": [
+                "TO BE ADDED"
+            ]
+        },
+        {
+            "name": "이예림",
+            "degree": "Bachelor(2025)",
+            "major": "Industrial Security, CAU",
+            "status": "Hyundai Motor Company",
             "interests": [
                 "TO BE ADDED"
             ]

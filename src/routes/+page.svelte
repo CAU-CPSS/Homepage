@@ -1,34 +1,11 @@
+<script context="module">
+  import projs from "$lib/projects.json";
+
+  export const projects = projs;
+</script>
 <script>
   import Navbar from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
-
-  const projects = [
-    {
-      name: "42dot", description: "커넥티드카 및 차량 디지털트윈을 위한 효율적인 데이터 동기화 모델 및 차량 민감정보 동기화 방안 연구 (2024-2025)",
-    },
-    {
-      name: "한국연구재단", description: "(참여과제) 현장연계 미래선도인재양성 지원사업 '탄소중립 ESG 미래선도 실전문제연구단' (2022-2026)",
-    },
-    {
-      name: "한국연구재단(NRF)", description: "(참여과제) 두뇌한국21 4단계 (Brain Korea Four, BK4) '사이버 물리 공간 청정화 연구사업단' (2020-2027)",
-    },
-    {
-      name: "정보통신기획평가원(IITP)", description: "(참여과제) 대학 ICT연구센터(ITRC) '디지털 트윈 기반 스마트 에너지 시티 융합 기술 개발 및 인력양성' (2020-2027)",
-    },
-    {
-      name: "에너지기술평가원", description: "(참여과제) '전기소비자 특성을 반영한 주택용 전력사용 빅데이터 분석/관리체계 구축' (2019-2022)",
-    },
-    {
-      name: "한국산업기술보호협회", description: "(참여과제) '4차 산업혁명 기반 산업기술보호 R&D 전문인력 양성' (2019-2023)",
-    },
-    {
-      name: "한국연구재단(NRF)", description: "(개인과제) '안정성과 보안성을 고려한 자율주행 플랫폼 연구' (2018-2021)",
-    },
-    {
-      name: "정보통신기획평가원(IITP)", description: "(참여과제) 대학 ICT연구센터(ITRC) '블럭체인서비스센터' (2018-2024)",
-    }
-  ]
-
 </script>
 
 <svelte:head>
@@ -186,7 +163,7 @@
     <ul>
       {#each projects as project}
         <li>
-          {project.name}, {project.description}
+          {project.name}, {project.description} {project.period}
         </li>
       {/each}
     </ul>

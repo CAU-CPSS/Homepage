@@ -86,16 +86,6 @@
     margin-bottom: 100px;
   }
 
-  .card-photo {
-    max-width: 150px;
-    width: 150px;
-    height: auto;
-
-    /* TODO: refine width/height */
-    margin: 20px auto;
-    padding: 10px 0px 10px 0px;
-  }
-
   .card-name {
     font-size: 25px;
     font-weight: 600;

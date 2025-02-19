@@ -81,26 +81,6 @@
     -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
   }
-  .footer-outer .footer-nav ul {
-    list-style: none;
-    text-align: center;
-  }
-  .footer-outer .footer-nav ul li {
-    display: inline-block;
-    line-height: 50px;
-    color: #b5b5c8;
-    margin: 0 30px;
-    font-size: 14px;
-  }
-  .footer-outer .footer-nav ul li:hover {
-    color: #fff;
-    -webkit-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
-  }
-  .footer-outer .footer-nav ul .active {
-    color: #fff;
-  }
   .footer-outer .footer-nav ul li a {
     color: #fff;
     text-decoration: none;
