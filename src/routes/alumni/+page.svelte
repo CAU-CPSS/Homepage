@@ -61,15 +61,6 @@
 </div>
 
 <style>
-  /* Bootstrap */
-  @import "/src/css_old/bootstrap.css";
-
-  /* Animate.css */
-  @import "/src/css_old/animate.css";
-
-  /* Custom CSS */
-  @import "/src/css_old/style.css";
-
   @import "$lib/shared.css";
 
   .card {

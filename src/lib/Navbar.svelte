@@ -109,15 +109,6 @@
 </nav>
 
 <style>
-  /* Bootstrap */
-  @import "/src/css_old/bootstrap.css";
-
-  /* Animate.css */
-  @import "/src/css_old/animate.css";
-
-  /* Custom CSS */
-  @import "/src/css_old/style.css";
-
   .main-navbar-nav .navbar-brand {
     font-size: 38px;
     letter-spacing: 3px;
