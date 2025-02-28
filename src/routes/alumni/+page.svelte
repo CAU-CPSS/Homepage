@@ -33,7 +33,7 @@
               <span class="card-degree">{graduate.degree}</span>
 
               <p class="card-major">{graduate.major}</p>
-              <div class="card-status">{graduate.status}</div>
+              <div class="card-status">{graduate.status ?? "BLANK"}</div>
             </div>
           </div>
         {/each}
