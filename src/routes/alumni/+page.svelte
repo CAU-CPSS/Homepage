@@ -49,7 +49,7 @@
               <span class="card-degree">{undergraduate.degree}</span>
 
               <p class="card-major">{undergraduate.major}</p>
-              <div class="card-status">{undergraduate.status}</div>
+              <div class="card-status">{undergraduate.status ?? "BLANK"}</div>
             </div>
           </div>
         {/each}
@@ -67,8 +67,6 @@
     max-width: 80%;
     margin: 0 auto;
     margin-top: 50px;
-
-    max-width: 80%;
     display: flex;
     flex-direction: row;
   }
@@ -88,15 +86,37 @@
     font-weight: 500;
   }
 
-  .card-status ul {
-    padding-left: 20px;
-  }
-
   /**/
 
   .cpss-member-outer {
     width: 100%;
     height: auto;
     padding: 70px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    .cpss-member-outer {
+      width: 100%;
+      height: auto;
+      padding: 0px !important;
+      margin: 0px !important;
+      align-items: center;
+      align-self: center;
+    }
+
+    .card {
+        max-width: 90%;
+    } .card-body {
+      padding: 10px 20px 10px 20px;
+      margin: 5px 5px 5px 5px;
+    } .card-name {
+      font-size: 22px;
+    } .card-degree {
+      font-size: 16px;
+    }
   }
 </style>

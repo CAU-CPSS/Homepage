@@ -20,7 +20,6 @@
 
     <div class="container cpss-about-inner">
       <h1 class="animated fadeIn wow" data-wow-delay="0.4s">CAU CPSS Lab</h1>
-      <!-- https://seb.kr/w/사이버_물리_시스템 : 띄어쓰기 참고 -->
       <h2 class="animated fadeIn wow" data-wow-delay="0.45s">
         Cyber-Physical System<br />
         Security Lab at CAU
@@ -29,13 +28,13 @@
         중앙대학교 사이버물리시스템 보안 연구실
       </h3>
       <p class="animated fadeIn wow" data-wow-delay="0.67s">
-        AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을
+        ✧ AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을
         연구합니다.<br />
-        학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.<br
+        ✧ 학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.<br
         />
         주요 연구분야: OS, On-device, Embedded, Real-time system, Security
       </p>
-      <h4 class="animated fadeIn">
+      <h4 class="animated fadeIn" id="recruit">
         ╔═════════ ∘◦ ☆ ◦∘ ══════════╗<br />
         🎉 석·박사 절⭐찬 모집중 🎊<br />
         ╚═════════ ∘◦ ❉ ◦∘ ══════════╝
@@ -160,7 +159,7 @@
   <div id="cpss-accomplishment" class="cpss-accomplishment-outer">
     <h2 class="titles">Research Projects</h2>
 
-    <ul>
+    <ul id="researches">
       {#each projects as project}
         <li>
           {project.name}, {project.description} {project.period}
@@ -194,25 +193,61 @@
     background-size: cover; /* 또는 contain */
   }
 
+  #recruit {
+    text-align: center;
+    color: #fff;
+    width: 45%;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2em;
+  } #recruit:hover {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+    background: linear-gradient(to right, #ff3a6b, #29a9ff , #48ff00, #df3eff, #8173ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 1.5s ease-in infinite;
+    background-size: 400% 100%;
+  } @keyframes rainbow_animation {
+    0%,100% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+  } @media screen and (max-width: 1400px) {
+    #recruit {
+      width: 100%;
+    } #recruit:hover {
+      font-size: 15px;
+    }
+  }
+
   #cpss-accomplishment > ul {
     width: 1000px;
     margin: 60px auto 300px auto;
     list-style: none; /* Remove default bullet points */
     padding: 0;
-  }
-
-  #cpss-accomplishment ul li {
+  } #cpss-accomplishment ul li {
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px; /* Add spacing between items */
-  }
-
-  #cpss-accomplishment ul li::before {
+  } #cpss-accomplishment ul li::before {
     content: "•"; /* Custom bullet symbol */
     color: #2A9D8F; /* Color for bullet point */
     font-size: 1.2em; /* Larger bullet */
     position: absolute;
     left: 0;
     top: 0;
+  } @media screen and (max-width: 1400px) {
+    #cpss-accomplishment > ul {
+      width: 90%;
+      text-wrap: wrap;
+      margin: 60px 10px 300px 10px;
+    } #cpss-accomplishment ul li {
+      padding-left: 10px;
+    }
   }
+
 </style>

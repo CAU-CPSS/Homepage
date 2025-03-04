@@ -81,4 +81,21 @@
     left: 0;
     top: 0;
   }
+
+  @media screen and (max-width: 1400px) {
+    #cpss-publications {
+      padding: 30px 10px 10px 10px;
+    }
+    #cpss-publications > ul {
+      width: 90%;
+      text-wrap: wrap;
+      margin: 60px 10px 70px 10px;
+    } #cpss-publications ul li {
+      padding-left: 10px;
+    }
+    h2 {
+      margin-top: 60px;
+      font-size: 35px;
+    }
+  }
 </style>

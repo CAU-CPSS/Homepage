@@ -144,31 +144,6 @@ a.dropdown-item:hover {
   line-height: 1.9em;
 }
 
-.cpss-about-inner > h4 {
-  text-align: center;
-  color: #fff;
-  width: 600px;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  line-height: 2em;
-} .cpss-about-inner > h4:hover {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  
-  background: linear-gradient(to right, #ff3a6b, #29a9ff , #48ff00, #df3eff, #8173ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 1.5s ease-in infinite;
-  background-size: 400% 100%;
-} @keyframes rainbow_animation {
-  0%,100% { background-position: 0 0; }
-  50% { background-position: 100% 0; }
-}
-
 .cpss-about-inner .download-btn-first {
   font-size: 15px;
   padding: 10px 15px;

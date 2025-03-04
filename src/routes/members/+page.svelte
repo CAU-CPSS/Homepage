@@ -130,7 +130,6 @@
   }
 
   .container .card {
-    max-width: 80%;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 0px;
@@ -170,11 +169,50 @@
     padding-left: 20px;
   }
 
+  @media screen and (max-width: 1400px) {
+    h1 {
+      font-size: 30px;
+    }
+    .card {
+      max-width: 90%;
+      display: flex;
+      flex-direction: column !important;
+      align-items: flex-start;
+      padding: 10px 10px 0px 10px;
+    } .card-body {
+      padding: 20px 20px 5px 20px;
+    }
+    .card-photo {
+      width: 120px;
+      height: 160px;
+
+      margin: 12px 0px 0px 0px;
+      align-self: center;
+    } .card-name {
+      font-size: 23px;
+      font-weight: 600;
+    } .card-degree {
+      font-size: 16px;
+      font-weight: 500;
+    } .card-interests ul {
+      padding-left: 16px;
+    }
+
+    .cpss-member-outer {
+      width: 100%;
+      height: auto;
+      padding: 0px !important;
+      margin: 0px !important;
+      align-items: center;
+      align-self: center;
+    }
+  }
   /**/
 
   .cpss-member-outer {
     width: 100%;
     height: auto;
     padding: 70px;
+    align-self: center;
   }
 </style>
