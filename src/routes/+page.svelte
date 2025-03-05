@@ -27,18 +27,19 @@
       <h3 class="animated fadeIn wow" data-wow-delay="0.6s">
         중앙대학교 사이버물리시스템 보안 연구실
       </h3>
+      <ul class="animated fadeIn wow" data-wow-delay="0.65s">
+        <li>AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을 연구합니다.</li>
+        <li>학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.</li>
+      </ul>
       <p class="animated fadeIn wow" data-wow-delay="0.67s">
-        ✧ AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을
-        연구합니다.<br />
-        ✧ 학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.<br
-        />
+
         주요 연구분야: OS, On-device, Embedded, Real-time system, Security
       </p>
-      <h4 class="animated fadeIn" id="recruit">
+      <p class="animated fadeIn" id="recruit">
         ╔═════════ ∘◦ ☆ ◦∘ ══════════╗<br />
         🎉 석·박사 절⭐찬 모집중 🎊<br />
         ╚═════════ ∘◦ ❉ ◦∘ ══════════╝
-      </h4>
+      </p>
     </div>
   </div>
 
@@ -193,6 +194,29 @@
     background-size: cover; /* 또는 contain */
   }
 
+  .cpss-about-inner > ul {
+    color: #fff;
+    width: 800px;
+    font-weight: 200;
+    font-size: 17px;
+    margin-top: 25px;
+    list-style: none;
+  } .cpss-about-inner > ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px; /* Add spacing between items */
+  } .cpss-about-inner > ul li::before {
+    content: "✧";
+    position: absolute;
+    left: 0;
+    top: 0;
+  } @media screen and (max-width: 1024px) { 
+    .cpss-about-inner > ul {
+      width: 90%;
+      text-wrap: balance;
+    } 
+  }
+
   #recruit {
     text-align: center;
     color: #fff;
@@ -216,7 +240,7 @@
   } @keyframes rainbow_animation {
     0%,100% { background-position: 0 0; }
     50% { background-position: 100% 0; }
-  } @media screen and (max-width: 1400px) {
+  } @media screen and (max-width: 1024px) {
     #recruit {
       width: 100%;
     } #recruit:hover {
@@ -240,7 +264,7 @@
     position: absolute;
     left: 0;
     top: 0;
-  } @media screen and (max-width: 1400px) {
+  } @media screen and (max-width: 1024px) {
     #cpss-accomplishment > ul {
       width: 90%;
       text-wrap: wrap;

@@ -7,7 +7,8 @@
     "nav-about", 
     "nav-research", 
     "nav-members", 
-    "nav-publications"
+    "nav-publications",
+    // "nav-contact"
   ];
 
   const activeNav = writable("");
@@ -23,15 +24,18 @@
 
     switch (currentPath) {
       case "/":
-        nav_link = "nav-about";
+        nav_link = pages[0];
         break;
       case "/members":
       case "/alumni":
-        nav_link = "nav-members";
+        nav_link = pages[2];
         break;
       case "/publications":
-        nav_link = "nav-publications";
+        nav_link = pages[3];
         break;
+      //case "/contact":
+      //  nav_link = pages[4];
+      //  break;
     }
 
     if (nav_link) {
