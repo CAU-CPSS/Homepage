@@ -1,4 +1,5 @@
 <script>
+    import { goto } from "$app/navigation";
   import { onMount } from "svelte";
   import { writable } from "svelte/store";
 
@@ -46,7 +47,7 @@
     event.preventDefault();
     // If in other page, change the location
     if (window.location.pathname !== "/") {
-      window.location.href = "/#cpss-research";
+      goto("/#cpss-research");
     }
 
     // Scroll the page to research area
@@ -114,6 +115,7 @@
     letter-spacing: 3px;
     position: relative;
     font-weight: 500;
+    text-decoration: none;
   }
 
   .main-navbar-nav {

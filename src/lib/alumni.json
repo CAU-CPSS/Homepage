@@ -49,7 +49,7 @@
             "name": "김지후",
             "degree": "Master(2023)",
             "major": "Security Convergence, CAU",
-            "status": "NONE",
+            "status": null,
             "interests": [
                 "*Exploring*"
             ]

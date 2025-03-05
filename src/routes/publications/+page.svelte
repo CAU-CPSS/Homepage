@@ -41,7 +41,7 @@
             {/if}
             {p.people.split("Jaewoo Lee")[0]}
             <b>Jaewoo Lee</b>{p.people.split("Jaewoo Lee")[1]},
-            "{p.title}," {p.details}
+            <i>{p.title}</i>, {p.details}
           </li>
         {/each}
       </ul>
@@ -82,7 +82,7 @@
     top: 0;
   }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1024px) {
     #cpss-publications {
       padding: 30px 10px 10px 10px;
     }

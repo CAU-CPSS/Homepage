@@ -169,7 +169,7 @@
     padding-left: 20px;
   }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1024px) {
     h1 {
       font-size: 30px;
     }
