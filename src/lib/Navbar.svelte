@@ -8,7 +8,7 @@
     "nav-research", 
     "nav-members", 
     "nav-publications",
-    // "nav-contact"
+    "nav-contact"
   ];
 
   const activeNav = writable("");
@@ -33,9 +33,9 @@
       case "/publications":
         nav_link = pages[3];
         break;
-      //case "/contact":
-      //  nav_link = pages[4];
-      //  break;
+      case "/contact":
+        nav_link = pages[4];
+        break;
     }
 
     if (nav_link) {

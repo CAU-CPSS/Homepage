@@ -35,11 +35,15 @@
 
         주요 연구분야: OS, On-device, Embedded, Real-time system, Security
       </p>
-      <p class="animated fadeIn" id="recruit">
-        ╔═════════ ∘◦ ☆ ◦∘ ══════════╗<br />
-        🎉 석·박사 절⭐찬 모집중 🎊<br />
-        ╚═════════ ∘◦ ❉ ◦∘ ══════════╝
-      </p>
+      <div>
+        <p class="animated fadeIn" id="recruit">
+          ╔══════════ ∘◦ ☆ ◦∘ ═══════════╗<br />
+          🎉 석·박사 절⭐찬 모집중 🎊<br />
+          풀타임, 공학 석·박사 수여 가능<br />
+          장학금, 연구 장비, 해외 학술발표 지원<br />
+          ╚══════════ ∘◦ ❉ ◦∘ ═══════════╝
+        </p>
+      </div>
     </div>
   </div>
 
@@ -185,7 +189,7 @@
   /* TODO: Main Background */
   #cpss-about-wrapper {
     position: relative;
-    height: 700px; /* TODO: 800 */
+    height: 800px;
     width: 100%;
     background-color: black;
     background-image: url("/images/cpss-main.jpeg");
@@ -211,6 +215,7 @@
     left: 0;
     top: 0;
   } @media screen and (max-width: 1024px) { 
+    
     .cpss-about-inner > ul {
       width: 90%;
       text-wrap: balance;

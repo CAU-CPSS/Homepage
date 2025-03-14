@@ -107,6 +107,15 @@
   ],
   "conferences": [
     {
+      "code": "(C9)",
+      "people": 
+        "Sunghwan Park, Sangho Park, Sunwoo Na, Yeseul Chang and Jaewoo Lee",
+      "title": 
+        "ELFS: Entropy-based Loss Function Selection for Global Model Accuracy in Federated Learning",
+      "details": 
+        "2024 IEEE International Conference on Big Data (BigData), 7991-7997"
+    },
+    {
       "code": "(C8)",
       "people":
         "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
@@ -175,6 +184,15 @@
     }
   ],
   "others": [
+    {
+      "code": "(O3)",
+      "people":
+        "Hyunjee Nam, Minjung Kang, Sunghwan Park , Il-Youp Kwak , and Jaewoo Lee",
+      "title":
+        "A Benchmark of Unlearnable Examples for Medical Images",
+      "details":
+        "AAAI Workshop on Privacy-Preserving Artificial Intelligence, 2025."
+    },
     {
       "code": "(O2)",
       "people":
