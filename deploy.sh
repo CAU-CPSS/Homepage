@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# CPSS Homepage deployment tool
+#
+# Author: Karu (@karu-rress)
+#
 
 LR='\033[1;31m'
 LG='\033[1;32m'
@@ -13,12 +18,21 @@ echo -e "${LB}###############################################"
 echo "######## CPSS HOMEPAGE DEPLOYMENT TOOL ########"
 echo -e "###############################################${NC}"
 echo ""
-echo -e "${LR}NOTE${LW}: DO NOT RUN THIS TOOL AS ROOT${NC}"
+
+echo "Welcome back. Looking forward to seeing the awesome updates you've made."
 echo ""
+
+# 0. Check for sudo access
+if [ "$EUID" -eq 0 ]; then
+	echo -e "${LR}NOTE${LW}: DO NOT RUN THIS TOOL AS ROOT!${NC}"
+	echo "Exiting..."
+	echo ""
+	exit
+fi
 
 # 1. Remove directories and files
 echo -e "${LY}[Step 1]${LW} Removing old files...${NC}"
-rm -r ../_app/ ../images/
+rm -r ../_app/ ../images/ 2> /dev/null
 rm ../index.html ../favicon.png
 echo -e "${LG}==>${LW} Successfully removed.${NC}"
 echo ""

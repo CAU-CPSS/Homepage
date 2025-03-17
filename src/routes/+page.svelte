@@ -6,6 +6,16 @@
 <script>
   import Navbar from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
+  import { goto } from "$app/navigation";
+
+  /**
+   * kidnap kidnaps the user to the contact page.
+   * 
+   * @param {MouseEvent} event
+   */
+  function kidnap(event) {
+    goto("/contact");
+  }
 </script>
 
 <svelte:head>
@@ -37,11 +47,12 @@
       </p>
       <div>
         <p class="animated fadeIn" id="recruit">
-          ╔══════════ ∘◦ ☆ ◦∘ ═══════════╗<br />
-          🎉 석·박사 절⭐찬 모집중 🎊<br />
-          풀타임, 공학 석·박사 수여 가능<br />
+          ╔═════════ ∘◦ ☆ ◦∘ ══════════╗<br />
+          🎉 풀타임 석·박사 절⭐찬 모집중 🎊<br />
+          🎓 공학 석·박사학위 수여 가능<br />
           장학금, 연구 장비, 해외 학술발표 지원<br />
-          ╚══════════ ∘◦ ❉ ◦∘ ═══════════╝
+          <u><b on:click={kidnap}>》》학부연구생/대학원 지원하기《《</b></u><br />
+          ╚═════════ ∘◦ ❉ ◦∘ ══════════╝
         </p>
       </div>
     </div>
@@ -215,7 +226,7 @@
     left: 0;
     top: 0;
   } @media screen and (max-width: 1024px) { 
-    
+
     .cpss-about-inner > ul {
       width: 90%;
       text-wrap: balance;

@@ -53,7 +53,7 @@
 </div>
 
 <style>
-@import "$lib/shared.css";
+  @import "$lib/shared.css";
   .cpss-publications-outer {
     width: 100%;
     height: auto;
