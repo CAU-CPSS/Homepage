@@ -1,36 +1,17 @@
-# CAU-CPSS
+# CAU CPSS Lab Homepage
 
-The homepage of CPSS Lab. at Chung-Ang University.
+The homepage of CPSS Lab. at Chung-Ang University.  
 
+Created by [karu-rress](https://github.com/karu-rress) & esther
 
-Website: http://freehtml5.co/
-CREDITS:
+Credits: http://freehtml5.co/
 
-Bootstrap
-http://getbootstrap.com/
+## Deploy
 
-jQuery
-http://jquery.com/
-
-Google Fonts
-https://www.google.com/fonts/
-
-animate.css
-http://daneden.me/animate
-
-
-## Developing
+Run
 
 ```bash
-npm run dev -- --open --host
+./deploy.sh
 ```
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+to deploy the website.
