@@ -1,7 +1,7 @@
 <script>
-    import { goto } from "$app/navigation";
+  import { goto } from "$app/navigation";
   import { onMount } from "svelte";
-  import { writable } from "svelte/store";
+  import { writable, get } from "svelte/store";
 
   const pages = [
     "nav-about", 
@@ -14,41 +14,29 @@
   const activeNav = writable("");
   const isOpen = writable(false);
 
-  function toggleNavbar() {
-    isOpen.update((v) => !v); // Toggle the state
-  }
+  // Toggle the state
+  const toggleNavbar = () => isOpen.update((v) => !v);
 
   onMount(() => {
-    const currentPath = window.location.pathname;
-    let nav_link = "";
+    let nav_link = {
+      "/": pages[0],
+      "/members": pages[2],
+      "/alumni": pages[2],
+      "/publications": pages[3],
+      "/contact": pages[4],
+    }[window.location.pathname];
 
-    switch (currentPath) {
-      case "/":
-        nav_link = pages[0];
-        break;
-      case "/members":
-      case "/alumni":
-        nav_link = pages[2];
-        break;
-      case "/publications":
-        nav_link = pages[3];
-        break;
-      case "/contact":
-        nav_link = pages[4];
-        break;
-    }
-
-    if (nav_link) {
+    if (nav_link) 
       activeNav.set(nav_link);
-    }
   });
 
   /**
-   * Called when 'Research' is clicked
+   * handleResearchClick handles when 'Research' is clicked
    * @param {any} event
    */
   function handleResearchClick(event) {
     event.preventDefault();
+
     // If in other page, change the location
     if (window.location.pathname !== "/") {
       goto("/#cpss-research");
@@ -82,29 +70,19 @@
   >
     <ul class="navbar-nav ml-auto mr-auto">
       {#each pages as item}
-        <li
-          class="nav-item {item === $activeNav ? 'active' : ''}
-          {item === 'nav-members' ? 'dropdown' : ''}"
-        >
-          <a
-            id={item}
-            class="nav-link"
+        <li class="nav-item {item === $activeNav ? 'active' : ''}
+          {item === 'nav-members' ? 'dropdown' : ''}">
+          <!-- Assign links to the buttons -->
+          <a id={item} class="nav-link"
             href={item === "nav-about" || item === "nav-research"
-              ? "/"
-              : `/${item.split("-")[1]}`}
-            on:click={item === "nav-research" ? handleResearchClick : null}
-          >
+              ? "/" : `/${item.split("-")[1]}`}
+            on:click={item === "nav-research" ? handleResearchClick : null}>
             {item.replace("nav-", "").charAt(0).toUpperCase() + item.slice(5)}
           </a>
           {#if item === "nav-members"}
             <ul class="dropdown-menu">
-              <!-- <li><a id="nav-professor" href="/professor" hx-boost="true" class="dropdown-item">Professor</a></li> -->
-              <li>
-                <a id="nav-members" href="/members" class="dropdown-item">Members</a>
-              </li>
-              <li>
-                <a id="nav-alumni" href="/alumni" class="dropdown-item">Alumni</a>
-              </li>
+              <li><a id="nav-members" href="/members" class="dropdown-item">Members</a></li>
+              <li><a id="nav-alumni" href="/alumni" class="dropdown-item">Alumni</a></li>
             </ul>
           {/if}
         </li>

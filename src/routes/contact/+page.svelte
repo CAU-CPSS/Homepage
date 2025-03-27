@@ -14,7 +14,7 @@
 
   <div id="cpss-contact" class="cpss-contact-outer">
     <h2 class="titles">Recruit</h2>
-    <p>NOTE: Last update at Mar. 17th, 2025.<br/>
+    <p>NOTE: Last update at Mar. 27th, 2025.<br/>
       <b>석·박사과정 및 학부연구생 지원 문의는 <a href="mailto:jaewoo.cau@gmail.com">jaewoo.cau@gmail.com</a> 또는
         <a href="mailto:jaewoolee@cau.ac.kr">jaewoolee@cau.ac.kr</a>로 부탁드립니다.</b><p>
 
@@ -36,8 +36,8 @@
     <h3>학부연구생 모집</h3>
     <p><b>중앙대학교 사이버물리시스템 보안 연구실에서 연구활동을 경험할 학부생을 모집합니다.</b></p>
     <ul>
-      <li>주전공 및 복수전공 학과 제한 없음</li>
-      <li>혜택: 연구 지원금 지급</li>
+      <li>소속 캠퍼스 및 주전공 <u>제한 없음</u></li>
+      <li>혜택: 연구 지원금 지급, 경력증명서 발급 가능</li>
       <li>모집현황: <b>2025-1학기 모집 마감, 2025-2학기 모집 예정</b></li>
     </ul>
   </div>

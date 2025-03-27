@@ -3884,9 +3884,10 @@ input[type="button"].btn-block {
 .navbar-nav {
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 30%;
+  padding-left: 20%;
   margin-bottom: 0;
   list-style: none;
 }
