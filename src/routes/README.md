@@ -8,7 +8,7 @@ If you want add another page, create a directory which contains `+page.svelte`. 
 src/routes/<page_name>/+page.svelte
 ```
 
-All subpages should include the `<Navbar />` and `<Footer />` to ensure the uniformity.
+All subpages should include the [`<Navbar />`](../lib/Navbar.svelte) and [`<Footer />`](../lib/Footer.svelte) to ensure the uniformity.
 
 ## alumni
 Contains the information of alumni.

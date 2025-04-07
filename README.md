@@ -26,7 +26,7 @@ Guides written by [karu-rress](https://github.com/karu-rress).
 
 ### Databases
 
-The website uses JSON files to manage the data. Consider using RDBMS in case the data gets bigger.
+The website uses JSON files to manage the data. Consider using RDBMS in case the data gets bigger. Currently, the JSON datasets are stored in [src/lib](./src/lib/).
 
 - `src/lib/alumni.json`: defines the information of the alumni.
 - `src/lib/members.json`: stores the current members of CPSS Lab. Move to `alumni.json` if they have graduated.
@@ -36,7 +36,7 @@ The website uses JSON files to manage the data. Consider using RDBMS in case the
 
 ### Pages
 
-The pages are defined in `src/routes`. Add the page by creating directory `<page_name>`. In the directory, you should create `+page.svelte` file to design a page.
+The pages are defined in [`src/routes`](./src/routes/). Add the page by creating directory `<page_name>`. In the directory, you should create `+page.svelte` file to design a page.
 
 The structure should be like:
 
@@ -56,7 +56,7 @@ The structure should be like:
 </style>
 ```
 
-The scripts and stylesheets are only visible in that page. If you need a shared element, consider using $lib (`src/lib`) directory. To avoid ambiguity, you must use shared elements as little as possible.
+The scripts and stylesheets are only visible in that page. If you need a shared element, consider using $lib ([`src/lib`](./src/lib/)) directory. To avoid ambiguity, you must use shared elements as little as possible.
 
 ### Test the Website
 
