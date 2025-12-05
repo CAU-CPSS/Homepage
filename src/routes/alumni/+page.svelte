@@ -30,9 +30,9 @@
           <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.4 + i*0.07}s`}>
             <div class="card-body">
               <span class="card-name">{graduate.name}</span><br />
-              <span class="card-degree">{graduate.degree}</span>
+              <span class="card-degree">{graduate.degree} ({graduate.year})</span>
 
-              <p class="card-major">{graduate.major}</p>
+              <p class="card-major">{graduate.major}, {graduate.school}</p>
               <div class="card-status">{graduate.status ?? "BLANK"}</div>
             </div>
           </div>
@@ -46,9 +46,9 @@
           <div class="card col-sm-5 wow fadeIn animated" data-wow-delay={`${0.15 + i*0.07}s`}>
             <div class="card-body">
               <span class="card-name">{undergraduate.name}</span><br />
-              <span class="card-degree">{undergraduate.degree}</span>
+              <span class="card-degree">{undergraduate.degree} ({undergraduate.year})</span>
 
-              <p class="card-major">{undergraduate.major}</p>
+              <p class="card-major">{undergraduate.major}, {undergraduate.school}</p>
               <div class="card-status">{undergraduate.status ?? "BLANK"}</div>
             </div>
           </div>

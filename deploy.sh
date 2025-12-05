@@ -33,7 +33,7 @@ fi
 # 1. Remove directories and files
 echo -e "${LY}[Step 1]${LW} Removing old files...${NC}"
 rm -r ../_app/ ../images/ 2> /dev/null
-rm ../index.html ../favicon.png
+rm ../index.js ../favicon.png
 echo -e "${LG}==>${LW} Successfully removed.${NC}"
 echo ""
 
@@ -50,6 +50,7 @@ echo ""
 
 # 3. Run build operation
 echo -e "${LY}[Step 3]${LW} Running build...${NC}"
+source .env
 npm run build > /dev/null 2>&1
 
 if [ $? -ne 0 ]; then
@@ -62,6 +63,9 @@ echo ""
 # 4. Publish
 echo -e "${LY}[Step 4]${LW} Publishing webpage...${NC}"
 cp -R build/* ..
+# If systemd:
+# /etc/systemd/system/cpss-homepage.service
+# sudo systemctl restart cpss-homepage
 sudo systemctl reload nginx
 
 if [ $? -ne 0 ]; then

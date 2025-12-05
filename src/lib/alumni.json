@@ -2,8 +2,10 @@
     "graduates": [
         {
             "name": "송용택",
-            "degree": "Master(2019)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2019,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "SK Infosec",
             "interests": [
                 "*Exploring*"
@@ -11,8 +13,10 @@
         },
         {
             "name": "최동준",
-            "degree": "Master(2020)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2020,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "Air Force Officer",
             "interests": [
                 "*Exploring*"
@@ -20,8 +24,10 @@
         },
         {
             "name": "서예령",
-            "degree": "Master(2021)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2021,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "Security Manager in Yungjin Pharm. Co., Ltd.",
             "interests": [
                 "*Exploring*"
@@ -29,8 +35,10 @@
         },
         {
             "name": "이선우",
-            "degree": "Master(2022)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2022,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": null,
             "interests": [
                 "*Exploring*"
@@ -38,8 +46,10 @@
         },
         {
             "name": "이승욱",
-            "degree": "Master(2022)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2022,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "RaonSecure",
             "interests": [
                 "*Exploring*"
@@ -47,8 +57,10 @@
         },
         {
             "name": "김지후",
-            "degree": "Master(2023)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": null,
             "interests": [
                 "*Exploring*"
@@ -56,8 +68,10 @@
         },
         {
             "name": "임지혜",
-            "degree": "Master(2023)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "Posco",
             "interests": [
                 "*Exploring*"
@@ -65,8 +79,10 @@
         },
         {
             "name": "김영준",
-            "degree": "Master(2023)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "Korea Local Information Research & Development Institute",
             "interests": [
                 "*Exploring*"
@@ -74,8 +90,10 @@
         },
         {
             "name": "강한바다",
-            "degree": "Master(2023)",
-            "major": "Security Convergence, CAU",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
             "status": "Korea Local Information Research & Development Institute",
             "interests": [
                 "*Exploring*"
@@ -85,8 +103,10 @@
     "undergraduates": [
         {
             "name": "최병준",
-            "degree": "Bachelor(2020)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2020,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": "KAIST GSIS",
             "interests": [
                 "*Exploring*"
@@ -94,8 +114,10 @@
         },
         {
             "name": "현석훈",
-            "degree": "Bachelor(2022)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2022,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": "KAIST GSIS",
             "interests": [
                 "*Exploring*"
@@ -103,8 +125,10 @@
         },
         {
             "name": "장영욱",
-            "degree": "Bachelor(2022)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2022,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": null,
             "interests": [
                 "*Exploring*"
@@ -112,8 +136,10 @@
         },
         {
             "name": "이승현",
-            "degree": "Bachelor(2022)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2022,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": null,
             "interests": [
                 "*Exploring*"
@@ -121,8 +147,10 @@
         },
         {
             "name": "강준규",
-            "degree": "Bachelor(2024)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2024,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": "KAIST GSIS",
             "interests": [
                 "*Exploring*"
@@ -130,8 +158,10 @@
         },
         {
             "name": "소명원",
-            "degree": "Bachelor(2024)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2024,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": "Lotte Data Communication Company",
             "interests": [
                 "*Exploring*"
@@ -139,8 +169,10 @@
         },
         {
             "name": "이예림",
-            "degree": "Bachelor(2025)",
-            "major": "Industrial Security, CAU",
+            "degree": "Bachelor",
+            "year": 2025,
+            "major": "Industrial Security",
+            "school": "CAU",
             "status": "Hyundai Motor Company",
             "interests": [
                 "*Exploring*"
