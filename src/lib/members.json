@@ -109,6 +109,16 @@
                 "Automated Program Repair"
             ],
             "photo": "ur_swn.jpg"
+        },
+        {
+            "name": "Puang",
+            "degree": "Server administrator",
+            "major": "RECRUITING A NEW ADMIN",
+            "interests": [
+                "Homepage Design",
+                "Linux Server Maintenance"
+            ],
+            "photo": null
         }
     ]
 }
