@@ -33,7 +33,7 @@ fi
 # 1. Remove directories and files
 echo -e "${LY}[Step 1]${LW} Removing old files...${NC}"
 rm -r ../_app/ ../images/ 2> /dev/null
-rm ../index.js ../favicon.png
+rm ../index.html ../favicon.png
 echo -e "${LG}==>${LW} Successfully removed.${NC}"
 echo ""
 
