@@ -72,11 +72,13 @@
             "photo": null
         },
         {
-            "name": "(기태린)",
+            "name": "Taerin Ki",
             "degree": "Undergraduate researcher",
             "major": "Industrial Security, CAU",
             "interests": [
-                "*Exploring*"
+                "Privacy-Preserving ML",
+                "Anti Piracy & Content Protection",
+                "Forensic Watermarking"
             ],
             "photo": null
         },
@@ -106,7 +108,8 @@
             "major": "Republic of Korea Navy",
             "interests": [
                 "Programming Languages",
-                "Automated Program Repair"
+                "Computer Security",
+                "Automated Program Repair",
             ],
             "photo": "ur_swn.jpg"
         },
