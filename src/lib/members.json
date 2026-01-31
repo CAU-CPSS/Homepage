@@ -45,16 +45,6 @@
             "photo": null
         },
         {
-            "name": "Sunwoo Na",
-            "degree": "Undergraduate researcher",
-            "major": "Computer Science & Engineering, CAU",
-            "interests": [
-                "Programming Languages",
-                "Internet of Things"
-            ],
-            "photo": "ur_swn.jpg"
-        },
-        {
             "name": "Junyoung Park",
             "degree": "Undergraduate researcher",
             "major": "Art & Technology, CAU",
@@ -80,6 +70,45 @@
                 "*Exploring*"
             ],
             "photo": null
+        },
+        {
+            "name": "(기태린)",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "*Exploring*"
+            ],
+            "photo": null
+        },
+        {
+            "name": "(류수민)",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "*Exploring*"
+            ],
+            "photo": null
+        },
+        {
+            "name": "(이상우)",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "*Exploring*"
+            ],
+            "photo": null
+        }
+    ],
+    "admins": [
+        {
+            "name": "Sunwoo Na",
+            "degree": "Server administrator",
+            "major": "Republic of Korea Navy",
+            "interests": [
+                "Programming Languages",
+                "Automated Program Repair"
+            ],
+            "photo": "ur_swn.jpg"
         }
     ]
 }

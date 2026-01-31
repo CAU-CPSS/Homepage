@@ -3,6 +3,7 @@
 
   export const students = members.students;
   export const undergraduates = members.undergraduates;
+  export const admins = members.admins;
 </script>
 
 <script>
@@ -66,7 +67,7 @@
           >
             <img
               class="card-photo"
-              src="/images/card/{student.photo ?? "puang.png"}"
+              src="/images/card/{student.photo ?? 'puang.png'}"
               alt="Picture of {student.name}"
             />
             <div class="card-body">
@@ -96,7 +97,7 @@
           >
             <img
               class="card-photo"
-              src="/images/card/{undergraduate.photo ?? "puang.png"}"
+              src="/images/card/{undergraduate.photo ?? 'puang.png'}"
               alt="Picture of {undergraduate.name}"
             />
             <div class="card-body">
@@ -108,6 +109,36 @@
                 <b>Interests:</b>
                 <ul>
                   {#each undergraduate.interests as interest}
+                    <li>{interest}</li>
+                  {/each}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {/each}
+      </div>
+
+      <h1 class="titles">Homepage & Server Admin</h1>
+      <div class="row justify-content-center">
+        {#each admins as admin, i}
+          <div
+            class="card col-sm-5 wow fadeIn animated"
+            data-wow-delay={`${0.15 + i * 0.07}s`}
+          >
+            <img
+              class="card-photo"
+              src="/images/card/{admin.photo ?? 'puang.png'}"
+              alt="Picture of {admin.name}"
+            />
+            <div class="card-body">
+              <span class="card-name">{admin.name}</span><br />
+              <span class="card-degree">{admin.degree}</span>
+
+              <p class="card-major">{admin.major}</p>
+              <div class="card-interests">
+                <b>Interests:</b>
+                <ul>
+                  {#each admin.interests as interest}
                     <li>{interest}</li>
                   {/each}
                 </ul>
@@ -179,7 +210,8 @@
       flex-direction: column !important;
       align-items: flex-start;
       padding: 10px 10px 0px 10px;
-    } .card-body {
+    }
+    .card-body {
       padding: 20px 20px 5px 20px;
     }
     .card-photo {
@@ -188,13 +220,16 @@
 
       margin: 12px 0px 0px 0px;
       align-self: center;
-    } .card-name {
+    }
+    .card-name {
       font-size: 23px;
       font-weight: 600;
-    } .card-degree {
+    }
+    .card-degree {
       font-size: 16px;
       font-weight: 500;
-    } .card-interests ul {
+    }
+    .card-interests ul {
       padding-left: 16px;
     }
 
