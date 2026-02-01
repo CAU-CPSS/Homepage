@@ -177,6 +177,27 @@
             "interests": [
                 "*Exploring*"
             ]
+        },
+        {
+            "name": "Sangho Park",
+            "degree": "Bachelor",
+            "year": 2026,
+            "major": "Business Administration",
+            "school": "CAU",
+            "status": "Yonsei University",
+            "interests": [
+                "*Exploring*"
+            ]
+        },
+        {
+            "name": "Yoonseo Han",
+            "degree": "Bachelor",
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "KPMG",
+            "interests": [
+                "*Exploring*"
+            ]
         }
     ]
 }

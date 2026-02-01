@@ -36,15 +36,6 @@
     ],
     "undergraduates": [
         {
-            "name": "Sangho Park",
-            "degree": "Undergraduate researcher",
-            "major": "Business Administration, CAU",
-            "interests": [
-                "*Exploring*"
-            ],
-            "photo": null
-        },
-        {
             "name": "Junyoung Park",
             "degree": "Undergraduate researcher",
             "major": "Art & Technology, CAU",
@@ -52,15 +43,6 @@
                 "*Exploring*"
             ],
             "photo": null
-        },
-        {
-            "name": "Yoonseo Han",
-            "degree": "Undergraduate researcher",
-            "major": "Industrial Security, CAU",
-            "interests": [
-                "*Exploring*"
-            ],
-            "photo": "ur_ysh.jpg"
         },
         {
             "name": "Seongyong Ju",
