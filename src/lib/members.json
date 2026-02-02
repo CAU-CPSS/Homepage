@@ -65,16 +65,18 @@
             "photo": "ur_trk.jpg"
         },
         {
-            "name": "(류수민)",
+            "name": "Sangwoo Lee",
             "degree": "Undergraduate researcher",
             "major": "Industrial Security, CAU",
             "interests": [
-                "*Exploring*"
+                "Privacy-Preserving ML",
+                "OS Security",
+                "Cyber-Physical System"
             ],
-            "photo": null
+            "photo": "ur_swl.jpg"
         },
         {
-            "name": "(이상우)",
+            "name": "(류수민)",
             "degree": "Undergraduate researcher",
             "major": "Industrial Security, CAU",
             "interests": [
@@ -96,14 +98,15 @@
             "photo": "ur_swn.jpg"
         },
         {
-            "name": "Anonymous",
-            "degree": "NEXT Server administrator",
-            "major": "RECRUITING A NEW ADMIN",
+            "name": "Taerin Ki",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
             "interests": [
-                "Homepage Design",
-                "Linux Server Maintenance"
+                "Privacy-Preserving ML",
+                "Anti Piracy & Content Protection",
+                "Forensic Watermarking"
             ],
-            "photo": null
+            "photo": "ur_trk.jpg"
         }
     ]
 }

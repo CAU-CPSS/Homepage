@@ -199,6 +199,19 @@
             "interests": [
                 "*Exploring*"
             ]
+        },
+        {
+            "name": "Sunwoo Na",
+            "degree": "Undergraduate",
+            "year": 2025,
+            "major": "Computer Science & Engineering",
+            "school": "CAU",
+            "status": "Republic of Korea Navy",
+            "interests": [
+                "Programming Languages",
+                "Computer Security",
+                "Automated Program Repair"
+            ]
         }
     ]
 }
