@@ -76,13 +76,15 @@
             "photo": "ur_swl.jpg"
         },
         {
-            "name": "(류수민)",
+            "name": "Sumin Ryu",
             "degree": "Undergraduate researcher",
             "major": "Industrial Security, CAU",
             "interests": [
-                "*Exploring*"
+                "Federated Learning",
+                "Cybersecurity",
+                "Web Programming"
             ],
-            "photo": null
+            "photo": "ur_smr.jpg"
         }
     ],
     "admins": [
