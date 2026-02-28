@@ -14,7 +14,7 @@
 
   <div id="cpss-contact" class="cpss-contact-outer">
     <h2 class="titles">Recruit</h2>
-    <p>NOTE: Last update at Mar. 27th, 2025.<br/>
+    <p>NOTE: Last update at Jan. 31st, 2026.<br/>
       <b>석·박사과정 및 학부연구생 지원 문의는 <a href="mailto:jaewoo.cau@gmail.com">jaewoo.cau@gmail.com</a> 또는
         <a href="mailto:jaewoolee@cau.ac.kr">jaewoolee@cau.ac.kr</a>로 부탁드립니다.</b><p>
 
@@ -37,7 +37,7 @@
     <p><b>중앙대학교 사이버물리시스템 보안 연구실에서 연구활동을 경험할 학부생을 모집합니다.</b></p>
     <ul>
       <li>소속 캠퍼스 및 주전공 <u>제한 없음</u></li>
-      <li>혜택: 경력증명서 발급 가능 (<a href="../../../static/certificate.hwp" download="경력증명서-양식_OOO.hwp">해당 파일 다운로드</a> 및 작성 후 메일 문의)</li>
+      <li>혜택: 경력증명서 발급 가능 (<a href="/certificate.hwp" download="경력증명서-양식_OOO.hwp">해당 파일 다운로드</a> 및 작성 후 메일 문의)</li>
       <li>모집현황: <b>2026-1학기 모집 예정</b></li>
       <li>추가 안내: 홈페이지 개발 및 리눅스 서버 관리자 모집 (문의: <a href="mailto:nsun527@cau.ac.kr">나선우 학부연구생</a>)</li>
     </ul>
@@ -60,7 +60,7 @@
 
   #cpss-contact > p {
     width: 1000px;
-    margin: 30px auto 20px auto;
+    margin: 50px auto 20px auto;
     list-style: none; /* Remove default bullet points */
     padding: 0;
   }
@@ -103,7 +103,7 @@
       padding-left: 10px;
     }
     h2 {
-      margin-top: 60px;
+      margin-top: 50px;
       font-size: 35px;
     }
   }

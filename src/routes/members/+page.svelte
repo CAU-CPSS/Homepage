@@ -205,7 +205,7 @@
 
   @media screen and (max-width: 1024px) {
     h1 {
-      font-size: 30px;
+      font-size: 35px;
     }
     .card {
       max-width: 90%;
@@ -250,7 +250,7 @@
   .cpss-member-outer {
     width: 100%;
     height: auto;
-    padding: 70px;
+    padding: 0 70px 70px 70px;
     align-self: center;
   }
 </style>

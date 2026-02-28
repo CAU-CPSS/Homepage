@@ -63,6 +63,10 @@
 <style>
   @import "$lib/shared.css";
 
+  .titles {
+    margin-top: 50px;
+  }
+
   .card {
     max-width: 80%;
     margin: 0 auto;

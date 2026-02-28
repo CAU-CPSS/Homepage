@@ -35,7 +35,7 @@
     background: #2e3149;
   }
   .footer-outer .footer-inner {
-    max-width: 1140px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -65,6 +65,7 @@
     color: #fff;
     line-height: 1.6;
     margin: 0;
+    text-align: center;
   }
 
   .border-bottom-footer {

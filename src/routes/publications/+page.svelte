@@ -62,7 +62,7 @@
 
   #cpss-publications > ul {
     width: 1000px;
-    margin: 60px auto 150px auto;
+    margin: 50px auto;
     list-style: none; /* Remove default bullet points */
     padding: 0;
   }
@@ -89,12 +89,11 @@
     #cpss-publications > ul {
       width: 90%;
       text-wrap: wrap;
-      margin: 60px 10px 70px 10px;
     } #cpss-publications ul li {
       padding-left: 10px;
     }
     h2 {
-      margin-top: 60px;
+      margin-top: 50px;
       font-size: 35px;
     }
   }
