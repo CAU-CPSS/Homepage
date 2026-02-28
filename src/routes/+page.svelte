@@ -197,6 +197,7 @@
 <!-- main page wrapper -->
 
 <style>
+
   /* TODO: Main Background */
   #cpss-about-wrapper {
     position: relative;
@@ -287,6 +288,9 @@
       margin: 60px 10px 300px 10px;
     } #cpss-accomplishment ul li {
       padding-left: 10px;
+    }
+    .titles {
+      font-size: 35px;
     }
   }
 

@@ -88,17 +88,18 @@
 
   @media screen and (max-width: 1024px) {
     #cpss-contact {
-      padding: 30px 10px 10px 10px;
+      padding: 0px 10px;
+      margin-bottom: 50px;
     }
     #cpss-contact > p {
       width: 90%;
       text-wrap: wrap;
-      margin: 30px 10px 20px 10px;
+      margin: 30px 15px 0px 15px;
     }
     #cpss-contact > ul {
       width: 90%;
       text-wrap: wrap;
-      margin: 30px 10px 0px 10px;
+      margin: 30px 15px 0px 15px;
     }  #cpss-contact ul li {
       padding-left: 10px;
     }

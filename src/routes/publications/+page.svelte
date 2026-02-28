@@ -84,7 +84,7 @@
 
   @media screen and (max-width: 1024px) {
     #cpss-publications {
-      padding: 30px 10px 10px 10px;
+      padding: 0px 10px;
     }
     #cpss-publications > ul {
       width: 90%;

@@ -95,7 +95,7 @@
   .cpss-member-outer {
     width: 100%;
     height: auto;
-    padding: 70px;
+    padding: 0px 70px 70px 70px;
   }
 
   @media screen and (max-width: 1024px) {
