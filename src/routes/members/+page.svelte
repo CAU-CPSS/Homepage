@@ -156,16 +156,20 @@
 <style>
   @import "$lib/shared.css";
 
-  /* .titles {
-    margin-top: 80px;
-  } */
+  .titles {
+    margin: 50px 0;
+  }
 
   .container .card {
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
   }
 
   .card {
@@ -236,7 +240,7 @@
       width: 100%;
       height: auto;
       padding: 0px !important;
-      margin: 80px 0px;
+      margin: 50px 0px;
       align-items: center;
       align-self: center;
     }
