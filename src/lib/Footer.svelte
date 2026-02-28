@@ -15,7 +15,6 @@
           주소: 서울시 동작구 흑석로 84, 310관 1139호<br />
         </p>
       </div>
-      <div class="column-3-3"></div>
     </div>
 
     <span class="border-bottom-footer"></span>
@@ -32,71 +31,55 @@
 <style>
   .footer-outer {
     width: 100%;
-    padding: 50px;
-    height: 250px;
+    padding: 30px 20px;
     background: #2e3149;
-    overflow: hidden;
   }
   .footer-outer .footer-inner {
-    width: 100%;
-    height: inherit;
+    max-width: 1140px;
+    margin: 0 auto;
   }
 
   .footer-outer .footer-three-grid {
-    width: 1140px;
-    margin: 0 auto;
-    height: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
-  .footer-outer .column-1-3 {
-    width: 20%;
-    float: left;
-    height: 50px;
+
+  .column-1-3,
+  .column-2-3 {
+    flex: 1;
+    min-width: 250px;
   }
-  .footer-outer .column-1-3 h1 {
-    font-size: 38px;
-    letter-spacing: 3px;
-    position: relative;
-    top: -5px;
+
+  .column-1-3 h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
     font-weight: 600;
     color: #fff;
+    margin: 0;
   }
-  .footer-outer .column-2-3 {
-    width: 60%;
-    float: left;
-    height: 50px;
-  }
-  .footer-outer .column-3-3 {
-    width: 20%;
-    float: left;
-    height: 50px;
-  }
-  .footer-outer .column-3-3 a {
-    color: #b5b5c8;
-  }
-  .footer-outer .column-3-3 .social-icons-header a:hover {
+
+  .column-2-3 p {
     color: #fff;
-    opacity: 1;
-    -webkit-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
-    transition: color 0.2s ease;
+    line-height: 1.6;
+    margin: 0;
   }
-  .footer-outer .footer-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .footer-outer .border-bottom-footer {
+
+  .border-bottom-footer {
     height: 1px;
-    width: 60%;
-    margin: 0 auto;
-    border: 1px solid #434769;
+    width: 100%;
+    border: none;
+    background: #434769;
     display: block;
-    margin-top: 50px;
+    margin: 20px 0;
   }
-  .footer-outer .copyright {
+
+  .copyright {
     color: #767ba7;
     text-align: center;
     font-size: 13px;
-    padding: 40px 0;
+    margin: 0;
   }
 </style>

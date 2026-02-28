@@ -275,7 +275,6 @@ a.dropdown-item:hover {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -771,7 +770,7 @@ a.dropdown-item:hover {
     width: 100%;
     float: none;
     height: auto;
-    padding-top: 30px;
+    padding: 10px 0;
   }
 
   .footer-outer .column-2-3 {
