@@ -1,7 +1,7 @@
+import HeroSection from "@/components/layout/HeroSection";
+
 export default function HomePage() {
   return (
-    <>
-      메인 페이지
-    </>
+    <HeroSection />
   );
 }

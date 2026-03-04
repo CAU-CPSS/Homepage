@@ -1,8 +1,15 @@
-import React from 'react'
+"use client";
+
+import * as S from "./Header.styles";
+import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <S.HeaderWrapper>
+      <S.Container>
+        <Nav />
+      </S.Container>
+    </S.HeaderWrapper>
   )
 }
 
