@@ -4,11 +4,11 @@ export const Wrapper = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 105px 25px;
   height: 100vh;
   width: 100%;
-  background-color: #1a1a1a;
   color: #fff;
 
   @media (max-width: 768px) {
@@ -17,28 +17,12 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h1`
-  line-height: 1.2;
   z-index: 1000;
-  margin-bottom: 10px;
-`;
-
-export const Line = styled.span`
-  display: block;
-`;
-
-export const LineDesktop = styled.span`
-  display: block;
+  font-size: 6rem;
+  font-weight: 700;
 
   @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const LineMobile = styled.span`
-  display: none;
-
-  @media (max-width: 768px) {
-    display: block;
+    font-size: 2.5rem;
   }
 `;
 

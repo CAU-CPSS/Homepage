@@ -4,12 +4,13 @@ import styled from "styled-components";
 import Link from "next/link";
 
 export const Navbar = styled.nav<{ $open: boolean }>`
+  font-family: var(--font-montserrat), sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 10000;
   padding: 0 25px;
   background-color: rgba(0,0,0,.6);
   backdrop-filter: blur(6px);

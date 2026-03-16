@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import localfont from "next/font/local";
 import Nav from "@/components/layout/Nav";
 import { Montserrat } from 'next/font/google';
+import StyledComponentsRegistry from "./StyledComponentsRegistry";
 
 export const metadata: Metadata = {
   title: "CAU CPSS Lab @ CAU",
@@ -17,13 +18,13 @@ export const viewport: Viewport = {
 
 const pretendard = localfont({
   src: "./fonts/PretendardVariable.woff2",
-  display: "swap",
+  display: "optional",
   variable: "--font-pretendard",
 })
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  display: "swap",
+  display: "optional",
   variable: "--font-montserrat",
 })
 
@@ -34,12 +35,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${montserrat.className}` + ` ${pretendard.className}`}>
-        <main>
-          <Nav />
-          {children}
-          <Footer />
-        </main>
+      <body className={`${pretendard.variable} ${montserrat.variable}`}>
+        <StyledComponentsRegistry>
+          <main>
+            <Nav />
+            {children}
+            <Footer />
+          </main>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

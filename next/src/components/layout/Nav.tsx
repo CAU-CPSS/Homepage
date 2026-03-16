@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import * as S from "./Nav.styles";
 import { FiMenu, FiX } from "react-icons/fi";
-import Image from "next/image";
 
 const Nav = () => {
   const pathname = usePathname();
