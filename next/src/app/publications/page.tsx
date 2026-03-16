@@ -1,7 +1,9 @@
+import Header from "@/components/layout/Header";
+
 export default function PublicationsPage() {
   return (
     <>
-      논문 목록 페이지
+      <Header title="Publications" />
     </>
   );
 }

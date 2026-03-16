@@ -1,7 +1,9 @@
+import Header from "@/components/layout/Header";
+
 export default function ResearchPage() {
   return (
     <>
-      연구 주제 페이지
+      <Header title="Research" />
     </>
   );
 }

@@ -1,7 +1,9 @@
+import Header from "@/components/layout/Header";
+
 export default function MembersPage() {
   return (
     <>
-      멤버 페이지
+      <Header title="Members" />
     </>
   );
 }

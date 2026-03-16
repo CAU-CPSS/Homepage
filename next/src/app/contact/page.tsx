@@ -1,7 +1,9 @@
+import Header from "@/components/layout/Header";
+
 export default function ContactPage() {
   return (
     <>
-      컨택 페이지
+      <Header title="Contact" />
     </>
   );
 }

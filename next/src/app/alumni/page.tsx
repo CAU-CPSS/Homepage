@@ -1,7 +1,9 @@
+import Header from "@/components/layout/Header";
+
 export default function AlumniPage() {
   return (
     <>
-      알럼나이 페이지
+      <Header title="Alumni" />
     </>
   );
 }
