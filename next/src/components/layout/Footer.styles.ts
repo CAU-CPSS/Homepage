@@ -26,8 +26,7 @@ export const Column = styled.div`
   min-width: 250px;
 `;
 
-export const Title = styled.h1`
-  font-size: 32px;
+export const Title = styled.h2`
   letter-spacing: 2px;
   font-weight: 600;
   color: #fff;

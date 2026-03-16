@@ -1,36 +1,29 @@
-"use client";
-
+import { RiScrollToBottomLine } from "react-icons/ri";
+import InteractiveBackground from "../ui/InteractiveBackground";
 import * as S from "./HeroSection.styles";
+import { IoArrowDownCircleOutline } from "react-icons/io5";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const HeroSection = () => {
   return (
     <S.Wrapper>
-      <S.Inner>
-        <S.Title>CAU CPSS Lab</S.Title>
+      <InteractiveBackground />
+      <S.Title>
+        <S.Line>Chung-Ang University</S.Line>
 
-        <S.SubTitle>
-          Cyber-Physical System <br />
-          Security Lab at CAU
-        </S.SubTitle>
+        <S.LineDesktop>
+          Cyber-Physical System Security Lab
+        </S.LineDesktop>
 
-        <S.KoreanTitle>
-          중앙대학교 사이버물리시스템 보안 연구실
-        </S.KoreanTitle>
-
-        <S.List>
-          <li>
-            AI와 디바이스의 융합을 시스템 관점에서 접근하여 효율적인 응용 방안을
-            연구합니다.
-          </li>
-          <li>
-            학문적인 연구를 넘어 실제 산업에 적용할 수 있는 시스템을 구현합니다.
-          </li>
-        </S.List>
-
-        <S.Description>
-          주요 연구분야: OS, On-device, Embedded, Real-time system, Security
-        </S.Description>
-      </S.Inner>
+        <S.LineMobile>Cyber-Physical System</S.LineMobile>
+        <S.LineMobile>Security Lab</S.LineMobile>
+      </S.Title>
+      <S.Description>
+        중앙대학교 사이버물리시스템 보안 연구실
+      </S.Description>
+      <S.Scroll>
+        <MdKeyboardDoubleArrowDown />
+      </S.Scroll>
     </S.Wrapper>
   );
 };
