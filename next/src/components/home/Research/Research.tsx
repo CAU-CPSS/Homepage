@@ -23,7 +23,7 @@ export default function Research() {
         {researchAreas.map((area) => (
           <S.Card key={area.index} href="/research" image={area.image}>
             <S.CardContent>
-              <S.CardLabel>Topic {area.index}</S.CardLabel>
+              <S.CardLabel>Area {area.index}</S.CardLabel>
               <S.CardTitle>{area.title}</S.CardTitle>
             </S.CardContent>
 

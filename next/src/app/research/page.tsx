@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Header from "@/components/layout/Header";
 import researchAreas from "@/data/research.json";
+import projects from "@/data/projects.json";
+import ProjectCard from "@/components/home/Project/ProjectCard";
 import * as S from "./page.styles";
 
 interface ResearchArea {
@@ -10,6 +12,13 @@ interface ResearchArea {
   title: string;
   image: string;
   description: string;
+}
+
+interface Project {
+  sponsor: string;
+  title: string;
+  period: string;
+  type: string | null;
 }
 
 export default function ResearchPage() {
@@ -55,13 +64,22 @@ export default function ResearchPage() {
               <S.Image src={area.image} alt={area.title} />
             </S.ImageWrapper>
             <S.Content>
-              <S.IndexLabel>{area.index}</S.IndexLabel>
+              <S.IndexLabel>Research Area {area.index}</S.IndexLabel>
               <S.Title>{area.title}</S.Title>
               <S.Divider />
               <S.Description>{area.description}</S.Description>
             </S.Content>
           </S.ResearchSection>
         ))}
+
+        <S.ProjectsSection>
+          <S.SectionTitle>Projects</S.SectionTitle>
+          <S.ProjectsGrid>
+            {(projects as Project[]).map((project, i) => (
+              <ProjectCard key={i} {...project} />
+            ))}
+          </S.ProjectsGrid>
+        </S.ProjectsSection>
       </S.Container>
     </>
   );

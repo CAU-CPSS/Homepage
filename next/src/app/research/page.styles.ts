@@ -104,7 +104,7 @@ export const IndexLabel = styled.span`
 export const Title = styled.h1`
   font-size: 1.7rem;
   font-weight: 700;
-  color: #111827;
+  color: #1a2a6c;
   line-height: 1.25;
   letter-spacing: -0.02em;
 `;
@@ -123,4 +123,26 @@ export const Divider = styled.div`
 export const Description = styled.p`
   line-height: 1.6;
   color: rgb(17, 24, 39, 0.7);
+`;
+
+export const ProjectsSection = styled.section`
+  margin-top: 40px;
+`;
+
+export const SectionTitle = styled.h1`
+  text-transform: uppercase;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.05em;
+`;
+
+export const ProjectsGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
