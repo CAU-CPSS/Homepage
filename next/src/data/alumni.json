@@ -1,0 +1,158 @@
+{
+    "graduates": [
+        {
+            "name": "송용택",
+            "degree": "Master",
+            "year": 2019,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "SK Infosec"
+        },
+        {
+            "name": "최동준",
+            "degree": "Master",
+            "year": 2020,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "Air Force Officer"
+        },
+        {
+            "name": "서예령",
+            "degree": "Master",
+            "year": 2021,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "Security Manager in Yungjin Pharm. Co., Ltd."
+        },
+        {
+            "name": "이선우",
+            "degree": "Master",
+            "year": 2022,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": null
+        },
+        {
+            "name": "이승욱",
+            "degree": "Master",
+            "year": 2022,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "RaonSecure"
+        },
+        {
+            "name": "김지후",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": null
+        },
+        {
+            "name": "임지혜",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "Posco"
+        },
+        {
+            "name": "김영준",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "Korea Local Information Research & Development Institute"
+        },
+        {
+            "name": "강한바다",
+            "degree": "Master",
+            "year": 2023,
+            "major": "Security Convergence",
+            "school": "CAU",
+            "status": "Korea Local Information Research & Development Institute"
+        }
+    ],
+    "undergraduates": [
+        {
+            "name": "최병준",
+            "degree": "Bachelor",
+            "year": 2020,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "KAIST GSIS"
+        },
+        {
+            "name": "현석훈",
+            "degree": "Bachelor",
+            "year": 2022,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "KAIST GSIS"
+        },
+        {
+            "name": "장영욱",
+            "degree": "Bachelor",
+            "year": 2022,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": null
+        },
+        {
+            "name": "이승현",
+            "degree": "Bachelor",
+            "year": 2022,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": null
+        },
+        {
+            "name": "강준규",
+            "degree": "Bachelor",
+            "year": 2024,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "KAIST GSIS"
+        },
+        {
+            "name": "소명원",
+            "degree": "Bachelor",
+            "year": 2024,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "Lotte Data Communication Company"
+        },
+        {
+            "name": "이예림",
+            "degree": "Bachelor",
+            "year": 2025,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "Hyundai Motor Company"
+        },
+        {
+            "name": "Sangho Park",
+            "degree": "Bachelor",
+            "year": 2026,
+            "major": "Business Administration",
+            "school": "CAU",
+            "status": "Yonsei University"
+        },
+        {
+            "name": "Yoonseo Han",
+            "degree": "Bachelor",
+            "year": 2025,
+            "major": "Industrial Security",
+            "school": "CAU",
+            "status": "KPMG"
+        },
+        {
+            "name": "Sunwoo Na",
+            "degree": "Undergraduate",
+            "year": 2025,
+            "major": "Computer Science & Engineering",
+            "school": "SKKU",
+            "status": "Undergraduate"
+        }
+    ]
+}

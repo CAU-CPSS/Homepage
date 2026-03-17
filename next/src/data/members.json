@@ -1,0 +1,109 @@
+{
+    "professor": [
+        {
+            "name": "Jaewoo Lee",
+            "degree": "Professor",
+            "major": "Industrial Security, Chung-Ang Univ.",
+            "background": "Ph.D. in Computer and Information Science, Univ. of Pennsylvania",
+            "interests": [
+                "OS Security",
+                "Network Security",
+                "Blockchain Security",
+                "Big-Data Security",
+                "Mobility Security",
+                "Cyber-Physical Safety & Security"
+            ],
+            "photo": "professor.jpg"
+        }
+    ],
+    "students": [
+        {
+            "name": "Sunghwan Park",
+            "degree": "Ph.D. candidate",
+            "major": "Security Convergence, CAU",
+            "interests": [
+                "Federated Learning",
+                "Security & Privacy for ML",
+                "Cyber-Physical System",
+                "Real-time System"
+            ],
+            "photo": "phd_shp.jpg"
+        },
+        {
+            "name": "Yeseul Chang",
+            "degree": "Ph.D. candidate",
+            "major": "Security Convergence, CAU",
+            "interests": [
+                "Cybersecurity",
+                "Data Analysis"
+            ],
+            "photo": "phd_ysc.jpg"
+        },
+        {
+            "name": "Byunghoon Oh",
+            "degree": "Master candidate",
+            "major": "Security Convergence, CAU",
+            "interests": [
+                "Data Analysis",
+                "Cybersecurity",
+                "Natural Language Processing"
+            ],
+            "photo": "ms_bho.jpg"
+        }
+    ],
+    "undergraduates": [
+        {
+            "name": "Junyoung Park",
+            "degree": "Undergraduate researcher",
+            "major": "Art & Technology, CAU",
+            "interests": [
+                "*Exploring*"
+            ],
+            "photo": "ur_jyp.jpg"
+        },
+        {
+            "name": "Seongyong Ju",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "*Exploring*"
+            ],
+            "photo": null
+        },
+        {
+            "name": "Taerin Ki",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "Privacy-Preserving ML",
+                "Anti Piracy & Content Protection",
+                "Forensic Watermarking"
+            ],
+            "photo": "ur_trk.jpg"
+        },
+        {
+            "name": "Sangwoo Lee",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "Privacy-Preserving ML",
+                "OS Security",
+                "Cyber-Physical System"
+            ],
+            "photo": "ur_swl.jpg"
+        }
+    ],
+    "admins": [
+        {
+            "name": "Taerin Ki",
+            "degree": "Undergraduate researcher",
+            "major": "Industrial Security, CAU",
+            "interests": [
+                "Privacy-Preserving ML",
+                "Anti Piracy & Content Protection",
+                "Forensic Watermarking"
+            ],
+            "photo": "ur_trk.jpg"
+        }
+    ]
+}
