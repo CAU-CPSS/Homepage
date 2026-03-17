@@ -8,6 +8,12 @@ export const Card = styled.div`
   border: 1px solid #e5e7eb;
   border-radius: 4px;
   background: #fff;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
 
   @media (max-width: 520px) {
     grid-template-columns: 100px 1fr;
