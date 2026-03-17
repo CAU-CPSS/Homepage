@@ -1,26 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import * as S from "./Research.styles";
 import ResearchBackground from "./ResearchBackground";
-
-const researchAreas = [
-  {
-    index: "01",
-    title: "Cyber-Physical Systems",
-    image: "/images/research-1.png",
-  },
-  {
-    index: "02",
-    title: "Machine Learning Security & Autonomous Driving",
-    image: "/images/research-2.png",
-  },
-  {
-    index: "03",
-    title: "Mixed Criticality Embedded Systems",
-    image: "/images/research-3.png",
-  },
-];
+import researchAreas from "@/data/research.json";
 
 export default function Research() {
   return (

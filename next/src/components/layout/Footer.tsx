@@ -12,7 +12,7 @@ const Footer = () => {
 
           <S.Column>
             <S.Info>
-              중앙대학교 산업보안학과, 사이버물리시스템 보안 연구실
+              중앙대학교 사이버물리시스템 보안 연구실
               <br />
               TEL. (02) 820-5935
               <br />
@@ -33,7 +33,7 @@ const Footer = () => {
           >
             karu-rress
           </S.Link>{" "}
-          & esther. <br />
+          & esther,
           Redesigned by {" "}
           <S.Link
             href="https://github.com/xaerinoo"

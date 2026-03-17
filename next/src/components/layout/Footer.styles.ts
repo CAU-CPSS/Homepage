@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export const FooterOuter = styled.footer`
   width: 100%;
-  padding: 30px 20px;
-  background: #2e3149;
+  padding: 30px 25px;
+  background: #111827;
 `;
 
 export const FooterInner = styled.div`
@@ -27,7 +27,7 @@ export const Column = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 28px;
   letter-spacing: 2px;
   font-weight: 600;
   color: #fff;

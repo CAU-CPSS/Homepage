@@ -16,6 +16,10 @@ export const CardTitleArea = styled.div`
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const CardTitle = styled.h3`

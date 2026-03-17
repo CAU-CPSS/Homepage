@@ -1,0 +1,20 @@
+[
+  {
+    "index": "01",
+    "title": "Cyber-Physical Systems",
+    "image": "/images/research-1.png",
+    "description": "My research is focused on foundations of Cyber-Physical Systems (CPS). CPS are next-generation computer systems which sense and actuate physical environment. Their examples are autonomous driving vehicles, unmanned aerial vehicles, and intelligent surgery robots. CPS can potentially revolutionize entire our life. One important aspect of CPS is real-time systems because CPS interact physical entities which are sensitive to time. Real-time systems are systems whose correctness depends on their temporal aspects as well as their functional aspects. In Real Time scheduling, its performance is evaluated by timeliness on timing constraints (deadlines). On the other hand, speed/average case performance/throughput, which is used for performance metric in traditional system research, are less significant. Its key property is predictability on timing constraints."
+  },
+  {
+    "index": "02",
+    "title": "Machine Learning Security & Autonomous Driving",
+    "image": "/images/research-2.png",
+    "description": "Federated learning is a learning method that collects only learned models on a server to ensure data privacy. FL proceeds with data directly from distributed clients. As clients in FL often have limited communication bandwidth, communication between servers and clients should be optimized to improve performance. FL clients have to communicate in unstable network environments. However, as existing FL aggregation algorithms transmit and receive a large amount of weights, accuracy is significantly reduced in unstable network environments."
+  },
+  {
+    "index": "03",
+    "title": "Mixed Criticality Embedded Systems",
+    "image": "/images/research-3.png",
+    "description": "Many safety-critical real-time systems such as avionics and automotive consist of multiple functionalities with different criticality. For example, an Unmanned Aerial Vehicle (UAV) consists of flight-related (high-critical) functionalities and mission-related (low-critical) functionalities. An increasing trend is to integrate multiple components with different criticality into a single shared platform, called Mixed-Criticality (MC) systems, in order to reduce manufacturing cost."
+  }
+]
