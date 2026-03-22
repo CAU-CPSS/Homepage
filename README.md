@@ -3,7 +3,7 @@
 > Official website of the Cyber-Physical Systems Security Lab at Chung-Ang University.  
 > 🔗 https://cpss.cau.ac.kr/
 
-<img width="1440" height="819" alt="thumbnail" src="https://github.com/user-attachments/assets/869dc3a0-36e2-42a3-a964-db96987a6004" />
+<img width="100%" alt="thumbnail" src="https://github.com/user-attachments/assets/869dc3a0-36e2-42a3-a964-db96987a6004" />
 
 ## Tech Stack
 
@@ -62,6 +62,10 @@ next/
         └── research.json
 ```
 
+## System Architecture
+
+<img width="100%" alt="diagram" src="https://github.com/user-attachments/assets/c20fc8fe-ea45-463f-ae7e-87217df851b4" />
+
 ## Managing Data
 
 All content is managed through JSON files in `src/data/`.
@@ -81,7 +85,7 @@ When a member graduates, move their entry from `members.json` to `alumni.json` a
 On the CPSS server, run:
 
 ```bash
-cd $HOMEPAGE
+cd $HOMEPAGE    # var/www/Homepage/next
 bash deploy.sh
 ```
 
@@ -91,5 +95,5 @@ The script pulls the latest changes, builds the project, and reloads Nginx autom
 
 ## Contributors
 
-- [karu-rress](https://github.com/karu-rress) — Initial development
-- [xaerinoo](https://github.com/xaerinoo) — Next.js migration
+- Initially created by [karu-rress](https://github.com/karu-rress) & esther
+- Next.js migration + Redesigned by [xaerinoo](https://github.com/xaerinoo)
