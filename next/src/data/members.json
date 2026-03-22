@@ -57,7 +57,9 @@
             "degree": "Undergraduate researcher",
             "major": "Art & Technology, CAU",
             "interests": [
-                "*Exploring*"
+                "Large Language Model Safety",
+                "Adversarial Robustness",
+                "Trustworthy AI"
             ],
             "photo": "ur_jyp.jpg"
         },

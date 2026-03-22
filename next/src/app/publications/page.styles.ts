@@ -87,7 +87,7 @@ export const Title = styled.h3`
 
 export const People = styled.p`
   font-size: 0.9rem;
-  color: rgb(17, 24, 39, 0.7);
+  color: #4b5563;
   line-height: 1.5;
 `;
 

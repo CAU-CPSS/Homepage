@@ -24,7 +24,7 @@ const Footer = () => {
         <S.Divider />
 
         <S.Copyright>
-          © 2024 CPSS Lab. All rights reserved. <br />
+          © 2024-2026 CPSS Lab. All rights reserved. <br />
           Originally designed by{" "}
           <S.Link
             href="https://github.com/karu-rress"

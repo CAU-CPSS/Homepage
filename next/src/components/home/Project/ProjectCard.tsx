@@ -29,7 +29,7 @@ export default function ProjectCard({
         </S.MetaRow>
 
         <S.MetaRow>
-          <S.MetaBadge>Sponsor</S.MetaBadge>
+          <S.MetaBadge>Support</S.MetaBadge>
           <S.MetaText>{sponsor}</S.MetaText>
         </S.MetaRow>
       </S.CardMeta>
