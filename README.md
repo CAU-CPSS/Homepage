@@ -7,11 +7,11 @@ https://cpss.cau.ac.kr/
 
 ## Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
+- **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
 - **Styling**: Styled Components, Tailwind CSS
 - **3D**: Three.js
-- **Deployment**: Nginx (static export)
+- **Deployment**: Nginx + PM2
 
 ## Getting Started
 
