@@ -1,6 +1,6 @@
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import * as S from "./HeroSection.styles";
-import SplitText from "../SplitText";
+import SplitText from "../../ui/SplitText";
 import HeroBackground from "./HeroBackground";
 
 const HeroSection = () => {
