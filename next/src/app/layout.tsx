@@ -5,6 +5,7 @@ import localfont from "next/font/local";
 import Nav from "@/components/layout/Nav";
 import { Montserrat } from 'next/font/google';
 import StyledComponentsRegistry from "./StyledComponentsRegistry";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "CAU CPSS Lab @ CAU",
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className={`${pretendard.variable} ${montserrat.variable}`}>
         <StyledComponentsRegistry>
+          <ScrollToTop />
           <main>
             <Nav />
             {children}
