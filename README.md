@@ -17,7 +17,7 @@
 
 ### Prerequisites
 
-- Node.js ≥ 20.x
+- Node.js ≥ 18.x
 - npm
 - git
 - Nginx
