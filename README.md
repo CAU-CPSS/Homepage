@@ -1,7 +1,7 @@
 # CAU CPSS Lab Homepage
 
-Official website of the Cyber-Physical Systems Security Lab at Chung-Ang University.  
-https://cpss.cau.ac.kr/
+> Official website of the Cyber-Physical Systems Security Lab at Chung-Ang University.  
+> 🔗 https://cpss.cau.ac.kr/
 
 <img width="1440" height="819" alt="thumbnail" src="https://github.com/user-attachments/assets/869dc3a0-36e2-42a3-a964-db96987a6004" />
 
@@ -35,6 +35,7 @@ npm run dev
 
 ```
 next/
+├── deploy.sh
 ├── public/
 │   ├── files/              # Certificate file
 │   └── images/
@@ -52,7 +53,7 @@ next/
     │   ├── home/           # Hero, Research/Project sections
     │   ├── layout/         # Nav, Page Header, Footer
     │   ├── people/         # MemberCard, AlumniCard
-    │   └── ui/
+    │   └── ui/             # Shared styles
     └── data/               # JSON datasets
         ├── members.json
         ├── alumni.json
