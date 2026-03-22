@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import publications from "@/data/publications.json";
 import * as S from "./page.styles";
+import { PageContainer, SectionCount, SectionHeader, SectionLabel } from "@/components/ui/Common.styles";
 
 interface Publication {
   code: string;
@@ -19,15 +20,15 @@ export default function PublicationsPage() {
   return (
     <>
       <Header title="Publications" />
-      <S.Container>
+      <PageContainer>
         {SECTIONS.map((section) => {
           const items = (publications as Record<string, Publication[]>)[section.key];
           return (
             <S.Section key={section.key}>
-              <S.SectionHeader>
-                <S.SectionLabel>{section.label}</S.SectionLabel>
-                <S.SectionCount>{items.length}</S.SectionCount>
-              </S.SectionHeader>
+              <SectionHeader>
+                <SectionLabel>{section.label}</SectionLabel>
+                <SectionCount>{items.length}</SectionCount>
+              </SectionHeader>
 
               <S.List>
                 {items.map((pub) => (
@@ -44,7 +45,7 @@ export default function PublicationsPage() {
             </S.Section>
           );
         })}
-      </S.Container>
+      </PageContainer>
     </>
   );
 }

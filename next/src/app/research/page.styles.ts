@@ -1,15 +1,10 @@
-import styled, { css, keyframes } from "styled-components";
+import { PageContainer } from "@/components/ui/Common.styles";
+import styled, { css } from "styled-components";
 
-export const Container = styled.div`
-  background-color: #ffffff;
-  padding: 50px;
+export const Container = styled(PageContainer)`
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  @media (max-width: 768px) {
-    padding: 50px 25px;
-  }
 `;
 
 export const ResearchSection = styled.section<{ $reverse?: boolean; $visible?: boolean }>`

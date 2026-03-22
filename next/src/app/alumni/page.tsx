@@ -3,6 +3,7 @@ import AlumniCard from "@/components/people/Alumni/AlumniCard";
 import alumni from "@/data/alumni.json";
 import * as S from "./page.styles";
 import type { AlumniData } from "@/components/people/Alumni/AlumniCard";
+import { PageContainer, SectionCount, SectionHeader, SectionLabel } from "@/components/ui/Common.styles";
 
 const SECTIONS = [
   { key: "graduates",    label: "Graduate Alumni"     },
@@ -13,16 +14,16 @@ export default function AlumniPage() {
   return (
     <>
       <Header title="Alumni" />
-      <S.Container>
+      <PageContainer>
         {SECTIONS.map((section) => {
           const items = (alumni as Record<string, AlumniData[]>)[section.key];
           if (!items?.length) return null;
           return (
             <S.Section key={section.key}>
-              <S.SectionHeader>
-                <S.SectionLabel>{section.label}</S.SectionLabel>
-                <S.SectionCount>{items.length}</S.SectionCount>
-              </S.SectionHeader>
+              <SectionHeader>
+                <SectionLabel>{section.label}</SectionLabel>
+                <SectionCount>{items.length}</SectionCount>
+              </SectionHeader>
               <S.Grid>
                 {items.map((a) => (
                   <AlumniCard key={`${a.name}-${a.year}`} alumni={a} />
@@ -31,7 +32,7 @@ export default function AlumniPage() {
             </S.Section>
           );
         })}
-      </S.Container>
+      </PageContainer>
     </>
   );
 }

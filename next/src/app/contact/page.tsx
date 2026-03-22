@@ -1,12 +1,13 @@
 import Header from "@/components/layout/Header";
 import * as S from "./page.styles";
 import { MdOutlineEmail, MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
+import { PageContainer } from "@/components/ui/Common.styles";
 
 export default function ContactPage() {
   return (
     <>
       <Header title="Contact" />
-      <S.Container>
+      <PageContainer>
 
         <S.Top>
           <S.MapBox>
@@ -106,7 +107,7 @@ export default function ContactPage() {
         </S.Sections>
 
         <S.UpdateNote>Last update: Jan. 31st, 2026.</S.UpdateNote>
-      </S.Container>
+      </PageContainer>
     </>
   );
 }

@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  background-color: #ffffff;
-  margin: 0 auto;
-  padding: 50px;
-
-  @media (max-width: 768px) {
-    padding: 50px 25px;
-  }
-`;
-
 export const Section = styled.section`
   margin-bottom: 72px;
 

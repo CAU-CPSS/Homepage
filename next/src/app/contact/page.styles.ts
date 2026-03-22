@@ -1,14 +1,4 @@
-import styled, { css } from "styled-components";
-
-export const Container = styled.div`
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 50px;
-
-  @media (max-width: 768px) {
-    padding: 50px 25px;
-  }
-`;
+import styled from "styled-components";
 
 export const Top = styled.div`
   display: grid;
