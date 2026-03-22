@@ -2,7 +2,6 @@
 set -e
 
 NEXT_DIR="/var/www/Homepage/next"
-WEB_ROOT="/var/www/html"
 BRANCH="next-migration"
 
 if [ "$EUID" -eq 0 ]; then
@@ -21,10 +20,9 @@ npm ci
 echo "[3/4] Building..."
 npm run build
 
-echo "[4/4] Deploying..."
-rm -rf "$WEB_ROOT"
-mkdir -p "$WEB_ROOT"
-cp -R out/* "$WEB_ROOT"
-sudo systemctl reload nginx
+echo "[4/4] Restarting Next server..."
+pm2 stop next-app 2>/dev/null || true
+sudo fuser -k 3000/tcp 2>/dev/null || true
+pm2 restart next-app 2>/dev/null || pm2 start npm --name "next-app" -- start
 
 echo "Done successfully."
