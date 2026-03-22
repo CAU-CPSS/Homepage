@@ -5,7 +5,6 @@ import * as S from "./Project.styles";
 import ProjectCard from "./ProjectCard";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import projects from "@/data/projects.json";
-import Image from "next/image";
 import ProjectBackground from "./ProjectBackground";
 
 export default function Project() {
