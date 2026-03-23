@@ -22,14 +22,30 @@
 - git
 - Nginx
 
-### Install & Run
+### Install & Run (Development)
 
 ```bash
 git clone https://github.com/cau-cpss/Homepage.git
 cd Homepage/next
 npm install
-npm run dev
+npm run dev    # Only for local development
 ```
+
+⚠️ **Do NOT use `npm run dev` on the SERVER!!!!!!!!!!!!!!!!** ⚠️
+> Running `npm run dev` on the server will overwrite the production build in `.next/`
+and cause PM2 production server to serve broken files (ChunkLoadError, 400 errors).
+
+## Run on Production Server
+
+On the CPSS server, always use:
+
+```bash
+cd $HOMEPAGE    # var/www/Homepage/next
+bash deploy.sh  # Builds and restart PM2 safely
+```
+
+⚠️ **Do NOT run as root** ⚠️
+> The script pulls the latest changes, builds the project, and restarts the server safely without corrupting the `.next/` folder.
 
 ## Project Structure
 
@@ -64,7 +80,7 @@ next/
 
 ## System Architecture
 
-<img width="100%" alt="diagram" src="https://github.com/user-attachments/assets/c20fc8fe-ea45-463f-ae7e-87217df851b4" />
+<img width="100%" alt="diagram" src="https://github.com/user-attachments/assets/c66e950c-c19d-483d-870e-6d6849d911c1" />
 
 ## Managing Data
 
@@ -79,19 +95,6 @@ All content is managed through JSON files in `src/data/`.
 | `research.json` | Research areas |
 
 When a member graduates, move their entry from `members.json` to `alumni.json` and remove their photo from `public/images/members/`.
-
-## Deployment
-
-On the CPSS server, run:
-
-```bash
-cd $HOMEPAGE    # var/www/Homepage/next
-bash deploy.sh
-```
-
-> Do not use root privileges here ⚠️
-
-The script pulls the latest changes, builds the project, and reloads Nginx automatically.
 
 ## Contributors
 
