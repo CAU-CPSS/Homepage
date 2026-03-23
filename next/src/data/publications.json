@@ -1,6 +1,24 @@
 {
   "international": [
     {
+        "code": "(J15)",
+        "people":
+          "Sunghwan Park, Hyeongboo Baek, Jaewoo Lee",
+        "title":
+          "ARES: Adaptive robust object detection framework for enhancing real-time performance in autonomous vehicle systems",
+        "details":
+          "Journal of Systems Architecture, vol. 168, 103574, 2025, SCIE"
+    },
+    {
+        "code": "(J14)",
+        "people":
+          "Byeongchan Kim, Heemin Kim, Minjung Kang, Hyunjee Nam, Sunghwan Park, Jaewoo Lee, Il-Youp Kwak",
+        "title":
+          "OD-SHIELD: Convolutional Autoencoder-Based Defense Against Adversarial Patch Attacks in Object Detection",
+        "details":
+          "IEEE Access, vol. 13, pp. 98242-98252, 2025, SCIE"
+    },
+    {
       "code": "(J13)",
       "people":
         "Heemin Kim, Byeong-Chan Kim, Sumi Lee, Minjung Kang, Hyunjee Nam, Sunghwan Park, Il-Youp Kwak, Jaewoo Lee",
@@ -22,7 +40,7 @@
       "title":
         "MC-FLEX: Flexible Mixed-Criticality Real-Time Scheduling by Task-Level Mode Switch",
       "details":
-        "IEEE Transactions on Computers (TC),vol. 71, no. 8, pp. 1889-1902, 1 Aug. 2022, SCIE"
+        "IEEE Transactions on Computers (TC), vol. 71, no. 8, pp. 1889-1902, 1 Aug. 2022, SCIE"
     },
     {
       "code": "(J10)",
