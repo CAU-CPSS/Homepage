@@ -21,8 +21,12 @@ echo "[3/4] Building..."
 npm run build
 
 echo "[4/4] Restarting Next server..."
-pm2 stop next-app 2>/dev/null || true
-sudo fuser -k 3000/tcp 2>/dev/null || true
-pm2 restart next-app 2>/dev/null || pm2 start npm --name "next-app" -- start
+if pm2 list | grep -q "next-app"; then
+    pm2 reload next-app -update-env
+else
+    pm2 start npm --name "next-app" -- start
+fi
+
+pm2 save
 
 echo "Done successfully."
