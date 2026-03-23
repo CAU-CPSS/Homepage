@@ -33,8 +33,12 @@ function roundRect(
   ctx: CanvasRenderingContext2D,
   x: number, y: number, w: number, h: number, r: number
 ) {
-  if ((ctx as any).roundRect) {
-    (ctx as any).roundRect(x, y, w, h, r);
+  type RoundRectCtx = CanvasRenderingContext2D & {
+    roundRect?: (x: number, y: number, w: number, h: number, r: number) => void;
+  };
+  const c = ctx as RoundRectCtx;
+  if (c.roundRect) {
+    c.roundRect(x, y, w, h, r);
   } else {
     ctx.beginPath();
     ctx.moveTo(x + r, y);
