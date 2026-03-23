@@ -21,9 +21,6 @@ export default function MembersPage() {
         {SECTIONS.map((section) => {
           const items = (members as Record<string, MemberData[]>)[section.key];
           if (!items?.length) return null;
-
-          const professor = members.professor;
-          const postdoc = members.postdoc;
           
           return (
             <S.Section key={section.key}>
