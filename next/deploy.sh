@@ -25,7 +25,7 @@ npm run build
 
 echo "[5/5] Restarting Next server..."
 if pm2 list | grep -q "next-app"; then
-    pm2 reload next-app -update-env
+    pm2 restart next-app -update-env
 else
     pm2 start npm --name "next-app" -- start
 fi
