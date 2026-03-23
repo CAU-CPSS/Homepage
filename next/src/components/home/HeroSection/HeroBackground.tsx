@@ -29,9 +29,26 @@ type Car = {
   scanTimer: number; detected: Car[]; lidarAngle: number;
 };
 
-type Ctx2D = CanvasRenderingContext2D & {
-  roundRect: (x: number, y: number, w: number, h: number, r: number) => void;
-};
+function roundRect(
+  ctx: CanvasRenderingContext2D,
+  x: number, y: number, w: number, h: number, r: number
+) {
+  if ((ctx as any).roundRect) {
+    (ctx as any).roundRect(x, y, w, h, r);
+  } else {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.arcTo(x + w, y, x + w, y + r, r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+    ctx.lineTo(x + r, y + h);
+    ctx.arcTo(x, y + h, x, y + h - r, r);
+    ctx.lineTo(x, y + r);
+    ctx.arcTo(x, y, x + r, y, r);
+    ctx.closePath();
+  }
+}
 
 export default function HeroBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -39,7 +56,7 @@ export default function HeroBackground() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext("2d")! as Ctx2D;
+    const ctx = canvas.getContext("2d")!;
     const safeCanvas = canvas;
     let W = 0, H = 0, dpr = 1;
     let cars: Car[] = [];
@@ -154,7 +171,7 @@ export default function HeroBackground() {
       ctx.lineWidth = type === "ego" ? 1.2 : 0.7;
       ctx.fillStyle = type === "ego" ? color : "rgba(30,60,110,0.85)";
       ctx.beginPath();
-      ctx.roundRect(x - w / 2, y - h / 2, w, h, 3);
+      roundRect(ctx, x - w / 2, y - h / 2, w, h, 3);
       ctx.fill(); ctx.stroke();
 
       const lightColor = dir === 1 ? "rgba(255,240,180,0.9)" : "rgba(255,80,80,0.8)";
