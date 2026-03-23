@@ -22,6 +22,7 @@ export const CardTitle = styled.h3`
   font-size: 1.2rem;
   color: #111827;
   line-height: 1.6;
+  letter-spacing: -0.04em;
 `;
 
 export const TypeBadge = styled.p<{ $type?: string | null }>`

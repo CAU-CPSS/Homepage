@@ -16,10 +16,11 @@
             "photo": "professor.jpg"
         }
     ],
-    "students": [
+    "postdoc": [
         {
             "name": "Sunghwan Park",
-            "degree": "Ph.D. candidate",
+            "degree": "Post Doctor",
+            "background": "Ph.D. in Information Security",
             "major": "Security Convergence, CAU",
             "interests": [
                 "Federated Learning",
@@ -28,7 +29,9 @@
                 "Real-time System"
             ],
             "photo": "phd_shp.jpg"
-        },
+        }
+    ],
+    "student": [
         {
             "name": "Yeseul Chang",
             "degree": "Ph.D. candidate",
@@ -41,7 +44,7 @@
         },
         {
             "name": "Byunghoon Oh",
-            "degree": "Master candidate",
+            "degree": "Master degree course student",
             "major": "Security Convergence, CAU",
             "interests": [
                 "Data Analysis",
@@ -51,7 +54,7 @@
             "photo": "ms_bho.jpg"
         }
     ],
-    "undergraduates": [
+    "undergraduate": [
         {
             "name": "Junyoung Park",
             "degree": "Undergraduate researcher",
@@ -95,7 +98,7 @@
             "photo": "ur_swl.jpg"
         }
     ],
-    "admins": [
+    "admin": [
         {
             "name": "Taerin Ki",
             "degree": "Undergraduate researcher",

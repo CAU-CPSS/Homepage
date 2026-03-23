@@ -7,9 +7,10 @@ import { PageContainer, SectionCount, SectionHeader, SectionLabel } from "@/comp
 
 const SECTIONS = [
   { key: "professor",      label: "Professor"                 },
-  { key: "students",       label: "Students"                  },
-  { key: "undergraduates", label: "Undergraduates           " },
-  { key: "admins",         label: "Homepage & Server Admin"   },
+  { key: "postdoc",        label: "Post Doctor"               },
+  { key: "student",        label: "Students"                  },
+  { key: "undergraduate",  label: "Undergraduates           " },
+  { key: "admin",          label: "Homepage & Server Admin"   },
 ] as const;
 
 export default function MembersPage() {
@@ -20,6 +21,10 @@ export default function MembersPage() {
         {SECTIONS.map((section) => {
           const items = (members as Record<string, MemberData[]>)[section.key];
           if (!items?.length) return null;
+
+          const professor = members.professor;
+          const postdoc = members.postdoc;
+          
           return (
             <S.Section key={section.key}>
               <SectionHeader>

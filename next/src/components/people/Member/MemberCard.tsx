@@ -6,7 +6,7 @@ export interface MemberData {
   name: string;
   degree: string;
   major: string;
-  background?: string;  // optional (교수님만)
+  background?: string;  // optional
   interests: string[];
   photo: string | null;
 }
@@ -39,7 +39,7 @@ export default function MemberCard({ member }: MemberCardProps) {
 
         <S.Major>{member.major}</S.Major>
         {member.background && (
-          <S.Background>{member.background}</S.Background>  // ✅ 있을 때만 렌더
+          <S.Background>{member.background}</S.Background>  // 있을 때만 렌더
         )}
 
         <S.Row>
