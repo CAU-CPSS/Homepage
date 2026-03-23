@@ -24,12 +24,14 @@ echo "[4/5] Building..."
 npm run build
 
 echo "[5/5] Restarting Next server..."
+fuser -k 3000/tcp 2>/dev/null || true
+
 if pm2 list | grep -q "next-app"; then
-    pm2 restart next-app -update-env
-else
-    pm2 start npm --name "next-app" -- start
+    pm2 stop next-app
+    pm2 delete next-app
 fi
 
+pm2 start npm --name "next-app" -- start
 pm2 save
 
 echo "Deployment completed successfully."
