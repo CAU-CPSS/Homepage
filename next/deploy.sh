@@ -11,16 +11,19 @@ fi
 
 cd "$NEXT_DIR"
 
-echo "[1/4] Pulling from GitHub..."
+echo "[1/5] Pulling from GitHub..."
 git pull origin "$BRANCH"
 
-echo "[2/4] Installing dependencies..."
+echo "[2/5] Installing dependencies..."
 npm ci
 
-echo "[3/4] Building..."
+echo "[3/5] Clearing old build..."
+rm -rf .next
+
+echo "[4/5] Building..."
 npm run build
 
-echo "[4/4] Restarting Next server..."
+echo "[5/5] Restarting Next server..."
 if pm2 list | grep -q "next-app"; then
     pm2 reload next-app -update-env
 else
@@ -29,4 +32,4 @@ fi
 
 pm2 save
 
-echo "Done successfully."
+echo "Deployment completed successfully."
