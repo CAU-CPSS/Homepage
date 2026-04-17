@@ -1,28 +1,19 @@
-# CAU CPSS Lab Homepage
+# 🏠 CAU CPSS Lab Homepage
 
 > Official website of the Cyber-Physical Systems Security Lab at Chung-Ang University.  
 > 🔗 https://cpss.cau.ac.kr/
 
-<img width="100%" alt="thumbnail" src="https://github.com/user-attachments/assets/869dc3a0-36e2-42a3-a964-db96987a6004" />
+## 🛠️ Tech Stack
 
-## Tech Stack
-
-- **Framework**: Next.js 15 (App Router)
+- **Framework**: Next.js 15
 - **Language**: TypeScript
 - **Styling**: Styled Components, Tailwind CSS
 - **3D**: Three.js
 - **Deployment**: Nginx + PM2
 
-## Getting Started
+<img width="100%" alt="diagram" src="https://github.com/user-attachments/assets/27c841d2-3566-4670-abfe-054cc822e0d7" />
 
-### Prerequisites
-
-- Node.js ≥ 18.x
-- npm
-- git
-- Nginx
-
-### Install & Run (Development)
+## 🚀 Development
 
 ```bash
 git clone https://github.com/cau-cpss/Homepage.git
@@ -31,21 +22,33 @@ npm install
 npm run dev    # Only for local development
 ```
 
-⚠️ **Do NOT use `npm run dev` on the SERVER!!!!!!!!!!!!!!!!** ⚠️
-> Running `npm run dev` on the server will overwrite the production build in `.next/`
-and cause PM2 production server to serve broken files (ChunkLoadError, 400 errors).
+> **Do NOT use `npm run dev` on the SERVER!!!!!!!!!!!!!!!! ⚠️**<br />
+> Server will overwrite the production build in `.next/` and cause PM2 production server to serve broken files (ChunkLoadError, 400 errors).
 
-## Run on Production Server
+## 📤 Deployment
 
-On the CPSS server, always use:
+On the CPSS server, use:
 
 ```bash
 cd $HOMEPAGE    # var/www/Homepage/next
 bash deploy.sh  # Builds and restart PM2 safely
 ```
 
-⚠️ **Do NOT run as root** ⚠️
+> **Do NOT run as root. ⚠️**<br />
 > The script pulls the latest changes, builds the project, and restarts the server safely without corrupting the `.next/` folder.
+
+### Build failure
+
+If the build fails, `deploy.sh` will abort before restarting PM2.<br />
+This causes a mismatch between the old running server and the new build files, resulting in ChunkLoadError.<br />
+If this happens, fix the code and simply run `bash deploy.sh` again.
+
+### Also...
+
+- Do NOT use `as any` (`@typescript-eslint/no-explicit-any` is enforced)
+- When writing browser compatibility polyfills, always use explicit type declarations instead of `any`
+
+> Always be careful of ESLint errors for your mental health. 👍
 
 ## Project Structure
 
@@ -78,11 +81,7 @@ next/
         └── research.json
 ```
 
-## System Architecture
-
-<img width="100%" alt="diagram" src="https://github.com/user-attachments/assets/c66e950c-c19d-483d-870e-6d6849d911c1" />
-
-## Managing Data
+## 📊 Managing Data
 
 All content is managed through JSON files in `src/data/`.
 
@@ -96,7 +95,7 @@ All content is managed through JSON files in `src/data/`.
 
 When a member graduates, move their entry from `members.json` to `alumni.json` and remove their photo from `public/images/members/`.
 
-## Contributors
+## 👤 Contributors
 
-- Initially created by [karu-rress](https://github.com/karu-rress) & esther
-- Next.js migration + Redesigned by [xaerinoo](https://github.com/xaerinoo)
+- Initially created by [@karu-rress](https://github.com/karu-rress) & esther
+- Next.js migration + Redesigned by [@xaerinoo](https://github.com/xaerinoo)
