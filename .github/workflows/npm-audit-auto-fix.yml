@@ -32,7 +32,7 @@ jobs:
         id: audit
         working-directory: ./next
         run: |
-          npm audit --json > audit.json
+          npm audit --json > audit.json || true
           VULN_COUNT=$(cat audit.json | jq '.metadata.vulnerabilities.total')
           echo "vuln_count=$VULN_COUNT" >> $GITHUB_OUTPUT
 
