@@ -1,0 +1,70 @@
+name: npm audit auto fix
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 매일 오전 9시 (KST)
+  workflow_dispatch:
+
+  jobs:
+    audit-and-fix:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: 코드 가져오기
+          uses: actions/checkout@v4
+
+        - name: Node.js 설청
+          uses: actions/setup-node@v4
+          with:
+            node-version: 'lts/*'
+
+        - name: 의존성 설치
+          working-directory: ./next
+          run: npm ci
+
+        - name: 취약점 검사
+          id: audit
+          working-directory: ./next
+          run: |
+            npm audit --json > audit.json
+            VULN_COUNT=$(cat audit.json | jq '.metadata.vulnerabilities.total')
+            echo "vuln_count=$VULN_COUNT" >> $GITHUB_OUTPUT
+
+        - name: 취약점 없으면 종료
+          if: steps.audit.outputs.vuln_count == '0'
+          run: echo "No vulnerabilities"
+
+        - name: 자동 수정
+          working-directory: ./next
+          if: steps.audit.outputs.vuln_count != '0'
+          run: npm audit fix
+
+        - name: 변경사항 커밋
+          if: steps.audit.outputs.vuln_count != '0'
+          run: |
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git add next/package-lock.json
+            git commit -m "chore: npm audit auto fix" || echo "No changes"
+            git push
+
+        - name: 배포
+          if: steps.audit.outputs.vuln_count != '0'
+          uses: appleboy/ssh-action@v1.0.3
+          with:
+            host: ${{ secrets.SERVER_HOST }}
+            username: ${{ secrets.SERVER_USER }}
+            key: ${{ secrets.SERVER_SSH_KEY }}
+            port: 6689
+            script: |
+              cd /var/www/Homepage/next
+              git pull
+              npm ci
+              bash deploy.sh
+
+        - name: 디스코드 알림
+          if: steps.audit.outputs.vuln_count != '0'
+          run: |
+            curl -H "Content-Type: application/json" \
+            -d '{"content": "npm audit fix + 배포 완료"}' \
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
