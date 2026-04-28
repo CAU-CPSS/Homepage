@@ -24,10 +24,12 @@ jobs:
       - name: jq 설치
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: 의존성 설치
+      # scripts 차단
+      - name: 안전한 의존성 설치
         working-directory: ./next
-        run: npm ci
+        run: npm ci --ignore-scripts
 
+      # audit
       - name: 취약점 검사
         id: audit
         working-directory: ./next
@@ -36,26 +38,43 @@ jobs:
           VULN_COUNT=$(cat audit.json | jq '.metadata.vulnerabilities.total')
           echo "vuln_count=$VULN_COUNT" >> $GITHUB_OUTPUT
 
-      - name: 취약점 없으면 종료
+      - name: 취약점 없으면 디코 알림 후 종료
         if: steps.audit.outputs.vuln_count == '0'
-        run: echo "No vulnerabilities"
-
-      - name: 자동 수정
+        run: |
+          curl -s -H "Content-Type: application/json" \
+            -d '{"content": "✅ 취약점 없음"}' \
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - name: 자동 수정 시도
+        id: fix
+        if: steps.audit.outputs.vuln_count != '0'
         working-directory: ./next
-        if: steps.audit.outputs.vuln_count != '0'
-        run: npm audit fix
+        run: |
+          # --force 없이 수정, 실패해도 계속 진행
+          npm audit fix || true
 
-      - name: 변경사항 커밋
-        if: steps.audit.outputs.vuln_count != '0'
+          # 수정 후 다시 검사
+          npm audit --json > audit_after.json || true
+          REMAINING=$(jq '.metadata.vulnerabilities.total' audit_after.json)
+          echo "remaining=$REMAINING" >> $GITHUB_OUTPUT
+
+          # package-lock.json 변경 여부 확인
+          if git diff --quiet next/package-lock.json 2>/dev/null || git diff --quiet package-lock.json 2>/dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 변경사항 커밋 & push
+        if: steps.audit.outputs.vuln_count != '0' && steps.fix.outputs.changed == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add next/package-lock.json
-          git commit -m "Chore: npm audit auto fix" || echo "No changes"
+          git add next/package -lock.json
+          git commit -m "Chore: npm audit auto fix"
           git push
 
-      - name: 배포
-        if: steps.audit.outputs.vuln_count != '0'
+      - name: 서버 배포
+        if: steps.audit.outputs.vuln_count != '0' && steps.fix.outputs.changed == 'true'
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -67,9 +86,18 @@ jobs:
             git pull
             npm ci
             bash deploy.sh
-      - name: 디스코드 알림
-        if: steps.audit.outputs.vuln_count != '0'
+
+      - name: 디스코드 알림 (수정 완료)
+        if: steps.audit.outputs.vuln_count != '0' && steps.fix.outputs.changed == 'true' && steps.fix.outputs.remaining == '0'
         run: |
-          curl -H "Content-Type: application/json" \
-          -d '{"content": "npm audit fix + 배포 완료"}' \
-          ${{ secrets.DISCORD_WEBHOOK_URL }}
+          curl -s -H "Content-Type: application/json" \
+            -d '{"content": "🔁 취약점 자동 수정 완료 \n`npm audit fix` 적용 후 배포했습니다."}' \
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: 디스코드 알림 (수동 확인 필요)
+        if: steps.audit.outputs.vuln_count != '0' && steps.fix.outputs.remaining != '0'
+        run: |
+          REMAINING=${{ steps.fix.outputs.remaining }}
+          curl -s -H "Content-Type: application/json" \
+            -d "{\"content\": \"⚠️ 수동 확인 필요*\n자동 수정 후에도 취약점 ${REMAINING}개가 남아있습니다.\n\`npm audit fix --force\`가 필요하거나 breaking change가 있는 취약점입니다. 직접 확인해주세요!\"}" \
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
