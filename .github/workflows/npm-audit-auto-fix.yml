@@ -69,7 +69,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add next/package -lock.json
+          git add next/package-lock.json
           git commit -m "Chore: npm audit auto fix"
           git push
 
