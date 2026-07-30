@@ -96,6 +96,17 @@
                 "Cyber-Physical System"
             ],
             "photo": "ur_swl.jpg"
+        },
+        {
+            "name": "Yesong Jang",
+            "degree": "Undergraduate researcher",
+            "major": "Computer Science, San Jose State University",
+            "interests": [
+                "Facial/image privacy protection",
+                "Dual-use adversarial ML security",
+                "AI Alignment governance & censorship risks"
+            ],
+            "photo": null
         }
     ],
     "admin": [
