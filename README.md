@@ -64,22 +64,52 @@ next/
     │   ├── alumni/
     │   ├── contact/
     │   ├── members/
+    │   │   └── professor/  # Professor profile
+    │   ├── news/
     │   ├── publications/
     │   └── research/
     │   └── page.tsx        # HomePage
+    │   └── globals.css     # Design tokens (colors, radii, shadows) + base styles
     │   └── ...
     ├── components/
-    │   ├── home/           # Hero, Research/Project sections
+    │   ├── home/           # Hero, News, Research/Project sections
     │   ├── layout/         # Nav, Page Header, Footer
-    │   ├── people/         # MemberCard, AlumniCard
-    │   └── ui/             # Shared styles
+    │   ├── people/         # MemberCard, AlumniCard, PeopleTabs
+    │   └── ui/             # LangToggle, shared styles
+    ├── content/            # Site config & typed views of the data
+    │   ├── site.ts         # Lab info, navigation menu, shared UI strings
+    │   ├── data.ts         # Typed exports of src/data/*.json
+    │   └── vocab.ts        # ko/en dictionary for repeated terms & badges
+    ├── lib/
+    │   └── i18n.tsx        # KOR/ENG language store (`useT`, `useLanguage`)
     └── data/               # JSON datasets
         ├── members.json
         ├── alumni.json
+        ├── professor.json
         ├── projects.json
         ├── publications.json
-        └── research.json
+        ├── research.json
+        └── news.json
 ```
+
+## 🌐 Korean / English
+
+Every visitor-facing string is bilingual. Text lives as `{ "ko": "...", "en": "..." }`
+and components read it through `const t = useT()`:
+
+```tsx
+const t = useT();
+<h1>{t(site.labName)}</h1>       // string
+{t(area.keywords).map(...)}      // string[] works too
+```
+
+The chosen language is stored in `localStorage` (`cpss-lang`) and defaults to the
+browser language. Menu labels and page titles stay in English in both modes.
+
+Publications and member names are stored in English only — they are cited that way.
+Short repeated terms (degrees, departments, schools) are stored in English in the JSON
+and translated at render time through `src/content/vocab.ts`; unknown values fall back
+to the original string, so adding a new value never breaks the page.
 
 ## 📊 Managing Data
 
@@ -88,10 +118,29 @@ All content is managed through JSON files in `src/data/`.
 | File | Description |
 | :---: | :---: |
 | `members.json` | Current lab members |
-| `alumni.json` | Graduated members |
-| `projects.json` | Research projects |
-| `publications.json` | Papers & publications |
-| `research.json` | Research areas |
+| `alumni.json` | Graduated members (names and status are bilingual) |
+| `professor.json` | Professor profile shown on `/members/professor` |
+| `projects.json` | Research projects (bilingual) |
+| `publications.json` | Papers & publications (English only) |
+| `research.json` | Research areas (bilingual) |
+| `news.json` | News items shown on the home page and `/news` |
+
+### Adding a news item
+
+Add an entry to the top of `news.json`. `date` accepts `"YYYY.MM"` or `"YYYY"` — use
+just the year when the exact month is unknown. `category` must be one of
+`paper`, `career`, `award`, `project`, `notice` (see `src/content/vocab.ts`).
+Items are sorted newest-first automatically, and the home page shows the latest four.
+
+```json
+{
+  "id": "2026-example",
+  "date": "2026.09",
+  "category": "paper",
+  "title": { "ko": "...", "en": "..." },
+  "body":  { "ko": "...", "en": "..." }
+}
+```
 
 When a member graduates, move their entry from `members.json` to `alumni.json` and remove their photo from `public/images/members/`.
 
