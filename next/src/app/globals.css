@@ -61,10 +61,18 @@
 html,
 body {
   background-color: var(--bg);
-  max-width: 100vw;
   height: 100%;
-  overflow-x: hidden;
   margin: 0;
+}
+
+/*
+  가로 스크롤 방지.
+  overflow-x: hidden 을 쓰면 루트가 스크롤 컨테이너가 되면서
+  position: fixed 인 네비게이션의 backdrop-filter 가 배경을 샘플링하지 못해
+  블러가 아예 걸리지 않는다. clip 은 스크롤 컨테이너를 만들지 않아 안전하다.
+*/
+html {
+  overflow-x: clip;
 }
 
 body {

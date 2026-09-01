@@ -4,16 +4,17 @@ import styled from "styled-components";
 import Link from "next/link";
 
 /**
- * 네비게이션은 두 가지 상태를 가진다.
- * - 페이지 최상단($solid=false): 어두운 히어로 위에 얹히므로 완전히 투명
- * - 스크롤 이후($solid=true): 흐린 유리 배경이 깔린다
+ * 네비게이션.
  *
- * 배경과 blur 는 ::before 에 고정으로 걸어두고 opacity 만 전환한다.
- * backdrop-filter 를 none <-> blur() 로 직접 전환하면 브라우저에 따라
- * blur 가 아예 적용되지 않는 경우가 있어서다. (opacity:0 이면 렌더되지 않으므로
- * 최상단에서는 blur 도 걸리지 않는다.)
+ * 배경과 blur 는 항상 켜 두고, 스크롤하면 아래 경계선과 그림자만 나타난다.
+ * (레퍼런스 IPsecurity-lab/homepage 의 헤더와 같은 방식)
+ * backdrop-filter 를 none <-> blur() 로 전환하면 none 이 보간되지 않는 값이라
+ * 브라우저에 따라 블러가 아예 적용되지 않는다.
  *
- * 글자는 두 상태 모두 흰색이다. 홈이 다크·라이트 섹션을 번갈아 지나가므로
+ * blur 가 실제로 걸리려면 루트에 overflow-x: hidden 이 없어야 한다.
+ * globals.css 의 `html { overflow-x: clip }` 주석 참고.
+ *
+ * 글자는 흰색 고정. 홈이 다크·라이트 섹션을 번갈아 지나가므로
  * 흰 배경 바를 쓰면 다크 섹션 위에서 지나치게 튄다.
  */
 export const Navbar = styled.header<{ $solid: boolean }>`
@@ -23,18 +24,15 @@ export const Navbar = styled.header<{ $solid: boolean }>`
   right: 0;
   z-index: 10000;
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(10, 14, 26, 0.78);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
-    opacity: ${({ $solid }) => ($solid ? 1 : 0)};
-    transition: opacity 0.3s var(--ease);
-  }
+  background: rgba(10, 14, 26, 0.72);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+  border-bottom: 1px solid
+    ${({ $solid }) => ($solid ? "rgba(255, 255, 255, 0.14)" : "transparent")};
+  box-shadow: ${({ $solid }) =>
+    $solid ? "0 1px 20px rgba(0, 0, 0, 0.3)" : "none"};
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
 `;
 
 export const Inner = styled.div`
