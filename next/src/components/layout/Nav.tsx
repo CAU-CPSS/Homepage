@@ -2,92 +2,145 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import * as S from "./Nav.styles";
 import { FiMenu, FiX } from "react-icons/fi";
+
+import * as S from "./Nav.styles";
+import LangToggle from "@/components/ui/LangToggle";
+import { navigation, peoplePages, site, ui, type NavNode } from "@/content/site";
+import { useT } from "@/lib/i18n";
+
+/** People 처럼 하위 경로가 여러 개인 메뉴까지 한 번에 판정한다. */
+function isActive(node: NavNode, pathname: string) {
+  if (node.label === "People") {
+    return peoplePages.some((page) => pathname.startsWith(page.href));
+  }
+  return node.match ? pathname.startsWith(node.match) : pathname === node.href;
+}
 
 const Nav = () => {
   const pathname = usePathname();
+  const t = useT();
+  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [memberHover, setMemberHover] = useState(false);
-  const closeMobile = () => setMobileOpen(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
+  // 모든 페이지가 어두운 히어로로 시작하므로, 최상단에서만 투명 네비를 쓴다.
   useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // 드로어가 열려 있는 동안 배경 스크롤 잠금
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileOpen]);
 
+  const solid = scrolled;
+  const closeMobile = () => setMobileOpen(false);
+
   return (
-    <S.Navbar
-      $open={memberHover}
-      onMouseLeave={() => setMemberHover(false)}
-    >
-      <S.TopBar>
-        <S.Logo href="/">CPSS Lab</S.Logo>
+    <>
+      <S.Navbar $solid={solid} onMouseLeave={() => setOpenMenu(null)}>
+        <S.Inner>
+          <S.Logo href="/">
+            {site.shortName}
+          </S.Logo>
 
-        <S.Menu>
-          <S.NavItem $active={pathname.startsWith("/research")} onMouseEnter={() => setMemberHover(false)}>
-            <S.NavLink href="/research">Research</S.NavLink>
-          </S.NavItem>
+          <S.Menu>
+            <S.MenuList>
+              {navigation.map((node) => {
+                const active = isActive(node, pathname);
 
-          <S.NavItem
-            $active={pathname.startsWith("/members")}
-            onMouseEnter={() => setMemberHover(true)}
-          >
-            <S.NavLink href="/members">People</S.NavLink>
+                return (
+                  <S.MenuItem
+                    key={node.href}
+                    onMouseEnter={() => setOpenMenu(node.children ? node.label : null)}
+                  >
+                    <S.NavLink href={node.href} $active={active}>
+                      {node.label}
+                      <S.Underline $active={active} />
+                    </S.NavLink>
 
-            <S.PeopleSubMenu
-              $open={memberHover}
-              onMouseEnter={() => setMemberHover(true)}
-              onMouseLeave={() => setMemberHover(false)}
+                    {node.children && (
+                      <S.Dropdown $open={openMenu === node.label}>
+                        <S.DropdownPanel>
+                          {node.children.map((child) => (
+                            <li key={child.href}>
+                              <S.DropdownLink
+                                href={child.href}
+                                $active={pathname === child.href}
+                              >
+                                {child.label}
+                              </S.DropdownLink>
+                            </li>
+                          ))}
+                        </S.DropdownPanel>
+                      </S.Dropdown>
+                    )}
+                  </S.MenuItem>
+                );
+              })}
+            </S.MenuList>
+          </S.Menu>
+
+          <S.Right>
+            <LangToggle onDark />
+            <S.Hamburger
+              type="button"
+              aria-label={t(ui.openMenu)}
+              onClick={() => setMobileOpen(true)}
             >
-              <S.SubLink href="/members">Members</S.SubLink>
-              <S.SubLink href="/alumni">Alumni</S.SubLink>
-            </S.PeopleSubMenu>
-          </S.NavItem>
+              <FiMenu />
+            </S.Hamburger>
+          </S.Right>
+        </S.Inner>
+      </S.Navbar>
 
-          <S.NavItem $active={pathname === "/publications"} onMouseEnter={() => setMemberHover(false)}>
-            <S.NavLink href="/publications">Publications</S.NavLink>
-          </S.NavItem>
+      <S.Drawer $open={mobileOpen} aria-hidden={!mobileOpen}>
+        <S.Scrim $open={mobileOpen} onClick={closeMobile} />
 
-          <S.NavItem $active={pathname === "/contact"} onMouseEnter={() => setMemberHover(false)}>
-            <S.NavLink href="/contact">Contact</S.NavLink>
-          </S.NavItem>
-        </S.Menu>
+        <S.Panel $open={mobileOpen}>
+          <S.PanelHead>
+            <S.PanelTitle>{site.shortName}</S.PanelTitle>
+            <S.CloseButton type="button" aria-label={t(ui.closeMenu)} onClick={closeMobile}>
+              <FiX />
+            </S.CloseButton>
+          </S.PanelHead>
 
-        <S.Hamburger $open={mobileOpen} onClick={() => setMobileOpen(true)}>
-          <FiMenu />
-        </S.Hamburger>
-      </S.TopBar>
+          {/* 링크를 누르면 드로어를 닫는다 — 이벤트 위임 */}
+          <S.PanelNav onClick={closeMobile}>
+            <S.PanelList>
+              {navigation.map((node) => (
+                <li key={node.href}>
+                  <S.PanelLink href={node.href} $active={isActive(node, pathname)}>
+                    {node.label}
+                  </S.PanelLink>
 
-      <S.MobileMenu $open={mobileOpen}>
-        <S.CloseButton onClick={closeMobile}>
-          <FiX />
-        </S.CloseButton>
+                  {node.children?.map((child) => (
+                    <S.PanelSubLink
+                      key={child.href}
+                      href={child.href}
+                      $active={pathname === child.href}
+                    >
+                      {child.label}
+                    </S.PanelSubLink>
+                  ))}
+                </li>
+              ))}
+            </S.PanelList>
+          </S.PanelNav>
 
-        <S.MobileLink href="/research" onClick={closeMobile}>
-          Research
-        </S.MobileLink>
-
-        <S.MobileLink href="/members" onClick={closeMobile}>
-          Members
-        </S.MobileLink>
-
-        <S.MobileLink href="/alumni" onClick={closeMobile}>
-          Alumni
-        </S.MobileLink>
-
-        <S.MobileLink href="/publications" onClick={closeMobile}>
-          Publications
-        </S.MobileLink>
-
-        <S.MobileLink href="/contact" onClick={closeMobile}>
-          Contact
-        </S.MobileLink>
-      </S.MobileMenu>
-    </S.Navbar>
+          <S.PanelFoot>
+            <LangToggle />
+          </S.PanelFoot>
+        </S.Panel>
+      </S.Drawer>
+    </>
   );
 };
 
