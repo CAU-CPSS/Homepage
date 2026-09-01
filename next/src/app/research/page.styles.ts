@@ -42,19 +42,41 @@ export const ResearchSection = styled.section<{ $reverse: boolean; $visible: boo
   }
 `;
 
-export const ImageWrapper = styled.div`
-  border-radius: var(--r-lg);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--surface);
+/**
+ * 이미지를 그냥 둥근 상자에 넣는 대신, 뒤로 살짝 어긋나게 깔리는
+ * 네이비 테두리를 둬서 액자처럼 보이게 한다.
+ * 테두리는 글 반대쪽(바깥)으로 밀어 화면 안쪽이 답답해지지 않게 했다.
+ */
+export const ImageWrapper = styled.div<{ $reverse: boolean }>`
+  position: relative;
   aspect-ratio: 4 / 3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border: 1px solid var(--navy-600);
+    border-radius: var(--r-md);
+    transform: translate(${({ $reverse }) => ($reverse ? "14px" : "-14px")}, 14px);
+  }
+
+  @media (max-width: 900px) {
+    &::before {
+      transform: translate(10px, 10px);
+    }
+  }
 `;
 
 export const Image = styled.img`
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: var(--r-md);
+  box-shadow: 0 12px 32px rgba(16, 24, 40, 0.14);
 `;
 
 export const Content = styled.div``;
