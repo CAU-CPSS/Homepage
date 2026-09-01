@@ -1,61 +1,53 @@
-import { PageContainer } from "@/components/ui/Common.styles";
-import styled, { css } from "styled-components";
+"use client";
 
-export const Container = styled(PageContainer)`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
+import styled from "styled-components";
 
-export const ResearchSection = styled.section<{ $reverse?: boolean; $visible?: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  min-height: 520px;
-  flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
+import { SectionTitle as BaseSectionTitle } from "@/components/ui/Common.styles";
 
-  opacity: 0;
-  transform: translateY(28px);
-  transition:
-    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-
-  ${({ $visible }) => $visible && css`
-    opacity: 1;
-    transform: translateY(0);
-  `}
+export const Container = styled.div`
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 80px 28px 96px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 10px;
-    min-height: unset;
+    padding: 56px 20px 72px;
+  }
+`;
+
+export const ResearchSection = styled.section<{ $reverse: boolean; $visible: boolean }>`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 96px;
+  direction: ${({ $reverse }) => ($reverse ? "rtl" : "ltr")};
+
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "28px")});
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+
+  > * {
+    direction: ltr;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 72px;
+    direction: ltr;
   }
 `;
 
 export const ImageWrapper = styled.div`
-  position: relative;
+  border-radius: var(--r-lg);
   overflow: hidden;
-  width: 500px;
-  height: 500px;
-  border-radius: 100%;
-  flex-shrink: 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(26,42,108,0.2) 0%, transparent 55%);
-    transition: opacity 0.45s ease;
-    z-index: 1;
-  }
-
-  &:hover::after { opacity: 0; }
-
-  @media (max-width: 768px) {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
-  }
+  border: 1px solid var(--line);
+  background: var(--surface);
+  aspect-ratio: 4 / 3;
 `;
 
 export const Image = styled.img`
@@ -63,81 +55,106 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-
-  ${ImageWrapper}:hover & {
-    transform: scale(1.05);
-  }
 `;
 
-export const Content = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-
-  @media (max-width: 768px) {
-    text-align: center;
-  }
-`;
+export const Content = styled.div``;
 
 export const IndexLabel = styled.span`
-  font-weight: 500;
+  font-family: var(--font-montserrat), sans-serif;
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #1a2a6c;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
+  color: var(--navy-600);
 `;
 
-export const Title = styled.h1`
-  font-size: 1.7rem;
+export const Title = styled.h2`
+  margin-top: 10px;
+  font-family: var(--font-montserrat), var(--font-pretendard), sans-serif;
+  font-size: 1.9rem;
   font-weight: 700;
-  color: #1a2a6c;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-`;
-
-export const Divider = styled.div`
-  width: 36px;
-  height: 2.2px;
-  background: #1a2a6c;
-  border-radius: 2px;
+  color: var(--ink);
 
   @media (max-width: 768px) {
-    margin: 0 auto;
+    font-size: 1.5rem;
   }
+`;
+
+export const Subtitle = styled.p`
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+`;
+
+export const Keywords = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 18px;
+`;
+
+export const Keyword = styled.span`
+  padding: 5px 11px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--navy-100);
+  background: var(--navy-50);
+  color: var(--navy-700);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.4;
+`;
+
+export const Divider = styled.hr`
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 22px 0;
 `;
 
 export const Description = styled.p`
-  line-height: 1.6;
-  color: rgb(17, 24, 39, 0.7);
+  font-size: 0.94rem;
+  line-height: 1.85;
+  color: var(--body);
+  text-wrap: pretty;
+
+  & + & {
+    margin-top: 14px;
+  }
 `;
 
 export const ProjectsSection = styled.section`
-  margin-top: 40px;
+  margin-top: 110px;
+  padding-top: 64px;
+  border-top: 1px solid var(--line);
+
+  @media (max-width: 768px) {
+    margin-top: 76px;
+    padding-top: 48px;
+  }
 `;
 
-export const SectionTitle = styled.h1`
+export const SectionTitle = styled(BaseSectionTitle)`
   text-transform: uppercase;
-  color: #111827;
+  color: var(--ink);
   text-align: center;
-  margin-bottom: 40px;
-  letter-spacing: 0.05em;
+`;
+
+export const SectionLead = styled.p`
+  max-width: 560px;
+  margin: 14px auto 40px;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--muted);
+  text-align: center;
 `;
 
 export const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
   }
 `;

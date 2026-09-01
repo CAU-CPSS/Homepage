@@ -1,24 +1,27 @@
+"use client";
+
 import styled from "styled-components";
 import Link from "next/link";
+
+import { SectionTitle as BaseSectionTitle } from "@/components/ui/Common.styles";
 
 export const Section = styled.section`
   position: relative;
   padding: 100px 40px;
+  /* 캔버스가 같은 색을 칠하지만, 그려지기 전 흰 배경이 비치지 않도록 깔아 둔다 */
+  background: var(--navy-950);
 
   @media (max-width: 768px) {
     padding: 80px 25px;
   }
 `;
 
-export const SectionTitle = styled.h1<{ $active?: boolean }>`
+export const SectionTitle = styled(BaseSectionTitle)`
   position: relative;
   z-index: 1;
   text-align: center;
-  letter-spacing: 0.15em;
   color: #ffffff;
   margin-bottom: 50px;
-  transition: transform 0.6s ease;
-  transform: scale(${({ $active }) => ($active ? 1.12 : 1)});
 `;
 
 export const SectionDescriptionUl = styled.ul`
@@ -67,7 +70,7 @@ export const CardGrid = styled.div`
   }
 `;
 
-export const Card = styled(Link)<{ image?: string }>`
+export const Card = styled(Link)<{ $image?: string }>`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -81,7 +84,7 @@ export const Card = styled(Link)<{ image?: string }>`
       rgba(8, 16, 42, 0.4) 0%,
       rgba(4, 10, 28, 0.6) 100%
     ),
-    url(${({ image }) => image || ""});
+    url(${({ $image }) => $image || ""});
   background-size: cover;
   background-position: center;
 
