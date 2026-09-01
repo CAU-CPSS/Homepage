@@ -145,8 +145,12 @@
                 "ko": "",
                 "en": ""
             },
-            "interests": [],
-            "photo": null
+            "interests": [
+                "Trustworthy LLM & Agent Security",
+                "SLM · On-Device AI Security",
+                "Physical AI & CPS Security"
+            ],
+            "photo": "ur_mhk.jpg"
         }
     ],
     "admin": [

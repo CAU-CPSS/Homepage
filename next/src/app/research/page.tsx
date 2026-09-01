@@ -63,7 +63,7 @@ export default function ResearchPage() {
               refs.current[i] = el;
             }}
           >
-            <S.ImageWrapper $reverse={i % 2 === 1}>
+            <S.ImageWrapper>
               <S.Image src={area.image} alt={area.title} />
             </S.ImageWrapper>
 
