@@ -5,7 +5,6 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import * as S from "./Project.styles";
 import ProjectCard from "./ProjectCard";
-import ProjectBackground from "./ProjectBackground";
 import { projects } from "@/content/data";
 import { useT } from "@/lib/i18n";
 
@@ -41,8 +40,6 @@ export default function Project() {
 
   return (
     <S.Section id="projects">
-      <ProjectBackground />
-
       <S.Head>
         <S.Title>RESEARCH PROJECTS</S.Title>
         <S.Lead>{t(LEAD)}</S.Lead>

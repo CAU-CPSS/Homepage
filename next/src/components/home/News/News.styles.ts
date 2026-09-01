@@ -5,14 +5,9 @@ import Link from "next/link";
 
 import { SectionTitle } from "@/components/ui/Common.styles";
 
-/**
- * 밝은 Projects 섹션과 어두운 푸터 사이에 놓이는 섹션.
- * 아래로 갈수록 푸터 색(--navy-950)에 맞춰져 경계 없이 이어진다.
- */
 export const Section = styled.section`
   position: relative;
   padding: 100px 28px;
-  background: linear-gradient(to bottom, var(--navy-900) 0%, var(--navy-950) 100%);
 
   @media (max-width: 768px) {
     padding: 76px 20px;
@@ -96,23 +91,15 @@ export const ItemTitle = styled.p`
 
 export const ViewAll = styled(Link)`
   font-family: var(--font-montserrat), sans-serif;
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 13px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: var(--r-full);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease),
-    background 0.2s var(--ease);
+  transition: color 0.2s var(--ease);
 
   &:hover {
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
   }
 `;
 

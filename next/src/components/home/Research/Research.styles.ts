@@ -8,8 +8,6 @@ import { SectionTitle as BaseSectionTitle } from "@/components/ui/Common.styles"
 export const Section = styled.section`
   position: relative;
   padding: 100px 40px;
-  /* 캔버스가 같은 색을 칠하지만, 그려지기 전 흰 배경이 비치지 않도록 깔아 둔다 */
-  background: var(--navy-950);
 
   @media (max-width: 768px) {
     padding: 80px 25px;

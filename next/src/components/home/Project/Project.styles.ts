@@ -7,7 +7,6 @@ import { SectionTitle } from "@/components/ui/Common.styles";
 export const Section = styled.section`
   position: relative;
   padding: 100px 0;
-  background: #fbfbfb;
   overflow: hidden;
 
   @media (max-width: 768px) {
@@ -24,7 +23,7 @@ export const Head = styled.div`
 `;
 
 export const Title = styled(SectionTitle)`
-  color: var(--ink);
+  color: #ffffff;
 `;
 
 export const Lead = styled.p`
@@ -32,7 +31,7 @@ export const Lead = styled.p`
   margin: 16px auto 0;
   font-size: 0.95rem;
   line-height: 1.75;
-  color: var(--muted);
+  color: var(--on-dark-muted);
 `;
 
 export const SliderRow = styled.div`
@@ -56,18 +55,16 @@ export const ArrowBtn = styled.button`
   width: 40px;
   height: 40px;
   border-radius: var(--r-full);
-  border: 1px solid var(--line);
-  background: #ffffff;
-  color: var(--muted);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease),
-    box-shadow 0.2s var(--ease);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
 
   &:hover {
-    color: var(--navy-700);
-    border-color: var(--line-strong);
-    box-shadow: var(--shadow-sm);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.45);
   }
 
   @media (max-width: 640px) {
@@ -108,6 +105,7 @@ export const Dot = styled.button<{ $active: boolean }>`
   border: none;
   padding: 0;
   cursor: pointer;
-  background-color: ${({ $active }) => ($active ? "var(--navy-700)" : "var(--line-strong)")};
+  background-color: ${({ $active }) =>
+    $active ? "#ffffff" : "rgba(255, 255, 255, 0.28)"};
   transition: width 0.3s var(--ease), background-color 0.3s var(--ease);
 `;

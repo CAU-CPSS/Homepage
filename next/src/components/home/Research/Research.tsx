@@ -1,7 +1,6 @@
 "use client";
 
 import * as S from "./Research.styles";
-import ResearchBackground from "./ResearchBackground";
 import { researchAreas } from "@/content/data";
 import { ui } from "@/content/site";
 import { useT } from "@/lib/i18n";
@@ -28,7 +27,6 @@ export default function Research() {
 
   return (
     <S.Section id="research">
-      <ResearchBackground />
       <S.SectionTitle>RESEARCH</S.SectionTitle>
 
       <S.SectionDescriptionUl>

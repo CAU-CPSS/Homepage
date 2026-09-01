@@ -32,7 +32,10 @@ export default function ResearchBackground() {
     if (!ctx) return;
 
     const isMobile = window.innerWidth < 768;
-    const PARTICLE_COUNT = isMobile ? 60 : 110;
+    /* 기존 밀도(데스크톱 1920x900 에 110개)를 면적 기준으로 환산 */
+    const DENSITY = isMobile ? 1.9e-4 : 6.4e-5;
+    const particleCount = () =>
+      Math.max(60, Math.min(320, Math.round(W * H * DENSITY)));
 
     let W = 0;
     let H = 0;
@@ -50,7 +53,7 @@ export default function ResearchBackground() {
     };
 
     const initParticles = () => {
-      particles = Array.from({ length: PARTICLE_COUNT }, () => {
+      particles = Array.from({ length: particleCount() }, () => {
         const speed = 0.18 + Math.random() * 0.28;
         const angle = Math.random() * Math.PI * 2;
         const vx = Math.cos(angle) * speed;
@@ -85,12 +88,16 @@ export default function ResearchBackground() {
       mouseX = e.touches[0].clientX - rect.left;
       mouseY = e.touches[0].clientY - rect.top;
     };
-    canvas.addEventListener("mousemove", onMouseMove);
-    canvas.addEventListener("mouseleave", onMouseLeave);
-    canvas.addEventListener("touchmove", onTouchMove, { passive: true });
+    window.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
 
     const onResize = () => {
       resize();
+      if (particles.length !== particleCount()) {
+        initParticles();
+        return;
+      }
       particles.forEach((p) => {
         p.x = Math.min(p.x, W);
         p.y = Math.min(p.y, H);
@@ -184,9 +191,9 @@ export default function ResearchBackground() {
 
     return () => {
       cancelAnimationFrame(raf);
-      canvas.removeEventListener("mousemove", onMouseMove);
-      canvas.removeEventListener("mouseleave", onMouseLeave);
-      canvas.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("mouseleave", onMouseLeave);
+      window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("resize", onResize);
     };
   }, []);
