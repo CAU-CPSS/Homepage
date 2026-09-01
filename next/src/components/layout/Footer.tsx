@@ -26,11 +26,6 @@ const Footer = () => {
               <br />
               TEL. {site.tel}
             </S.Info>
-            {site.emails.map((email) => (
-              <S.MailLink key={email} href={`mailto:${email}`}>
-                {email}
-              </S.MailLink>
-            ))}
           </div>
         </S.FooterGrid>
 

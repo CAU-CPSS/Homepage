@@ -56,17 +56,6 @@ export const Info = styled.p`
   color: var(--on-dark-muted);
 `;
 
-export const MailLink = styled.a`
-  display: block;
-  font-size: 0.85rem;
-  line-height: 1.8;
-  color: var(--on-dark-muted);
-  text-decoration: none;
-
-  &:hover {
-    color: var(--accent-bright);
-  }
-`;
 
 
 

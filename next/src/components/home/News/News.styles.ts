@@ -39,13 +39,12 @@ export const Item = styled.li`
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 `;
 
-export const Row = styled(Link)`
+export const Row = styled.div`
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
   gap: 0 20px;
   align-items: baseline;
   padding: 18px 2px;
-  text-decoration: none;
 
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
@@ -67,14 +66,6 @@ export const ItemTitle = styled.p`
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.88);
-  transition: color 0.2s var(--ease);
-
-  ${Row}:hover & {
-    color: #ffffff;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
-  }
 `;
 
 export const Footer = styled.div`

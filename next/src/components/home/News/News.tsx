@@ -24,7 +24,7 @@ export default function News() {
             <S.List>
               {items.map((item) => (
                 <S.Item key={item.id}>
-                  <S.Row href={`/news#${item.id}`}>
+                  <S.Row>
                     <S.Date>{item.date}</S.Date>
                     <S.ItemTitle>{t(item.title)}</S.ItemTitle>
                   </S.Row>
