@@ -22,7 +22,8 @@ export interface ResearchArea {
   image: string;
   subtitle: Localized;
   summary: Localized;
-  keywords: Localized<string[]>;
+  /** 학술 용어라 번역하지 않는다 — 한/영 모두 영문으로 노출 */
+  keywords: string[];
   description: Localized;
 }
 

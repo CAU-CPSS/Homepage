@@ -12,22 +12,13 @@
       "ko": "물리 세계와 맞물려 동작하는 시스템이 언제나 제시간에, 그리고 안전하게 동작하도록 만드는 기반 기술을 연구합니다.",
       "en": "We build the foundations that keep systems interacting with the physical world both timely and safe."
     },
-    "keywords": {
-      "ko": [
-        "실시간 스케줄링",
-        "혼합 중요도 시스템",
-        "임베디드 시스템",
-        "자율주행 플랫폼",
-        "운영체제 보안"
-      ],
-      "en": [
-        "Real-Time Scheduling",
-        "Mixed-Criticality Systems",
-        "Embedded Systems",
-        "Autonomous Driving Platform",
-        "OS Security"
-      ]
-    },
+    "keywords": [
+      "Real-Time Scheduling",
+      "Mixed-Criticality Systems",
+      "Embedded Systems",
+      "Autonomous Driving Platform",
+      "OS Security"
+    ],
     "description": {
       "ko": "사이버물리시스템(CPS)은 물리 환경을 감지하고 제어하는 차세대 컴퓨터 시스템으로, 자율주행 차량과 무인 항공기, 지능형 수술 로봇이 대표적인 예입니다. CPS는 시간에 민감한 물리 개체와 상호작용하기 때문에 실시간성이 핵심입니다. 실시간 시스템의 성능은 처리량이나 평균 응답 속도가 아니라 마감시한(deadline) 준수 여부로 평가되며, 시간 제약에 대한 예측 가능성이 가장 중요한 속성입니다.\n\n또한 항공·자동차와 같은 안전 필수 시스템은 중요도가 서로 다른 여러 기능이 하나의 플랫폼에 통합되는 방향으로 발전하고 있습니다. 예를 들어 무인 항공기는 비행 관련 고중요도 기능과 임무 관련 저중요도 기능으로 구성됩니다. 본 연구실은 이러한 혼합 중요도(Mixed-Criticality) 시스템에서 고중요도 기능의 시간 보장을 유지하면서도 전체 자원 활용률을 높이는 스케줄링 기법을 연구하며, MC-Fluid·MC-ADAPT·MC-FLEX 등의 성과로 이어지고 있습니다.",
       "en": "Cyber-physical systems (CPS) are next-generation computer systems that sense and actuate the physical environment. Autonomous vehicles, unmanned aerial vehicles, and intelligent surgical robots are representative examples. Because CPS interact with physical entities that are sensitive to time, real-time behavior is central. The performance of a real-time system is judged by whether it meets its deadlines rather than by throughput or average-case latency, and predictability under timing constraints is its key property.\n\nSafety-critical systems such as avionics and automotive platforms increasingly integrate functionalities of differing criticality onto a single shared platform. A UAV, for instance, combines flight-related (high-criticality) and mission-related (low-criticality) functionality. We study scheduling techniques for such mixed-criticality (MC) systems that preserve timing guarantees for high-criticality work while raising overall resource utilization, a line of work that has produced MC-Fluid, MC-ADAPT, and MC-FLEX."
@@ -46,22 +37,13 @@
       "ko": "인식·판단·제어가 하나의 루프로 묶인 AI를 자원과 시간이 제한된 실제 디바이스 위에서 동작시키는 방법을 연구합니다.",
       "en": "We study how to run perception-decision-control AI loops on real devices under tight resource and timing budgets."
     },
-    "keywords": {
-      "ko": [
-        "온디바이스 AI",
-        "실시간 추론",
-        "임베디드 머신러닝",
-        "디지털 트윈",
-        "자율주행·모빌리티"
-      ],
-      "en": [
-        "On-Device AI",
-        "Real-Time Inference",
-        "Embedded Machine Learning",
-        "Digital Twin",
-        "Autonomous Mobility"
-      ]
-    },
+    "keywords": [
+      "On-Device AI",
+      "Real-Time Inference",
+      "Embedded Machine Learning",
+      "Digital Twin",
+      "Autonomous Mobility"
+    ],
     "description": {
       "ko": "Physical AI는 데이터센터가 아니라 차량·로봇·센서와 같은 물리 장치 위에서 직접 동작하며, 인식한 결과로 물리 환경을 바꾸는 AI를 뜻합니다. 클라우드 기반 AI와 달리 연산 자원과 전력, 그리고 무엇보다 응답 시간이 엄격하게 제한되며, 추론이 늦으면 결과가 아무리 정확해도 쓸모가 없습니다.\n\n본 연구실은 AI와 디바이스의 융합을 시스템 관점에서 접근합니다. 제한된 임베디드 환경에서 정확도와 실시간성을 함께 만족시키는 적응형 추론 구조, 인식 파이프라인의 지연 시간 예측과 보장, 커넥티드카·차량 디지털 트윈을 위한 효율적인 데이터 동기화 모델 등을 다루며, 학문적 연구를 넘어 실제 산업에 적용할 수 있는 시스템 구현을 목표로 합니다.",
       "en": "Physical AI runs directly on physical devices such as vehicles, robots, and sensors rather than in a data center, and changes the physical environment based on what it perceives. Unlike cloud-hosted AI, it operates under strict limits on compute, power, and above all response time: an inference that arrives late is useless no matter how accurate it is.\n\nWe approach the convergence of AI and devices from a systems perspective. Our work covers adaptive inference architectures that meet accuracy and real-time requirements simultaneously on constrained embedded platforms, latency prediction and guarantees for perception pipelines, and efficient data synchronization models for connected cars and vehicle digital twins. The goal is not only academic results but systems that can be deployed in industry."
@@ -80,22 +62,13 @@
       "ko": "데이터를 모으지 않고도 학습할 수 있는 방법, 그리고 공격에 견디는 모델을 만드는 방법을 함께 연구합니다.",
       "en": "We study how to learn without collecting data, and how to make models that hold up under attack."
     },
-    "keywords": {
-      "ko": [
-        "연합학습",
-        "프라이버시 보호 머신러닝",
-        "적대적 강건성",
-        "학습 불가 데이터",
-        "빅데이터 보안"
-      ],
-      "en": [
-        "Federated Learning",
-        "Privacy-Preserving ML",
-        "Adversarial Robustness",
-        "Unlearnable Examples",
-        "Big-Data Security"
-      ]
-    },
+    "keywords": [
+      "Federated Learning",
+      "Privacy-Preserving ML",
+      "Adversarial Robustness",
+      "Unlearnable Examples",
+      "Big-Data Security"
+    ],
     "description": {
       "ko": "연합학습(Federated Learning)은 데이터를 서버로 모으지 않고 분산된 클라이언트에서 학습한 모델만 수집하여 프라이버시를 보장하는 학습 방식입니다. 다만 클라이언트의 통신 대역폭이 제한적이고 네트워크 환경이 불안정한 경우가 많아, 대량의 가중치를 주고받는 기존 집계 알고리즘은 정확도가 크게 떨어집니다. 본 연구실은 통신 비용을 줄이면서도 전역 모델의 정확도를 유지하는 집계·최적화 기법을 연구하며, FedPSO와 ELFS 등의 결과를 발표했습니다.\n\n또한 학습된 모델 자체의 보안도 함께 다룹니다. 객체 탐지 모델에 대한 적대적 패치 공격 방어(OD-SHIELD, RAPID), 의료 영상에 대한 학습 불가 데이터(unlearnable examples) 벤치마크 등 모델과 데이터 양쪽을 지키는 방법을 연구하고 있습니다.",
       "en": "Federated learning keeps data private by collecting only locally trained models on a server instead of the data itself. In practice, clients have limited communication bandwidth and often operate over unstable networks, so conventional aggregation algorithms that exchange large weight vectors lose substantial accuracy. We study aggregation and optimization techniques that cut communication cost while preserving global model accuracy, work that has produced FedPSO and ELFS.\n\nWe also work on the security of the trained model itself: defenses against adversarial patch attacks on object detectors (OD-SHIELD, RAPID) and benchmarks of unlearnable examples for medical imaging, protecting both the model and the data it learns from."

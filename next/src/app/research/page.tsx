@@ -73,7 +73,7 @@ export default function ResearchPage() {
               <S.Subtitle>{t(area.subtitle)}</S.Subtitle>
 
               <S.Keywords>
-                {t(area.keywords).map((keyword) => (
+                {area.keywords.map((keyword) => (
                   <S.Keyword key={keyword}>{keyword}</S.Keyword>
                 ))}
               </S.Keywords>
