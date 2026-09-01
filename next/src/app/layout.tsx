@@ -1,15 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
-import Footer from "@/components/layout/Footer";
 import localfont from "next/font/local";
+import { Montserrat } from "next/font/google";
+
+import "./globals.css";
 import Nav from "@/components/layout/Nav";
-import { Montserrat } from 'next/font/google';
-import StyledComponentsRegistry from "./StyledComponentsRegistry";
+import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import StyledComponentsRegistry from "./StyledComponentsRegistry";
+import { LanguageProvider } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "CAU CPSS Lab @ CAU",
-  description: "중앙대학교 사이버물리시스템 보안 연구실",
+  title: "CAU CPSS Lab",
+  description:
+    "중앙대학교 사이버물리시스템 보안 연구실 — CPS & Safety, Physical AI, AI Security & Privacy",
 };
 
 export const viewport: Viewport = {
@@ -21,13 +24,13 @@ const pretendard = localfont({
   src: "./fonts/PretendardVariable.woff2",
   display: "optional",
   variable: "--font-pretendard",
-})
+});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "optional",
   variable: "--font-montserrat",
-})
+});
 
 export default function RootLayout({
   children,
@@ -38,12 +41,12 @@ export default function RootLayout({
     <html lang="ko">
       <body className={`${pretendard.variable} ${montserrat.variable}`}>
         <StyledComponentsRegistry>
-          <ScrollToTop />
-          <main>
+          <LanguageProvider>
+            <ScrollToTop />
             <Nav />
-            {children}
+            <main>{children}</main>
             <Footer />
-          </main>
+          </LanguageProvider>
         </StyledComponentsRegistry>
       </body>
     </html>
