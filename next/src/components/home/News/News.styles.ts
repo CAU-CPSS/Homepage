@@ -30,6 +30,13 @@ export const Title = styled(SectionTitle)`
   margin-bottom: 44px;
 `;
 
+/* 목록 오른쪽 위에 붙는 '전체 보기' 줄 */
+export const ListHead = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+`;
+
 export const List = styled.ul`
   list-style: none;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -68,10 +75,6 @@ export const ItemTitle = styled.p`
   color: rgba(255, 255, 255, 0.88);
 `;
 
-export const Footer = styled.div`
-  margin-top: 32px;
-  text-align: center;
-`;
 
 export const ViewAll = styled(Link)`
   font-family: var(--font-montserrat), sans-serif;

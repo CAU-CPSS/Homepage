@@ -21,6 +21,10 @@ export default function News() {
           <S.Empty>{t(ui.preparing)}</S.Empty>
         ) : (
           <>
+            <S.ListHead>
+              <S.ViewAll href="/news">{t(ui.viewAll)}</S.ViewAll>
+            </S.ListHead>
+
             <S.List>
               {items.map((item) => (
                 <S.Item key={item.id}>
@@ -31,10 +35,6 @@ export default function News() {
                 </S.Item>
               ))}
             </S.List>
-
-            <S.Footer>
-              <S.ViewAll href="/news">{t(ui.viewAll)}</S.ViewAll>
-            </S.Footer>
           </>
         )}
       </S.Inner>
