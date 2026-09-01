@@ -10,7 +10,12 @@ export const Wrapper = styled.header`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: calc(var(--nav-h) + 88px) 28px 88px;
+  /*
+    위아래 패딩을 같게 둬야 제목+설명 묶음이 배경 이미지의 세로 중앙에 온다.
+    네비게이션은 이 영역 위에 투명하게 얹히므로(--nav-h 만큼) 상단에 그 높이를
+    더하면, 눈에 보이는 띠 기준으로는 내용이 아래로 밀려 보인다.
+  */
+  padding: 128px 28px;
   background-image: url("/images/header-bg.png");
   background-size: cover;
   background-position: center;
@@ -28,7 +33,7 @@ export const Wrapper = styled.header`
   }
 
   @media (max-width: 768px) {
-    padding: calc(var(--nav-h) + 56px) 20px 56px;
+    padding: 96px 20px;
   }
 `;
 
