@@ -1,0 +1,456 @@
+{
+  "name": {
+    "ko": "이재우",
+    "en": "Jaewoo Lee"
+  },
+  "nameSub": {
+    "ko": "Jaewoo Lee",
+    "en": "이재우"
+  },
+  "position": {
+    "ko": "부교수",
+    "en": "Associate Professor"
+  },
+  "affiliation": {
+    "ko": "중앙대학교 산업보안학과 · 대학원 융합보안학과 · 특수대학원 보안대학원(모빌리티 보안 트랙)",
+    "en": "Dept. of Industrial Security, Graduate School of Security Convergence, and Graduate School of Security (Mobility Security Track), Chung-Ang University"
+  },
+  "photo": "professor.jpg",
+  "emails": [
+    "jaewoo.cau@gmail.com",
+    "jaewoolee@cau.ac.kr"
+  ],
+  "links": [
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.co.kr/citations?user=lShsfKEAAAAJ"
+    },
+    {
+      "label": "ORCID",
+      "href": "https://orcid.org/0000-0001-5887-2184"
+    }
+  ],
+  "intro": {
+    "ko": "운영체제 보안과 네트워크 보안을 기반으로, 블록체인 보안·빅데이터 보안·모빌리티 보안·사이버물리시스템의 안전 및 보안을 연구합니다.",
+    "en": "Working from a foundation in operating-system and network security, with research spanning blockchain security, big-data security, mobility security, and the safety and security of cyber-physical systems."
+  },
+  "interests": {
+    "ko": [
+      "실시간 사이버물리시스템 보안",
+      "머신러닝을 위한 임베디드 시스템",
+      "운영체제 보안",
+      "네트워크 보안",
+      "블록체인 보안",
+      "빅데이터 보안",
+      "모빌리티 보안"
+    ],
+    "en": [
+      "Real-Time Cyber-Physical System Security",
+      "Embedded Systems for Machine Learning",
+      "OS Security",
+      "Network Security",
+      "Blockchain Security",
+      "Big-Data Security",
+      "Mobility Security"
+    ]
+  },
+  "sections": [
+    {
+      "id": "appointments",
+      "label": {
+        "ko": "경력",
+        "en": "Appointments"
+      },
+      "layout": "rows",
+      "entries": [
+        {
+          "period": {
+            "ko": "2018 – 현재",
+            "en": "2018 – Present"
+          },
+          "text": {
+            "ko": "중앙대학교 산업보안학과 부교수",
+            "en": "Associate Professor, Dept. of Industrial Security, Chung-Ang University"
+          },
+          "note": {
+            "ko": "대학원 융합보안학과 · 특수대학원 보안대학원 모빌리티 보안 트랙 겸임",
+            "en": "Also with the Graduate School of Security Convergence and the Mobility Security Track"
+          }
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "label": {
+        "ko": "학력",
+        "en": "Education"
+      },
+      "layout": "rows",
+      "entries": [
+        {
+          "period": "2017",
+          "text": {
+            "ko": "공학박사, University of Pennsylvania",
+            "en": "Ph.D., University of Pennsylvania"
+          },
+          "note": {
+            "ko": "컴퓨터정보과학 (Computer and Information Science)",
+            "en": "Computer and Information Science"
+          }
+        },
+        {
+          "period": "2008",
+          "text": {
+            "ko": "공학석사, 서울대학교",
+            "en": "M.S., Seoul National University"
+          },
+          "note": {
+            "ko": "컴퓨터공학",
+            "en": "Computer Engineering"
+          }
+        },
+        {
+          "period": "2006",
+          "text": {
+            "ko": "공학사, 서울대학교",
+            "en": "B.S., Seoul National University"
+          },
+          "note": {
+            "ko": "컴퓨터공학",
+            "en": "Computer Engineering"
+          }
+        }
+      ]
+    },
+    {
+      "id": "service-international",
+      "label": {
+        "ko": "국제 학회 활동",
+        "en": "International Professional Service"
+      },
+      "layout": "rows",
+      "entries": [
+        {
+          "text": {
+            "ko": "학술대회 조직위원",
+            "en": "Conference Organizer"
+          },
+          "items": {
+            "ko": [
+              "IEEE RTCSA 2024, Local Chair",
+              "IEEE RTCSA 2020, Student Session Chair",
+              "IEEE SOCA 2019, Publication Chair"
+            ],
+            "en": [
+              "IEEE RTCSA 2024, Local Chair",
+              "IEEE RTCSA 2020, Student Session Chair",
+              "IEEE SOCA 2019, Publication Chair"
+            ]
+          }
+        },
+        {
+          "text": {
+            "ko": "프로그램 위원 (TPC)",
+            "en": "Technical Program Committee Member"
+          },
+          "items": {
+            "ko": [
+              "ISORC (2021)",
+              "Workshop on Mixed-Criticality Systems (WMC), RTSS 병설 (2019, 2017)",
+              "SOCA (2019), NAS (2019), RTCSA (2018)"
+            ],
+            "en": [
+              "ISORC (2021)",
+              "Workshop on Mixed-Criticality Systems (WMC), co-located with RTSS (2019, 2017)",
+              "SOCA (2019), NAS (2019), RTCSA (2018)"
+            ]
+          }
+        },
+        {
+          "text": {
+            "ko": "저널 리뷰어",
+            "en": "Journal Reviewer"
+          },
+          "items": {
+            "ko": [
+              "IEEE Transactions on Computers (2020)",
+              "IEEE Transactions on Computer-Aided Design (2020)",
+              "Wiley CCPE (2020), IEEE Access (2019, 2020)",
+              "Journal of Systems and Software (2016, 2017)",
+              "ACM Computing Surveys (2016)",
+              "Real-Time Systems (2013–2016)",
+              "Journal of Systems Architecture (2013), LITES (2015), JCSE (2014)",
+              "Embedded Systems Letters (2013), IEEE SMC (2011)"
+            ],
+            "en": [
+              "IEEE Transactions on Computers (2020)",
+              "IEEE Transactions on Computer-Aided Design (2020)",
+              "Wiley CCPE (2020), IEEE Access (2019, 2020)",
+              "Journal of Systems and Software (2016, 2017)",
+              "ACM Computing Surveys (2016)",
+              "Real-Time Systems (2013–2016)",
+              "Journal of Systems Architecture (2013), LITES (2015), JCSE (2014)",
+              "Embedded Systems Letters (2013), IEEE SMC (2011)"
+            ]
+          }
+        },
+        {
+          "text": {
+            "ko": "학회 회원",
+            "en": "Professional Membership"
+          },
+          "items": {
+            "ko": [
+              "IEEE (2014~)",
+              "ACM (2019~)"
+            ],
+            "en": [
+              "IEEE (since 2014)",
+              "ACM (since 2019)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "service-domestic",
+      "label": {
+        "ko": "국내 학회 활동",
+        "en": "Domestic Professional Service"
+      },
+      "layout": "rows",
+      "entries": [
+        {
+          "text": {
+            "ko": "한국정보과학회",
+            "en": "Korean Institute of Information Scientists and Engineers (KIISE)"
+          },
+          "items": {
+            "ko": [
+              "종신회원 · 컴퓨터시스템소사이어티 이사 · 자율주행연구회",
+              "리눅스 커널 캠프 2022 공동 조직위원장, 2018 조직위원",
+              "컴퓨터시스템소사이어티 동계학술대회 조직위원 (2019–2021)",
+              "제32대 학회지 편집위원 (2022)"
+            ],
+            "en": [
+              "Lifetime member; Director, Computer Systems Society; Autonomous Driving Research Group",
+              "Co-Chair, Linux Kernel Camp 2022; Organizing Committee, 2018",
+              "Organizing Committee, Computer Systems Society Winter Conference (2019–2021)",
+              "Editorial Board, KIISE Magazine, 32nd term (2022)"
+            ]
+          }
+        },
+        {
+          "text": {
+            "ko": "한국정보보호학회",
+            "en": "Korea Institute of Information Security & Cryptology"
+          },
+          "items": {
+            "ko": [
+              "종신회원 · 정보보호교육연구회"
+            ],
+            "en": [
+              "Lifetime member; Information Security Education Research Group"
+            ]
+          }
+        },
+        {
+          "text": {
+            "ko": "그 외",
+            "en": "Other"
+          },
+          "items": {
+            "ko": [
+              "한국전자거래학회 정회원",
+              "Autoware Workshop 2019 조직위원",
+              "서울대학교 총동창회 제27대 이사 (2018~)",
+              "중앙대학교 인공지능위원회 위원 (2019–2021)"
+            ],
+            "en": [
+              "Member, Korea Society of Electronic Commerce",
+              "Organizing Committee, Autoware Workshop 2019",
+              "Director, SNU Alumni Association, 27th term (2018–)",
+              "Member, Chung-Ang University AI Committee (2019–2021)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "awards",
+      "label": {
+        "ko": "수상",
+        "en": "Awards & Honors"
+      },
+      "layout": "grid",
+      "entries": [
+        {
+          "period": "2022",
+          "text": {
+            "ko": "중앙대학교 세미나 우수교원 선정",
+            "en": "Outstanding Seminar Faculty, Chung-Ang University"
+          }
+        },
+        {
+          "period": "2018",
+          "text": {
+            "ko": "한국전자거래학회 춘계학술대회 우수논문상",
+            "en": "Best Paper Award, Korea Society of Electronic Commerce Spring Conference"
+          }
+        },
+        {
+          "period": "2014",
+          "text": {
+            "ko": "IEEE RTSS 2014 최우수논문상 준우승",
+            "en": "Best Paper Award Runner-up, IEEE RTSS 2014"
+          }
+        },
+        {
+          "period": "2008",
+          "text": {
+            "ko": "박사과정 펠로우십 (5년 이상), University of Pennsylvania",
+            "en": "Graduate Ph.D. Fellowship (5+ years), University of Pennsylvania"
+          }
+        },
+        {
+          "period": "2006",
+          "text": {
+            "ko": "대학원 장학금 (1.5년), 서울대학교",
+            "en": "Graduate Scholarship (1.5 years), Seoul National University"
+          }
+        }
+      ]
+    },
+    {
+      "id": "patents",
+      "label": {
+        "ko": "국내 특허",
+        "en": "Patents (Republic of Korea)"
+      },
+      "layout": "rows",
+      "entries": [
+        {
+          "period": "2019",
+          "text": {
+            "ko": "다중 중요도 시스템을 위한 작업별 중요도 모드 전환 방법",
+            "en": "Task-Level Criticality Mode Switch for Mixed-Criticality Systems"
+          },
+          "note": {
+            "ko": "신인식, 좌훈승, 이재우 · 등록번호 10-2031853",
+            "en": "Insik Shin, Hoon Sung Chwa, Jaewoo Lee · Reg. No. 10-2031853"
+          }
+        },
+        {
+          "period": "2019",
+          "text": {
+            "ko": "빠르고 정확한 실행시간 예측을 위한 하이브리드 명령어 집합 시뮬레이션 기술",
+            "en": "Hybrid Instruction-Set Simulation for Fast and Accurate Execution-Time Prediction"
+          },
+          "note": {
+            "ko": "박청운, 신인식, 이길호, 한욱현, 좌훈승, 이재우 · 등록번호 10-2007991",
+            "en": "Chungwoon Park, Insik Shin, Kilho Lee, Wookhyun Han, Hoon Sung Chwa, Jaewoo Lee · Reg. No. 10-2007991"
+          }
+        },
+        {
+          "period": "2017",
+          "text": {
+            "ko": "사이버 물리 시스템을 위한 보안 제약 사항을 포함하는 실시간 스케줄링 장치 및 방법",
+            "en": "Real-Time Scheduling Apparatus and Method with Security Constraints for Cyber-Physical Systems"
+          },
+          "note": {
+            "ko": "백형부, 이용재, 윤현수, 이재우 · 등록번호 10-1733339",
+            "en": "Hyeongboo Baek, Yongjae Lee, Hyunsoo Yoon, Jaewoo Lee · Reg. No. 10-1733339"
+          }
+        }
+      ]
+    },
+    {
+      "id": "outreach",
+      "label": {
+        "ko": "강연 · 기고",
+        "en": "Talks & Outreach"
+      },
+      "layout": "rows",
+      "entries": [
+        {
+          "period": "2021",
+          "text": {
+            "ko": "「자율주행과 미래사회」 주제 강의",
+            "en": "Invited lecture: \"Autonomous Driving and the Future Society\""
+          },
+          "note": {
+            "ko": "동작교육지원청 · 중앙대학교 LINC사업단, 고교학점제 선도지구 진로·진학 프로그램",
+            "en": "Dongjak Office of Education & CAU LINC, High School Credit System Career Program"
+          }
+        },
+        {
+          "period": "2021",
+          "text": {
+            "ko": "Expert Opinion: 「Introduction of Digital Vaccine Passport, Social Discussion should begin」",
+            "en": "Expert Opinion: \"Introduction of Digital Vaccine Passport, Social Discussion should begin\""
+          },
+          "note": {
+            "ko": "중앙헤럴드 제573호",
+            "en": "The Chung-Ang Herald, No. 573"
+          }
+        },
+        {
+          "period": "2020",
+          "text": {
+            "ko": "「DID 분산시스템의 데이터 전송 연구」 주제 발표",
+            "en": "Invited talk: \"Data Transmission in DID Distributed Systems\""
+          },
+          "note": {
+            "ko": "분산원장기술표준포럼, 블록체인 표준 및 응용 국제 컨퍼런스",
+            "en": "Distributed Ledger Technology Standards Forum, International Conference on Blockchain Standards and Applications"
+          }
+        },
+        {
+          "period": "2020",
+          "text": {
+            "ko": "「전기소비자 특성을 반영한 주택용 전력사용 패턴 분석」 주제 발표",
+            "en": "Invited talk: \"Residential Power Usage Pattern Analysis Reflecting Consumer Characteristics\""
+          },
+          "note": {
+            "ko": "대한전자공학회 스마트미터링 연구회 제2차 워크샵",
+            "en": "2nd Smart Metering Research Group Workshop, IEIE"
+          }
+        }
+      ]
+    },
+    {
+      "id": "collaboration",
+      "label": {
+        "ko": "협력 기관",
+        "en": "Collaborating Organizations"
+      },
+      "layout": "grid",
+      "entries": [
+        {
+          "text": {
+            "ko": "NICE신용평가",
+            "en": "NICE Information Service"
+          }
+        },
+        {
+          "text": {
+            "ko": "한국인터넷진흥원 (KISA)",
+            "en": "Korea Internet & Security Agency (KISA)"
+          }
+        },
+        {
+          "text": {
+            "ko": "강원랜드",
+            "en": "Kangwon Land"
+          }
+        },
+        {
+          "text": {
+            "ko": "한국지역정보개발원",
+            "en": "Korea Local Information Research & Development Institute"
+          }
+        }
+      ]
+    }
+  ]
+}
