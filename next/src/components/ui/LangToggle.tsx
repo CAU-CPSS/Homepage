@@ -15,9 +15,13 @@ export default function LangToggle({
   className?: string;
 }) {
   const { lang, setLang } = useLanguage();
+  const activeIndex = LANGS.indexOf(lang);
 
   return (
     <Group role="group" aria-label="Language" $onDark={onDark} className={className}>
+      {/* 선택 표시를 각 버튼에 칠하지 않고, 배경 하나를 옮겨서 미끄러지듯 전환한다 */}
+      <Thumb $index={activeIndex} $onDark={onDark} aria-hidden />
+
       {LANGS.map((code) => (
         <Option
           key={code}
@@ -34,10 +38,13 @@ export default function LangToggle({
   );
 }
 
+const PAD = 2;
+
 const Group = styled.div<{ $onDark: boolean }>`
+  position: relative;
   display: inline-flex;
   align-items: center;
-  padding: 2px;
+  padding: ${PAD}px;
   border-radius: var(--r-full);
   border: 1px solid
     ${({ $onDark }) => ($onDark ? "rgba(255,255,255,0.28)" : "var(--line)")};
@@ -45,28 +52,40 @@ const Group = styled.div<{ $onDark: boolean }>`
   transition: background 0.25s var(--ease), border-color 0.25s var(--ease);
 `;
 
+/** 두 칸 중 한 칸을 덮는 알약. translateX 로 이동한다. */
+const Thumb = styled.span<{ $index: number; $onDark: boolean }>`
+  position: absolute;
+  top: ${PAD}px;
+  bottom: ${PAD}px;
+  left: ${PAD}px;
+  width: calc((100% - ${PAD * 2}px) / ${LANGS.length});
+  border-radius: var(--r-full);
+  background: ${({ $onDark }) => ($onDark ? "#ffffff" : "var(--navy-700)")};
+  transform: translateX(${({ $index }) => $index * 100}%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s var(--ease);
+`;
+
 const Option = styled.button<{ $active: boolean; $onDark: boolean }>`
   font-family: var(--font-montserrat), sans-serif;
+  position: relative;
+  z-index: 1;
+  flex: 1 1 0;
+  min-width: 44px;
   cursor: pointer;
   border: none;
+  background: none;
   border-radius: var(--r-full);
   padding: 5px 10px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1;
-  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+  transition: color 0.25s var(--ease);
 
-  ${({ $active, $onDark }) => {
-    if ($active) {
-      return $onDark
-        ? "background: #ffffff; color: var(--navy-800);"
-        : "background: var(--navy-700); color: #ffffff;";
-    }
-    return $onDark
-      ? "background: transparent; color: rgba(255,255,255,0.72);"
-      : "background: transparent; color: var(--muted);";
-  }}
+  color: ${({ $active, $onDark }) => {
+    if ($active) return $onDark ? "var(--navy-800)" : "#ffffff";
+    return $onDark ? "rgba(255,255,255,0.72)" : "var(--muted)";
+  }};
 
   &:hover {
     color: ${({ $active, $onDark }) =>
