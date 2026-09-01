@@ -367,8 +367,8 @@
         {
           "period": "2019",
           "text": {
-            "ko": "다중 중요도 시스템을 위한 작업별 중요도 모드 전환 방법",
-            "en": "Task-Level Criticality Mode Switch for Mixed-Criticality Systems"
+            "ko": "다중 중요도 시스템 위한 작업별 중요도 모드 전환 방법",
+            "en": "Method of Switching Task-level Criticality-mode for Mixed-Criticality Systems"
           },
           "note": {
             "ko": "신인식, 좌훈승, 이재우 · 등록번호 10-2031853",
@@ -378,19 +378,19 @@
         {
           "period": "2019",
           "text": {
-            "ko": "빠르고 정확한 실행시간 예측을 위한 하이브리드 명령어 집합 시뮬레이션 기술",
-            "en": "Hybrid Instruction-Set Simulation for Fast and Accurate Execution-Time Prediction"
+            "ko": "빠르고 정확한 실행 시간 예측을 위한 하이브리드 명령어 집합 시뮬레이션 방법 및 시스템",
+            "en": "Method and system for fast and accurate cycle estimation through hybrid instruction set simulation"
           },
           "note": {
-            "ko": "박청운, 신인식, 이길호, 한욱현, 좌훈승, 이재우 · 등록번호 10-2007991",
-            "en": "Chungwoon Park, Insik Shin, Kilho Lee, Wookhyun Han, Hoon Sung Chwa, Jaewoo Lee · Reg. No. 10-2007991"
+            "ko": "박청운, 신인식, 이길호, 한욱현, 좌훈승, 이재우 · 등록번호 10-2007881",
+            "en": "Chungwoon Park, Insik Shin, Kilho Lee, Wookhyun Han, Hoon Sung Chwa, Jaewoo Lee · Reg. No. 10-2007881"
           }
         },
         {
           "period": "2017",
           "text": {
             "ko": "사이버 물리 시스템을 위한 보안 제약 사항을 포함하는 실시간 스케줄링 장치 및 방법",
-            "en": "Real-Time Scheduling Apparatus and Method with Security Constraints for Cyber-Physical Systems"
+            "en": "Real-time scheduling apparatus and method for cyber physical systems incorporating security constraint"
           },
           "note": {
             "ko": "백형부, 이용재, 윤현수, 이재우 · 등록번호 10-1733339",
