@@ -1,0 +1,80 @@
+<!doctype html>
+<!--
+  서버(PM2/Next)가 내려갔을 때 nginx 가 직접 내보내는 화면.
+  이 시점에는 Next 가 응답하지 못하므로 외부 파일을 일절 참조하지 않는다.
+-->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>서버 점검중 · CPSS Lab</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+        box-sizing: border-box;
+        background: #1a1a1a;
+        color: #fff;
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Noto Sans KR", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .mark {
+        margin: 0 0 26px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        color: rgba(255, 255, 255, 0.35);
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+      }
+      .desc {
+        margin: 14px 0 0;
+        font-size: 0.92rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .retry {
+        margin-top: 32px;
+        padding: 10px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 999px;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.75);
+        font: inherit;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+      }
+      .retry:hover {
+        border-color: rgba(255, 255, 255, 0.55);
+        color: #fff;
+      }
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="mark">CPSS Lab</p>
+    <h1>서버 점검중입니다.</h1>
+    <p class="desc">The site is temporarily unavailable. Please try again later.</p>
+    <button class="retry" type="button" onclick="location.reload()">다시 시도</button>
+  </body>
+</html>
