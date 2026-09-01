@@ -29,17 +29,17 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 5.5rem;
+  font-size: 6.2rem;
   font-weight: 650;
   letter-spacing: -0.03em;
   color: #ffffff;
 
   @media (max-width: 1024px) {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 `;
 
@@ -54,17 +54,6 @@ export const Description = styled.p`
   }
 `;
 
-export const Tagline = styled.p`
-  margin-top: 22px;
-  max-width: 620px;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.56);
-
-  @media (max-width: 768px) {
-    font-size: 0.875rem;
-  }
-`;
 
 const bob = keyframes`
   0%, 100% { transform: translate(-50%, 0); opacity: 0.55; }

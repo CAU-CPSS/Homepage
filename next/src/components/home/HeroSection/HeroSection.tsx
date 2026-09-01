@@ -28,8 +28,6 @@ const HeroSection = () => {
             startDelay={500}
           />
         </S.Description>
-
-        <S.Tagline>{t(site.tagline)}</S.Tagline>
       </S.Content>
 
       <S.Scroll aria-hidden>
