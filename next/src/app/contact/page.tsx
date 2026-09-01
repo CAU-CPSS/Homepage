@@ -19,7 +19,6 @@ const COPY = {
   },
 
   gradTitle: { ko: "대학원생 모집", en: "Graduate Students" },
-  gradBadge: { ko: "모집 중", en: "Now recruiting" },
   gradDesc: {
     ko: "중앙대학교 사이버물리시스템 보안 연구실에서 연구자로 성장할 대학원생을 모집합니다.",
     en: "We are looking for graduate students to grow as researchers at the CPSS Lab, Chung-Ang University.",
@@ -43,7 +42,6 @@ const COPY = {
   },
 
   ugTitle: { ko: "학부연구생 모집", en: "Undergraduate Researchers" },
-  ugBadge: { ko: "2026-1학기 모집 예정", en: "Opening for Spring 2026" },
   ugDesc: {
     ko: "중앙대학교 사이버물리시스템 보안 연구실에서 연구활동을 경험할 학부생을 모집합니다.",
     en: "We welcome undergraduates who want hands-on research experience at the CPSS Lab.",
@@ -131,10 +129,7 @@ export default function ContactPage() {
 
         <S.Sections>
           <S.Section>
-            <S.SectionTop>
-              <S.SectionTitle>{t(COPY.gradTitle)}</S.SectionTitle>
-              <S.Badge>{t(COPY.gradBadge)}</S.Badge>
-            </S.SectionTop>
+            <S.SectionTitle>{t(COPY.gradTitle)}</S.SectionTitle>
             <S.Desc>{t(COPY.gradDesc)}</S.Desc>
 
             <S.InfoGrid>
@@ -155,10 +150,7 @@ export default function ContactPage() {
           </S.Section>
 
           <S.Section>
-            <S.SectionTop>
-              <S.SectionTitle>{t(COPY.ugTitle)}</S.SectionTitle>
-              <S.Badge>{t(COPY.ugBadge)}</S.Badge>
-            </S.SectionTop>
+            <S.SectionTitle>{t(COPY.ugTitle)}</S.SectionTitle>
             <S.Desc>{t(COPY.ugDesc)}</S.Desc>
 
             <S.InfoGrid>

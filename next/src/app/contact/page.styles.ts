@@ -128,30 +128,15 @@ export const Section = styled.section`
   box-shadow: var(--shadow-sm);
 `;
 
-export const SectionTop = styled.div`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 10px;
-`;
 
 export const SectionTitle = styled.h3`
+  margin-bottom: 10px;
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.01em;
 `;
 
-export const Badge = styled.span`
-  padding: 4px 6px;
-  border-radius: 3px;
-  background-color: var(--navy-700);
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 1.4;
-`;
 
 export const Desc = styled.p`
   font-size: 0.88rem;
