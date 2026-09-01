@@ -26,13 +26,6 @@ export const Title = styled(SectionTitle)`
   color: #ffffff;
 `;
 
-export const Lead = styled.p`
-  max-width: 560px;
-  margin: 16px auto 0;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: var(--on-dark-muted);
-`;
 
 export const SliderRow = styled.div`
   position: relative;
@@ -52,25 +45,24 @@ export const ArrowBtn = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--r-full);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 20px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: none;
   cursor: pointer;
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.2s var(--ease);
 
   &:hover {
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.45);
   }
 
   @media (max-width: 640px) {
     display: none;
   }
 `;
+
 
 export const Viewport = styled.div`
   overflow: hidden;

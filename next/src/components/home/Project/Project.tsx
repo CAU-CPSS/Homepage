@@ -6,15 +6,8 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import * as S from "./Project.styles";
 import ProjectCard from "./ProjectCard";
 import { projects } from "@/content/data";
-import { useT } from "@/lib/i18n";
-
-const LEAD = {
-  ko: "정부·기업과 함께 수행한 연구 과제입니다.",
-  en: "Research projects carried out with government agencies and industry partners.",
-};
 
 export default function Project() {
-  const t = useT();
   const [current, setCurrent] = useState(0);
   const total = projects.length;
 
@@ -42,7 +35,6 @@ export default function Project() {
     <S.Section id="projects">
       <S.Head>
         <S.Title>RESEARCH PROJECTS</S.Title>
-        <S.Lead>{t(LEAD)}</S.Lead>
       </S.Head>
 
       <S.SliderRow>
