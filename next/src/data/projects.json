@@ -21,7 +21,10 @@
       "en": "Field-Linked Future Leading Talent Program — Carbon-Neutral ESG Practical Problem Research Group"
     },
     "period": "2022 – 2026",
-    "type": "participating"
+    "type": {
+      "ko": "참여과제",
+      "en": "Co-Investigator"
+    }
   },
   {
     "sponsor": {
@@ -33,7 +36,10 @@
       "en": "Brain Korea 21 FOUR (BK21 FOUR) — Research Group for Cleansing Cyber-Physical Space"
     },
     "period": "2020 – 2027",
-    "type": "participating"
+    "type": {
+      "ko": "참여과제",
+      "en": "Co-Investigator"
+    }
   },
   {
     "sponsor": {
@@ -45,7 +51,10 @@
       "en": "University ICT Research Center (ITRC) — Digital Twin-Based Smart Energy City Convergence Technology and Workforce Development"
     },
     "period": "2020 – 2027",
-    "type": "participating"
+    "type": {
+      "ko": "참여과제",
+      "en": "Co-Investigator"
+    }
   },
   {
     "sponsor": {
@@ -57,7 +66,10 @@
       "en": "Big-Data Analysis and Management Framework for Residential Power Usage Reflecting Consumer Characteristics"
     },
     "period": "2019 – 2022",
-    "type": "participating"
+    "type": {
+      "ko": "참여과제",
+      "en": "Co-Investigator"
+    }
   },
   {
     "sponsor": {
@@ -69,7 +81,10 @@
       "en": "Training R&D Specialists in Industrial Technology Protection for the Fourth Industrial Revolution"
     },
     "period": "2019 – 2023",
-    "type": "participating"
+    "type": {
+      "ko": "참여과제",
+      "en": "Co-Investigator"
+    }
   },
   {
     "sponsor": {
@@ -81,7 +96,10 @@
       "en": "An Autonomous Driving Platform Considering Safety and Security"
     },
     "period": "2018 – 2021",
-    "type": "principal"
+    "type": {
+      "ko": "개인과제",
+      "en": "Principal Investigator"
+    }
   },
   {
     "sponsor": {
@@ -93,6 +111,9 @@
       "en": "University ICT Research Center (ITRC) — Blockchain Service Center"
     },
     "period": "2018 – 2024",
-    "type": "participating"
+    "type": {
+      "ko": "참여과제",
+      "en": "Co-Investigator"
+    }
   }
 ]

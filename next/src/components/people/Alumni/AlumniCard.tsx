@@ -1,15 +1,14 @@
 "use client";
 
 import * as S from "./AlumniCard.styles";
-import { term } from "@/content/vocab";
 import { useT, type Localized } from "@/lib/i18n";
 
 export interface AlumniData {
   name: Localized;
-  degree: string;
+  degree: Localized;
   year: number;
-  major: string;
-  school: string;
+  major: Localized;
+  school: Localized;
   status: Localized | null;
 }
 
@@ -27,9 +26,9 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
         <S.Year>{alumni.year}</S.Year>
       </S.TopRow>
 
-      <S.Degree>{t(term(alumni.degree))}</S.Degree>
+      <S.Degree>{t(alumni.degree)}</S.Degree>
       <S.Major>
-        {t(term(alumni.major))}, {t(term(alumni.school))}
+        {t(alumni.major)}, {t(alumni.school)}
       </S.Major>
 
       {alumni.status && <S.Status>{t(alumni.status)}</S.Status>}

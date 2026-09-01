@@ -94,7 +94,6 @@ export const ui = {
     ko: "콘텐츠를 준비하고 있습니다. 곧 업데이트될 예정입니다.",
     en: "This section is being prepared and will be updated soon.",
   },
-  interests: { ko: "관심 분야", en: "Interests" },
   period: { ko: "연구기간", en: "Period" },
   support: { ko: "지원기관", en: "Support" },
   scrollDown: { ko: "아래로 스크롤", en: "Scroll down" },

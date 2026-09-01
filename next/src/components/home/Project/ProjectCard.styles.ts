@@ -32,15 +32,15 @@ export const CardTitleArea = styled.div`
   margin-bottom: 20px;
 `;
 
-export const TypeBadge = styled.span<{ $type?: string | null }>`
+export const TypeBadge = styled.span<{ $principal: boolean }>`
   padding: 2px 6px;
   border-radius: 10px;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
 
-  ${({ $type }) =>
-    $type === "principal"
+  ${({ $principal }) =>
+    $principal
       ? css`
           color: var(--crimson);
           border: 1px solid var(--crimson);

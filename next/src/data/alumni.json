@@ -5,10 +5,19 @@
                 "ko": "송용택",
                 "en": "Yongtaek Song"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2019,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "SK인포섹",
                 "en": "SK Infosec"
@@ -19,10 +28,19 @@
                 "ko": "최동준",
                 "en": "Dongjun Choi"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2020,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "공군 장교",
                 "en": "Air Force Officer"
@@ -33,10 +51,19 @@
                 "ko": "서예령",
                 "en": "Yeryoung Suh"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2021,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "영진약품 보안담당자",
                 "en": "Security Manager in Yungjin Pharm. Co., Ltd."
@@ -47,10 +74,19 @@
                 "ko": "이선우",
                 "en": "Sunwoo Lee"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2022,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": null
         },
         {
@@ -58,10 +94,19 @@
                 "ko": "이승욱",
                 "en": "Seungwook Lee"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2022,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "라온시큐어",
                 "en": "RaonSecure"
@@ -72,10 +117,19 @@
                 "ko": "김지후",
                 "en": "Jihu Kim"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2023,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": null
         },
         {
@@ -83,10 +137,19 @@
                 "ko": "임지혜",
                 "en": "Jihye Lim"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2023,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "포스코",
                 "en": "Posco"
@@ -97,10 +160,19 @@
                 "ko": "김영준",
                 "en": "Youngjun Kim"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2023,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "한국지역정보개발원",
                 "en": "Korea Local Information Research & Development Institute"
@@ -111,13 +183,45 @@
                 "ko": "강한바다",
                 "en": "Hanbada Kang"
             },
-            "degree": "Master",
+            "degree": {
+                "ko": "석사",
+                "en": "Master"
+            },
             "year": 2023,
-            "major": "Security Convergence",
-            "school": "CAU",
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "한국지역정보개발원",
                 "en": "Korea Local Information Research & Development Institute"
+            }
+        },
+        {
+            "name": {
+                "ko": "박성환",
+                "en": "Sunghwan Park"
+            },
+            "degree": {
+                "ko": "박사",
+                "en": "Ph.D"
+            },
+            "year": 2026,
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
+            "status": {
+                "ko": "호서대학교 교수",
+                "en": "Professor at Hoseo University"
             }
         }
     ],
@@ -127,10 +231,19 @@
                 "ko": "최병준",
                 "en": "Byeongjun Choi"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2020,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "KAIST 정보보호대학원",
                 "en": "KAIST GSIS"
@@ -141,10 +254,19 @@
                 "ko": "현석훈",
                 "en": "Seokhun Hyun"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2022,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "KAIST 정보보호대학원",
                 "en": "KAIST GSIS"
@@ -155,10 +277,19 @@
                 "ko": "장영욱",
                 "en": "Youngwook Jang"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2022,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": null
         },
         {
@@ -166,10 +297,19 @@
                 "ko": "이승현",
                 "en": "Seunghyun Lee"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2022,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": null
         },
         {
@@ -177,10 +317,19 @@
                 "ko": "강준규",
                 "en": "Jungyu Kang"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2024,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": null
         },
         {
@@ -188,10 +337,19 @@
                 "ko": "소명원",
                 "en": "Myeongwon So"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2024,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "롯데정보통신",
                 "en": "Lotte Data Communication Company"
@@ -202,10 +360,19 @@
                 "ko": "이예림",
                 "en": "Yerim Lee"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2025,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "현대자동차",
                 "en": "Hyundai Motor Company"
@@ -216,10 +383,19 @@
                 "ko": "박상호",
                 "en": "Sangho Park"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2026,
-            "major": "Business Administration",
-            "school": "CAU",
+            "major": {
+                "ko": "경영학부",
+                "en": "Business Administration"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "연세대학교",
                 "en": "Yonsei University"
@@ -230,10 +406,19 @@
                 "ko": "한윤서",
                 "en": "Yunseo Han"
             },
-            "degree": "Bachelor",
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
             "year": 2025,
-            "major": "Industrial Security",
-            "school": "CAU",
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
             "status": {
                 "ko": "KPMG",
                 "en": "KPMG"
@@ -244,13 +429,45 @@
                 "ko": "나선우",
                 "en": "Sunwoo Na"
             },
-            "degree": "Undergraduate",
+            "degree": {
+                "ko": "학부",
+                "en": "Undergraduate"
+            },
             "year": 2025,
-            "major": "Computer Science & Engineering",
-            "school": "SKKU",
+            "major": {
+                "ko": "소프트웨어학부",
+                "en": "Computer Science & Engineering"
+            },
+            "school": {
+                "ko": "성균관대학교",
+                "en": "SKKU"
+            },
             "status": {
                 "ko": "재학 중",
                 "en": "Undergraduate"
+            }
+        },
+        {
+            "name": {
+                "ko": "주성용",
+                "en": "Seongyong Ju"
+            },
+            "degree": {
+                "ko": "학부",
+                "en": "Undergraduate"
+            },
+            "year": 2025,
+            "major": {
+                "ko": "산업보안학과",
+                "en": "Industrial Security"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
+            "status": {
+                "ko": "삼일회계법인(PWC)",
+                "en": "PWC"
             }
         }
     ]

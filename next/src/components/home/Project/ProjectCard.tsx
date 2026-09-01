@@ -2,7 +2,6 @@
 
 import * as S from "./ProjectCard.styles";
 import type { Project } from "@/content/data";
-import { projectTypes } from "@/content/vocab";
 import { ui } from "@/content/site";
 import { useT } from "@/lib/i18n";
 
@@ -12,7 +11,9 @@ export default function ProjectCard({ sponsor, title, period, type }: Project) {
   return (
     <S.Card>
       <S.CardTitleArea>
-        {type && <S.TypeBadge $type={type}>{t(projectTypes[type])}</S.TypeBadge>}
+        {type && (
+          <S.TypeBadge $principal={type.ko === "개인과제"}>{t(type)}</S.TypeBadge>
+        )}
         <S.CardTitle>{t(title)}</S.CardTitle>
       </S.CardTitleArea>
 

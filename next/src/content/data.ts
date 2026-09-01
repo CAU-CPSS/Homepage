@@ -6,7 +6,6 @@
  */
 
 import type { Localized } from "@/lib/i18n";
-import type { ProjectType } from "./vocab";
 
 import researchJson from "@/data/research.json";
 import newsJson from "@/data/news.json";
@@ -50,7 +49,8 @@ export interface Project {
   sponsor: Localized;
   title: Localized;
   period: string;
-  type: ProjectType | null;
+  /** 개인과제 / 참여과제. 배지 색은 ko 값으로 구분한다. */
+  type: Localized | null;
 }
 
 export const projects = projectsJson as Project[];

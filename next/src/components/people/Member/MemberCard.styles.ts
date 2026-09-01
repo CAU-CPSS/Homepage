@@ -86,21 +86,12 @@ export const Background = styled.p`
   color: var(--subtle);
 `;
 
-export const InterestLabel = styled.p`
-  margin-top: 12px;
-  font-family: var(--font-montserrat), var(--font-pretendard), sans-serif;
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--subtle);
-`;
 
 export const InterestList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 7px;
+  margin-top: 12px;
 `;
 
 export const InterestTag = styled.span`

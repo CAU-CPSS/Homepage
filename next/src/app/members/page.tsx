@@ -44,7 +44,7 @@ export default function MembersPage() {
 
               <S.Grid $single={items.length === 1}>
                 {items.map((member) => (
-                  <MemberCard key={member.name} member={member} />
+                  <MemberCard key={member.name.en} member={member} />
                 ))}
               </S.Grid>
             </S.Section>
