@@ -40,6 +40,15 @@ export const Title = styled.p`
 `;
 
 
+/* 좌측 로고와 균형을 맞추기 위해 연락처는 오른쪽 정렬 (모바일 1단에서는 좌측) */
+export const ContactCol = styled.div`
+  text-align: right;
+
+  @media (max-width: 900px) {
+    text-align: left;
+  }
+`;
+
 export const ColTitle = styled.p`
   font-family: var(--font-montserrat), sans-serif;
   margin-bottom: 12px;

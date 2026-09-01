@@ -19,14 +19,14 @@ const Footer = () => {
             <S.Title>{site.shortName}</S.Title>
           </S.Brand>
 
-          <div>
+          <S.ContactCol>
             <S.ColTitle>{t(LABELS.contact)}</S.ColTitle>
             <S.Info>
               {t(site.address)}
               <br />
               TEL. {site.tel}
             </S.Info>
-          </div>
+          </S.ContactCol>
         </S.FooterGrid>
 
         <S.Divider />
