@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const FooterOuter = styled.footer`
   width: 100%;
-  padding: 56px 28px 36px;
+  padding: 36px;
   background: var(--navy-950);
 
   @media (max-width: 768px) {
