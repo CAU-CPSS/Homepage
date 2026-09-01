@@ -86,28 +86,6 @@
             "ko": "컴퓨터정보과학 (Computer and Information Science)",
             "en": "Computer and Information Science"
           }
-        },
-        {
-          "period": "2008",
-          "text": {
-            "ko": "공학석사, 서울대학교",
-            "en": "M.S., Seoul National University"
-          },
-          "note": {
-            "ko": "컴퓨터공학",
-            "en": "Computer Engineering"
-          }
-        },
-        {
-          "period": "2006",
-          "text": {
-            "ko": "공학사, 서울대학교",
-            "en": "B.S., Seoul National University"
-          },
-          "note": {
-            "ko": "컴퓨터공학",
-            "en": "Computer Engineering"
-          }
         }
       ]
     },
