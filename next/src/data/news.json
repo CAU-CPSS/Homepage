@@ -10,53 +10,5 @@
       "ko": "연구실에서 학부연구생으로 함께한 주성용 학생이 PwC에 입사했습니다. 축하합니다!",
       "en": "Seongyong Ju, an undergraduate researcher in our lab, has joined PwC. Congratulations!"
     }
-  },
-  {
-    "id": "2025-jsa-ares",
-    "date": "2025",
-    "title": {
-      "ko": "ARES, Journal of Systems Architecture 게재 확정",
-      "en": "ARES accepted to Journal of Systems Architecture"
-    },
-    "body": {
-      "ko": "박성환, 백형부, 이재우의 논문 「ARES: Adaptive robust object detection framework for enhancing real-time performance in autonomous vehicle systems」가 Journal of Systems Architecture (SCIE)에 게재되었습니다.",
-      "en": "\"ARES: Adaptive robust object detection framework for enhancing real-time performance in autonomous vehicle systems\" by Sunghwan Park, Hyeongboo Baek, and Jaewoo Lee has been published in the Journal of Systems Architecture (SCIE)."
-    }
-  },
-  {
-    "id": "2025-ieee-access-odshield",
-    "date": "2025",
-    "title": {
-      "ko": "OD-SHIELD, IEEE Access 게재 확정",
-      "en": "OD-SHIELD accepted to IEEE Access"
-    },
-    "body": {
-      "ko": "「OD-SHIELD: Convolutional Autoencoder-Based Defense Against Adversarial Patch Attacks in Object Detection」이 IEEE Access에 게재되었습니다.",
-      "en": "\"OD-SHIELD: Convolutional Autoencoder-Based Defense Against Adversarial Patch Attacks in Object Detection\" has been published in IEEE Access."
-    }
-  },
-  {
-    "id": "2025-aaai-ppai-workshop",
-    "date": "2025",
-    "title": {
-      "ko": "AAAI Workshop on Privacy-Preserving AI 논문 발표",
-      "en": "Paper presented at the AAAI Workshop on Privacy-Preserving AI"
-    },
-    "body": {
-      "ko": "「A Benchmark of Unlearnable Examples for Medical Images」를 AAAI Workshop on Privacy-Preserving Artificial Intelligence에서 발표했습니다.",
-      "en": "\"A Benchmark of Unlearnable Examples for Medical Images\" was presented at the AAAI Workshop on Privacy-Preserving Artificial Intelligence."
-    }
-  },
-  {
-    "id": "2024-bigdata-elfs",
-    "date": "2024",
-    "title": {
-      "ko": "ELFS, IEEE BigData 2024 게재 확정",
-      "en": "ELFS accepted to IEEE BigData 2024"
-    },
-    "body": {
-      "ko": "「ELFS: Entropy-based Loss Function Selection for Global Model Accuracy in Federated Learning」이 2024 IEEE International Conference on Big Data에 게재되었습니다.",
-      "en": "\"ELFS: Entropy-based Loss Function Selection for Global Model Accuracy in Federated Learning\" was published at the 2024 IEEE International Conference on Big Data."
-    }
   }
 ]
