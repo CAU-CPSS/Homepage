@@ -4,63 +4,92 @@ import styled from "styled-components";
 
 export const FooterOuter = styled.footer`
   width: 100%;
-  padding: 30px 25px;
-  background: #111827;
+  padding: 56px 28px 36px;
+  background: var(--navy-950);
+
+  @media (max-width: 768px) {
+    padding: 44px 20px 28px;
+  }
 `;
 
 export const FooterInner = styled.div`
-  max-width: 1000px;
+  max-width: var(--container);
   margin: 0 auto;
 `;
 
 export const FooterGrid = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 `;
 
-export const Column = styled.div`
-  flex: 1;
-  min-width: 250px;
+export const Brand = styled.div``;
+
+export const Title = styled.p`
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 `;
 
-export const Title = styled.h1`
-  font-size: 28px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #fff;
-  margin: 0;
+
+export const ColTitle = styled.p`
+  font-family: var(--font-montserrat), sans-serif;
+  margin-bottom: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
 `;
 
 export const Info = styled.p`
-  color: #fff;
-  line-height: 1.6;
-  margin: 0;
-  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--on-dark-muted);
 `;
 
-export const Divider = styled.span`
-  height: 1px;
-  width: 100%;
-  background: #434769;
+export const MailLink = styled.a`
   display: block;
-  margin: 20px 0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--on-dark-muted);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-bright);
+  }
+`;
+
+
+
+export const Divider = styled.hr`
+  border: none;
+  height: 1px;
+  background: var(--on-dark-line);
+  margin: 32px 0 20px;
 `;
 
 export const Copyright = styled.p`
-  color: #767ba7;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.35);
   text-align: center;
-  font-size: 13px;
-  margin: 0;
 `;
 
-export const Link = styled.a`
+export const Link_ = styled.a`
   color: inherit;
   text-decoration: underline;
+  text-underline-offset: 2px;
 
   &:hover {
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.7);
   }
 `;
