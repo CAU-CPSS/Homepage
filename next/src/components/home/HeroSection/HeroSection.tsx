@@ -1,7 +1,6 @@
 "use client";
 
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import { FiArrowRight } from "react-icons/fi";
 
 import * as S from "./HeroSection.styles";
 import SplitText from "../../ui/SplitText";
@@ -31,13 +30,6 @@ const HeroSection = () => {
         </S.Description>
 
         <S.Tagline>{t(site.tagline)}</S.Tagline>
-
-        <S.Actions>
-          <S.PrimaryAction href="/research">
-            Research <FiArrowRight />
-          </S.PrimaryAction>
-          <S.SecondaryAction href="/contact">Contact</S.SecondaryAction>
-        </S.Actions>
       </S.Content>
 
       <S.Scroll aria-hidden>

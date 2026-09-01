@@ -1,7 +1,6 @@
 "use client";
 
 import styled, { keyframes } from "styled-components";
-import Link from "next/link";
 
 export const Wrapper = styled.section`
   position: relative;
@@ -64,54 +63,6 @@ export const Tagline = styled.p`
 
   @media (max-width: 768px) {
     font-size: 0.875rem;
-  }
-`;
-
-export const Actions = styled.div`
-  margin-top: 36px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-`;
-
-export const PrimaryAction = styled(Link)`
-  font-family: var(--font-montserrat), sans-serif;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 22px;
-  border-radius: var(--r-full);
-  background: #ffffff;
-  color: var(--navy-800);
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
-  }
-`;
-
-export const SecondaryAction = styled(Link)`
-  font-family: var(--font-montserrat), sans-serif;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 22px;
-  border-radius: var(--r-full);
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.6);
   }
 `;
 
