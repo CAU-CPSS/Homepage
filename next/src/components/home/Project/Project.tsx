@@ -46,7 +46,7 @@ export default function Project() {
           <S.Track style={{ transform: `translateX(-${current * 100}%)` }}>
             {projects.map((project, i) => (
               <S.Slide key={i} aria-hidden={i !== current}>
-                <ProjectCard {...project} />
+                <ProjectCard {...project} onDark />
               </S.Slide>
             ))}
           </S.Track>

@@ -5,11 +5,22 @@ import type { Project } from "@/content/data";
 import { ui } from "@/content/site";
 import { useT } from "@/lib/i18n";
 
-export default function ProjectCard({ sponsor, title, period, type }: Project) {
+interface ProjectCardProps extends Project {
+  /** 어두운 배경(홈) 위에 올라갈 때 */
+  onDark?: boolean;
+}
+
+export default function ProjectCard({
+  sponsor,
+  title,
+  period,
+  type,
+  onDark = false,
+}: ProjectCardProps) {
   const t = useT();
 
   return (
-    <S.Card>
+    <S.Card $onDark={onDark}>
       <S.CardTitleArea>
         <S.CardTitle>{t(title)}</S.CardTitle>
         {type && (
