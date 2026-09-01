@@ -31,8 +31,8 @@
     }
   ],
   "intro": {
-    "ko": "운영체제 보안과 네트워크 보안을 기반으로, 블록체인 보안·빅데이터 보안·모빌리티 보안·사이버물리시스템의 안전 및 보안을 연구합니다.",
-    "en": "Working from a foundation in operating-system and network security, with research spanning blockchain security, big-data security, mobility security, and the safety and security of cyber-physical systems."
+    "ko": "운영체제 보안, 네트워크 보안, 그리고 첨단 보안 분야(블록체인 보안, 빅데이터 보안, 모빌리티 보안, 사이버물리시스템 안전 및 보안)를 연구합니다.",
+    "en": "Research on OS security, network security, and advanced security areas: blockchain security, big-data security, mobility security, and cyber-physical system safety and security."
   },
   "interests": [
     "Real-Time Cyber-Physical System Security",
@@ -330,7 +330,7 @@
           "period": "2018",
           "text": {
             "ko": "한국전자거래학회 춘계학술대회 우수논문상",
-            "en": "Best Paper Award, Korea Society of Electronic Commerce Spring Conference"
+            "en": "Outstanding Paper Award, Korea Society of Electronic Commerce Spring Conference"
           }
         },
         {
@@ -414,8 +414,8 @@
             "en": "Invited lecture: \"Autonomous Driving and the Future Society\""
           },
           "note": {
-            "ko": "동작교육지원청 · 중앙대학교 LINC사업단, 고교학점제 선도지구 진로·진학 프로그램",
-            "en": "Dongjak Office of Education & CAU LINC, High School Credit System Career Program"
+            "ko": "동작교육청 · 중앙대학교 LINC사업단, 2021 동작관악 고교학점제 선도지구 진로·진학 프로그램 — 숭의여고 (3일 × 3시간)",
+            "en": "Dongjak Office of Education & CAU LINC, 2021 Dongjak-Gwanak High School Credit System Career Program — Sungui Girls' High School (3 days × 3 hours)"
           }
         },
         {
@@ -427,6 +427,17 @@
           "note": {
             "ko": "중앙헤럴드 제573호",
             "en": "The Chung-Ang Herald, No. 573"
+          }
+        },
+        {
+          "period": "2020",
+          "text": {
+            "ko": "「자율주행과 미래사회」 주제 강의",
+            "en": "Invited lecture: \"Autonomous Driving and the Future Society\""
+          },
+          "note": {
+            "ko": "동작교육청 · 중앙대학교 LINC사업단, 2020 동작관악 고교학점제 선도지구 진로·진학 프로그램 — 수도여고, 삼성고, 광신고, 미림여고, 숭의여고 (각 3시간)",
+            "en": "Dongjak Office of Education & CAU LINC, 2020 Dongjak-Gwanak High School Credit System Career Program — five high schools (3 hours each)"
           }
         },
         {
@@ -464,7 +475,7 @@
         {
           "text": {
             "ko": "NICE신용평가",
-            "en": "NICE Information Service"
+            "en": "NICE신용평가 (NICE Credit Rating)"
           }
         },
         {
