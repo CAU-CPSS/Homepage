@@ -23,12 +23,6 @@ export const Card = styled.article`
   border: 1px solid rgba(226, 230, 238, 0.85);
   border-top: 3px solid var(--navy-700);
   box-shadow: 0 8px 28px rgba(8, 16, 34, 0.22);
-  transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 34px rgba(8, 16, 34, 0.28);
-  }
 
   @media (max-width: 520px) {
     padding: 22px;
