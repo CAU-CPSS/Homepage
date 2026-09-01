@@ -161,8 +161,8 @@ a {
 }
 
 ::selection {
-  background: var(--surface-2);
-  color: var(--navy-800);
+  background: var(--navy-700);
+  color: #ffffff;
 }
 
 @media (prefers-reduced-motion: reduce) {
