@@ -4,10 +4,6 @@ import * as S from "./Footer.styles";
 import { site } from "@/content/site";
 import { useT } from "@/lib/i18n";
 
-const LABELS = {
-  contact: { ko: "연락처", en: "Contact" },
-};
-
 const Footer = () => {
   const t = useT();
 
@@ -20,7 +16,6 @@ const Footer = () => {
           </S.Brand>
 
           <S.ContactCol>
-            <S.ColTitle>{t(LABELS.contact)}</S.ColTitle>
             <S.Info>
               {t(site.address)}
               <br />

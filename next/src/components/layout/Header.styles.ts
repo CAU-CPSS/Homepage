@@ -70,7 +70,7 @@ export const Subtitle = styled.p`
 `;
 
 export const Description = styled.p`
-  margin-top: 18px;
+  margin-top: 9px;
   font-size: 0.95rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.62);
