@@ -1,31 +1,52 @@
 {
     "graduates": [
         {
-            "name": "송용택",
+            "name": {
+                "ko": "송용택",
+                "en": "Yongtaek Song"
+            },
             "degree": "Master",
             "year": 2019,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "SK Infosec"
+            "status": {
+                "ko": "SK인포섹",
+                "en": "SK Infosec"
+            }
         },
         {
-            "name": "최동준",
+            "name": {
+                "ko": "최동준",
+                "en": "Dongjun Choi"
+            },
             "degree": "Master",
             "year": 2020,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "Air Force Officer"
+            "status": {
+                "ko": "공군 장교",
+                "en": "Air Force Officer"
+            }
         },
         {
-            "name": "서예령",
+            "name": {
+                "ko": "서예령",
+                "en": "Yeryoung Suh"
+            },
             "degree": "Master",
             "year": 2021,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "Security Manager in Yungjin Pharm. Co., Ltd."
+            "status": {
+                "ko": "영진약품 보안담당자",
+                "en": "Security Manager in Yungjin Pharm. Co., Ltd."
+            }
         },
         {
-            "name": "이선우",
+            "name": {
+                "ko": "이선우",
+                "en": "Sunwoo Lee"
+            },
             "degree": "Master",
             "year": 2022,
             "major": "Security Convergence",
@@ -33,15 +54,24 @@
             "status": null
         },
         {
-            "name": "이승욱",
+            "name": {
+                "ko": "이승욱",
+                "en": "Seungwook Lee"
+            },
             "degree": "Master",
             "year": 2022,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "RaonSecure"
+            "status": {
+                "ko": "라온시큐어",
+                "en": "RaonSecure"
+            }
         },
         {
-            "name": "김지후",
+            "name": {
+                "ko": "김지후",
+                "en": "Jihu Kim"
+            },
             "degree": "Master",
             "year": 2023,
             "major": "Security Convergence",
@@ -49,49 +79,82 @@
             "status": null
         },
         {
-            "name": "임지혜",
+            "name": {
+                "ko": "임지혜",
+                "en": "Jihye Lim"
+            },
             "degree": "Master",
             "year": 2023,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "Posco"
+            "status": {
+                "ko": "포스코",
+                "en": "Posco"
+            }
         },
         {
-            "name": "김영준",
+            "name": {
+                "ko": "김영준",
+                "en": "Youngjun Kim"
+            },
             "degree": "Master",
             "year": 2023,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "Korea Local Information Research & Development Institute"
+            "status": {
+                "ko": "한국지역정보개발원",
+                "en": "Korea Local Information Research & Development Institute"
+            }
         },
         {
-            "name": "강한바다",
+            "name": {
+                "ko": "강한바다",
+                "en": "Hanbada Kang"
+            },
             "degree": "Master",
             "year": 2023,
             "major": "Security Convergence",
             "school": "CAU",
-            "status": "Korea Local Information Research & Development Institute"
+            "status": {
+                "ko": "한국지역정보개발원",
+                "en": "Korea Local Information Research & Development Institute"
+            }
         }
     ],
     "undergraduates": [
         {
-            "name": "최병준",
+            "name": {
+                "ko": "최병준",
+                "en": "Byeongjun Choi"
+            },
             "degree": "Bachelor",
             "year": 2020,
             "major": "Industrial Security",
             "school": "CAU",
-            "status": "KAIST GSIS"
+            "status": {
+                "ko": "KAIST 정보보호대학원",
+                "en": "KAIST GSIS"
+            }
         },
         {
-            "name": "현석훈",
+            "name": {
+                "ko": "현석훈",
+                "en": "Seokhun Hyun"
+            },
             "degree": "Bachelor",
             "year": 2022,
             "major": "Industrial Security",
             "school": "CAU",
-            "status": "KAIST GSIS"
+            "status": {
+                "ko": "KAIST 정보보호대학원",
+                "en": "KAIST GSIS"
+            }
         },
         {
-            "name": "장영욱",
+            "name": {
+                "ko": "장영욱",
+                "en": "Youngwook Jang"
+            },
             "degree": "Bachelor",
             "year": 2022,
             "major": "Industrial Security",
@@ -99,7 +162,10 @@
             "status": null
         },
         {
-            "name": "이승현",
+            "name": {
+                "ko": "이승현",
+                "en": "Seunghyun Lee"
+            },
             "degree": "Bachelor",
             "year": 2022,
             "major": "Industrial Security",
@@ -107,7 +173,10 @@
             "status": null
         },
         {
-            "name": "강준규",
+            "name": {
+                "ko": "강준규",
+                "en": "Jungyu Kang"
+            },
             "degree": "Bachelor",
             "year": 2024,
             "major": "Industrial Security",
@@ -115,44 +184,74 @@
             "status": null
         },
         {
-            "name": "소명원",
+            "name": {
+                "ko": "소명원",
+                "en": "Myeongwon So"
+            },
             "degree": "Bachelor",
             "year": 2024,
             "major": "Industrial Security",
             "school": "CAU",
-            "status": "Lotte Data Communication Company"
+            "status": {
+                "ko": "롯데정보통신",
+                "en": "Lotte Data Communication Company"
+            }
         },
         {
-            "name": "이예림",
+            "name": {
+                "ko": "이예림",
+                "en": "Yerim Lee"
+            },
             "degree": "Bachelor",
             "year": 2025,
             "major": "Industrial Security",
             "school": "CAU",
-            "status": "Hyundai Motor Company"
+            "status": {
+                "ko": "현대자동차",
+                "en": "Hyundai Motor Company"
+            }
         },
         {
-            "name": "박상호",
+            "name": {
+                "ko": "박상호",
+                "en": "Sangho Park"
+            },
             "degree": "Bachelor",
             "year": 2026,
             "major": "Business Administration",
             "school": "CAU",
-            "status": "Yonsei University"
+            "status": {
+                "ko": "연세대학교",
+                "en": "Yonsei University"
+            }
         },
         {
-            "name": "한윤서",
+            "name": {
+                "ko": "한윤서",
+                "en": "Yunseo Han"
+            },
             "degree": "Bachelor",
             "year": 2025,
             "major": "Industrial Security",
             "school": "CAU",
-            "status": "KPMG"
+            "status": {
+                "ko": "KPMG",
+                "en": "KPMG"
+            }
         },
         {
-            "name": "나선우",
+            "name": {
+                "ko": "나선우",
+                "en": "Sunwoo Na"
+            },
             "degree": "Undergraduate",
             "year": 2025,
             "major": "Computer Science & Engineering",
             "school": "SKKU",
-            "status": "Undergraduate"
+            "status": {
+                "ko": "재학 중",
+                "en": "Undergraduate"
+            }
         }
     ]
 }

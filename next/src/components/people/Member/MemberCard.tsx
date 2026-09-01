@@ -1,12 +1,15 @@
 "use client";
 
 import * as S from "./MemberCard.styles";
+import { term } from "@/content/vocab";
+import { ui } from "@/content/site";
+import { useT } from "@/lib/i18n";
 
 export interface MemberData {
   name: string;
   degree: string;
   major: string;
-  background?: string;  // optional
+  background?: string; // optional
   interests: string[];
   photo: string | null;
 }
@@ -16,41 +19,37 @@ interface MemberCardProps {
 }
 
 export default function MemberCard({ member }: MemberCardProps) {
+  const t = useT();
+  // 아직 채워지지 않은 항목이 빈 태그로 보이지 않도록 걸러낸다
+  const interests = member.interests.filter((interest) => interest.trim());
+
   return (
     <S.Card>
-      <S.PhotoCol>
-        <S.PhotoWrapper>
-          {member.photo ? (
-            <S.Photo
-              src={`/images/members/${member.photo}`}
-              alt={member.name}
-            />
-          ) : (
-            <S.PhotoPlaceholder>
-              {member.name.charAt(0)}
-            </S.PhotoPlaceholder>
-          )}
-        </S.PhotoWrapper>
-      </S.PhotoCol>
+      <S.PhotoWrapper>
+        {member.photo ? (
+          <S.Photo src={`/images/members/${member.photo}`} alt={member.name} />
+        ) : (
+          <S.PhotoPlaceholder aria-hidden>{member.name.charAt(0)}</S.PhotoPlaceholder>
+        )}
+      </S.PhotoWrapper>
 
       <S.InfoCol>
         <S.Name>{member.name}</S.Name>
-        <S.Degree>{member.degree}</S.Degree>
+        <S.Degree>{t(term(member.degree))}</S.Degree>
 
-        <S.Major>{member.major}</S.Major>
-        {member.background && (
-          <S.Background>{member.background}</S.Background>  // 있을 때만 렌더
+        {member.major && <S.Major>{t(term(member.major))}</S.Major>}
+        {member.background && <S.Background>{t(term(member.background))}</S.Background>}
+
+        {interests.length > 0 && (
+          <>
+            <S.InterestLabel>{t(ui.interests)}</S.InterestLabel>
+            <S.InterestList>
+              {interests.map((interest) => (
+                <S.InterestTag key={interest}>{interest}</S.InterestTag>
+              ))}
+            </S.InterestList>
+          </>
         )}
-
-        <S.Row>
-          <S.FieldBadge>Interests</S.FieldBadge>
-        </S.Row>
-
-        <S.InterestList>
-          {member.interests.map((interest, i) => (
-            <S.InterestTag key={i}>{interest}</S.InterestTag>
-          ))}
-        </S.InterestList>
       </S.InfoCol>
     </S.Card>
   );

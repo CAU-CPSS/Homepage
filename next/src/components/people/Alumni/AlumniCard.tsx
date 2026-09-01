@@ -1,14 +1,16 @@
 "use client";
 
 import * as S from "./AlumniCard.styles";
+import { term } from "@/content/vocab";
+import { useT, type Localized } from "@/lib/i18n";
 
 export interface AlumniData {
-  name: string;
+  name: Localized;
   degree: string;
   year: number;
   major: string;
   school: string;
-  status: string | null;
+  status: Localized | null;
 }
 
 interface AlumniCardProps {
@@ -16,19 +18,21 @@ interface AlumniCardProps {
 }
 
 export default function AlumniCard({ alumni }: AlumniCardProps) {
+  const t = useT();
+
   return (
     <S.Card>
-      <S.InfoCol>
-        <S.Name>{alumni.name}</S.Name>
-        <S.Degree>{alumni.degree} · {alumni.year}</S.Degree>
-        <S.Major>{alumni.major}, {alumni.school}</S.Major>
+      <S.TopRow>
+        <S.Name>{t(alumni.name)}</S.Name>
+        <S.Year>{alumni.year}</S.Year>
+      </S.TopRow>
 
-        {alumni.status && (
-          <>
-            <S.Status>{alumni.status}</S.Status>
-          </>
-        )}
-      </S.InfoCol>
+      <S.Degree>{t(term(alumni.degree))}</S.Degree>
+      <S.Major>
+        {t(term(alumni.major))}, {t(term(alumni.school))}
+      </S.Major>
+
+      {alumni.status && <S.Status>{t(alumni.status)}</S.Status>}
     </S.Card>
   );
 }

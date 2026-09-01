@@ -1,13 +1,21 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
 import * as S from "./Project.styles";
 import ProjectCard from "./ProjectCard";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import projects from "@/data/projects.json";
 import ProjectBackground from "./ProjectBackground";
+import { projects } from "@/content/data";
+import { useT } from "@/lib/i18n";
+
+const LEAD = {
+  ko: "정부·기업과 함께 수행한 연구 과제입니다.",
+  en: "Research projects carried out with government agencies and industry partners.",
+};
 
 export default function Project() {
+  const t = useT();
   const [current, setCurrent] = useState(0);
   const total = projects.length;
 
@@ -32,34 +40,30 @@ export default function Project() {
   };
 
   return (
-    <S.Section>
+    <S.Section id="projects">
       <ProjectBackground />
-      <S.SectionTitle>RESEARCH PROJECTS</S.SectionTitle>
+
+      <S.Head>
+        <S.Title>RESEARCH PROJECTS</S.Title>
+        <S.Lead>{t(LEAD)}</S.Lead>
+      </S.Head>
 
       <S.SliderRow>
-        <S.ArrowBtn onClick={prev}>
+        <S.ArrowBtn type="button" onClick={prev} aria-label="Previous project">
           <FiChevronLeft />
         </S.ArrowBtn>
 
-        <S.Viewport
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
+        <S.Viewport onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           <S.Track style={{ transform: `translateX(-${current * 100}%)` }}>
-            {projects.map((p, i) => (
-              <S.Slide key={i}>
-                <ProjectCard
-                  title={p.title}
-                  period={p.period}
-                  sponsor={p.sponsor}
-                  type={p.type}
-                />
+            {projects.map((project, i) => (
+              <S.Slide key={i} aria-hidden={i !== current}>
+                <ProjectCard {...project} />
               </S.Slide>
             ))}
           </S.Track>
         </S.Viewport>
 
-        <S.ArrowBtn onClick={next}>
+        <S.ArrowBtn type="button" onClick={next} aria-label="Next project">
           <FiChevronRight />
         </S.ArrowBtn>
       </S.SliderRow>
@@ -68,7 +72,9 @@ export default function Project() {
         {projects.map((_, i) => (
           <S.Dot
             key={i}
+            type="button"
             $active={i === current}
+            aria-label={`Project ${i + 1}`}
             onClick={() => setCurrent(i)}
           />
         ))}

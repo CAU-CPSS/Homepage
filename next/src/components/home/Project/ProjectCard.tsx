@@ -1,38 +1,31 @@
+"use client";
+
 import * as S from "./ProjectCard.styles";
+import type { Project } from "@/content/data";
+import { projectTypes } from "@/content/vocab";
+import { ui } from "@/content/site";
+import { useT } from "@/lib/i18n";
 
-export interface ProjectCardProps {
-  title: string;
-  period: string;
-  sponsor: string;
-  type: string | null;
-}
+export default function ProjectCard({ sponsor, title, period, type }: Project) {
+  const t = useT();
 
-export default function ProjectCard({
-  title,
-  period,
-  sponsor,
-  type,
-}: ProjectCardProps) {
   return (
     <S.Card>
       <S.CardTitleArea>
-        <S.CardTitle>{title}</S.CardTitle>
-        {type && <S.TypeBadge $type={type}>{type}</S.TypeBadge>}
+        {type && <S.TypeBadge $type={type}>{t(projectTypes[type])}</S.TypeBadge>}
+        <S.CardTitle>{t(title)}</S.CardTitle>
       </S.CardTitleArea>
 
-      <S.CardDivider />
-
-      <S.CardMeta>
-        <S.MetaRow>
-          <S.MetaBadge>Period</S.MetaBadge>
+      <div>
+        <S.CardDivider />
+        <S.CardMeta>
+          <S.MetaBadge>{t(ui.period)}</S.MetaBadge>
           <S.MetaText>{period}</S.MetaText>
-        </S.MetaRow>
 
-        <S.MetaRow>
-          <S.MetaBadge>Support</S.MetaBadge>
-          <S.MetaText>{sponsor}</S.MetaText>
-        </S.MetaRow>
-      </S.CardMeta>
+          <S.MetaBadge>{t(ui.support)}</S.MetaBadge>
+          <S.MetaText>{t(sponsor)}</S.MetaText>
+        </S.CardMeta>
+      </div>
     </S.Card>
   );
 }

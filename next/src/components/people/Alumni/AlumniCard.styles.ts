@@ -1,14 +1,21 @@
+"use client";
+
 import styled from "styled-components";
 
-export const Card = styled.div`
-  padding: 28px;
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
-  background: #fff;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+export const Card = styled.article`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: #ffffff;
+  transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease),
+    border-color 0.25s var(--ease);
 
   &:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-md);
     transform: translateY(-2px);
   }
 
@@ -17,32 +24,44 @@ export const Card = styled.div`
   }
 `;
 
-export const InfoCol = styled.div`
+export const TopRow = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
 `;
 
 export const Name = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #0f1923;
+  color: var(--ink);
   letter-spacing: -0.01em;
 `;
 
+export const Year = styled.span`
+  font-family: var(--font-montserrat), sans-serif;
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--subtle);
+`;
+
 export const Degree = styled.p`
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 600;
-  color: #1a2a6c;
+  color: var(--navy-700);
 `;
 
 export const Major = styled.p`
-  font-size: 0.88rem;
-  color: #4b5563;
+  font-size: 0.84rem;
+  color: var(--muted);
 `;
 
 export const Status = styled.p`
-  font-size: 0.88rem;
-  color: #4b5563;
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 0.84rem;
   line-height: 1.5;
+  color: var(--body);
 `;

@@ -1,45 +1,38 @@
+"use client";
+
 import styled from "styled-components";
 
-export const Card = styled.div`
+export const Card = styled.article`
   display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 0 28px;
-  padding: 28px;
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
-  background: #fff;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 0 26px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: #ffffff;
+  transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease),
+    border-color 0.25s var(--ease);
 
   &:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-md);
     transform: translateY(-2px);
   }
 
   @media (max-width: 520px) {
-    grid-template-columns: 100px 1fr;
-    gap: 0 20px;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 0 18px;
     padding: 20px;
   }
 `;
 
-export const PhotoCol = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-`;
-
 export const PhotoWrapper = styled.div`
-  width: 120px;
-  height: 160px;
+  width: 100%;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
-  border: 1px solid #e5e7eb;
-  flex-shrink: 0;
-
-  @media (max-width: 520px) {
-    width: 90px;
-    height: 120px;
-  }
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
 `;
 
 export const Photo = styled.img`
@@ -53,72 +46,69 @@ export const Photo = styled.img`
 export const PhotoPlaceholder = styled.div`
   width: 100%;
   height: 100%;
-  background: #f3f4f6;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--surface-2);
+  font-family: var(--font-montserrat), sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #9ca3af;
+  color: var(--subtle);
 `;
 
 export const InfoCol = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+  min-width: 0;
 `;
 
 export const Name = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: #0f1923;
+  color: var(--ink);
   letter-spacing: -0.01em;
 `;
 
 export const Degree = styled.p`
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #1a2a6c;
-`;
-
-export const Row = styled.div`
-  margin-top: 4px;
-`;
-
-export const FieldBadge = styled.span`
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #0f1923;
-  color: #0f1923;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  border-radius: 50px;
+  color: var(--navy-700);
 `;
 
 export const Major = styled.p`
-  font-size: 0.88rem;
-  color: #4b5563;
+  font-size: 0.85rem;
+  color: var(--muted);
 `;
 
 export const Background = styled.p`
-  font-size: 0.88rem;
-  color: #9ca3af;
+  font-size: 0.85rem;
+  color: var(--subtle);
+`;
+
+export const InterestLabel = styled.p`
+  margin-top: 12px;
+  font-family: var(--font-montserrat), var(--font-pretendard), sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--subtle);
 `;
 
 export const InterestList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 4px;
+  margin-top: 7px;
 `;
 
 export const InterestTag = styled.span`
-  display: inline-block;
-  padding: 4px 6px;
-  background: #f3f4f6;
-  color: #374151;
-  font-size: 11px;
+  padding: 4px 9px;
+  border-radius: var(--r-full);
+  background: var(--surface-2);
+  color: var(--body);
+  font-size: 0.7rem;
   font-weight: 500;
-  border-radius: 3px;
+  line-height: 1.4;
 `;
