@@ -60,7 +60,7 @@ export const Inner = styled.div`
 export const Logo = styled(Link)`
   font-family: var(--font-montserrat), sans-serif;
   font-size: 1.35rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-decoration: none;
   white-space: nowrap;
@@ -283,7 +283,7 @@ export const PanelLink = styled(Link)<{ $active: boolean }>`
   font-weight: 600;
   text-decoration: none;
   color: ${({ $active }) => ($active ? "var(--navy-800)" : "var(--muted)")};
-  background: ${({ $active }) => ($active ? "var(--navy-50)" : "transparent")};
+  background: ${({ $active }) => ($active ? "var(--surface-2)" : "transparent")};
 `;
 
 export const PanelSubLink = styled(Link)<{ $active: boolean }>`

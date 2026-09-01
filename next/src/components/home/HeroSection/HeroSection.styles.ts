@@ -31,7 +31,7 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
   font-size: 5.5rem;
-  font-weight: 800;
+  font-weight: 650;
   letter-spacing: -0.03em;
   color: #ffffff;
 
