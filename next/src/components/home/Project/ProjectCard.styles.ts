@@ -17,7 +17,7 @@ export const Card = styled.article`
   height: 100%;
   padding: 28px;
   border-radius: var(--r-md);
-  background: rgba(240, 243, 248, 0.86);
+  background: rgba(242, 245, 250, 0.93);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
   border: 1px solid rgba(226, 230, 238, 0.85);
