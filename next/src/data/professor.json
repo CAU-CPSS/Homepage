@@ -34,26 +34,15 @@
     "ko": "운영체제 보안과 네트워크 보안을 기반으로, 블록체인 보안·빅데이터 보안·모빌리티 보안·사이버물리시스템의 안전 및 보안을 연구합니다.",
     "en": "Working from a foundation in operating-system and network security, with research spanning blockchain security, big-data security, mobility security, and the safety and security of cyber-physical systems."
   },
-  "interests": {
-    "ko": [
-      "실시간 사이버물리시스템 보안",
-      "머신러닝을 위한 임베디드 시스템",
-      "운영체제 보안",
-      "네트워크 보안",
-      "블록체인 보안",
-      "빅데이터 보안",
-      "모빌리티 보안"
-    ],
-    "en": [
-      "Real-Time Cyber-Physical System Security",
-      "Embedded Systems for Machine Learning",
-      "OS Security",
-      "Network Security",
-      "Blockchain Security",
-      "Big-Data Security",
-      "Mobility Security"
-    ]
-  },
+  "interests": [
+    "Real-Time Cyber-Physical System Security",
+    "Embedded Systems for Machine Learning",
+    "OS Security",
+    "Network Security",
+    "Blockchain Security",
+    "Big-Data Security",
+    "Mobility Security"
+  ],
   "sections": [
     {
       "id": "appointments",

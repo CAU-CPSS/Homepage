@@ -84,7 +84,8 @@ export interface Professor {
   emails: string[];
   links: { label: string; href: string }[];
   intro: Localized;
-  interests: Localized<string[]>;
+  /** 학술 용어라 번역하지 않는다 */
+  interests: string[];
   sections: ProfileSection[];
 }
 

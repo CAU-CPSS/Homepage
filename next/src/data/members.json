@@ -1,130 +1,198 @@
 {
     "professor": [
         {
-            "name": { "ko": "이재우", "en": "Jaewoo Lee" },
-            "degree": { "ko": "교수", "en": "Professor" },
-            "major": { "ko": "중앙대학교 산업보안학과", "en": "Industrial Security, Chung-Ang Univ." },
+            "name": {
+                "ko": "이재우",
+                "en": "Jaewoo Lee"
+            },
+            "degree": {
+                "ko": "교수",
+                "en": "Professor"
+            },
+            "major": {
+                "ko": "중앙대학교 산업보안학과",
+                "en": "Industrial Security, Chung-Ang Univ."
+            },
             "background": {
                 "ko": "University of Pennsylvania 컴퓨터정보과학 박사",
                 "en": "Ph.D. in Computer and Information Science, Univ. of Pennsylvania"
             },
-            "interests": {
-                "ko": [
-                    "운영체제 보안",
-                    "네트워크 보안",
-                    "블록체인 보안",
-                    "빅데이터 보안",
-                    "모빌리티 보안",
-                    "사이버물리시스템 안전 및 보안"
-                ],
-                "en": [
-                    "OS Security",
-                    "Network Security",
-                    "Blockchain Security",
-                    "Big-Data Security",
-                    "Mobility Security",
-                    "Cyber-Physical Safety & Security"
-                ]
-            },
+            "interests": [
+                "OS Security",
+                "Network Security",
+                "Blockchain Security",
+                "Big-Data Security",
+                "Mobility Security",
+                "Cyber-Physical Safety & Security"
+            ],
             "photo": "professor.jpg"
         }
     ],
     "postdoc": [
         {
-            "name": { "ko": "박성환", "en": "Sunghwan Park" },
-            "degree": { "ko": "박사후연구원", "en": "Post Doctor" },
-            "background": { "ko": "정보보호 박사", "en": "Ph.D. in Information Security" },
-            "major": { "ko": "중앙대학교 융합보안학과", "en": "Security Convergence, CAU" },
-            "interests": {
-                "ko": ["연합학습", "머신러닝 보안 및 프라이버시", "사이버물리시스템", "실시간 시스템"],
-                "en": [
-                    "Federated Learning",
-                    "Security & Privacy for ML",
-                    "Cyber-Physical System",
-                    "Real-time System"
-                ]
+            "name": {
+                "ko": "박성환",
+                "en": "Sunghwan Park"
             },
+            "degree": {
+                "ko": "박사후연구원",
+                "en": "Post Doctor"
+            },
+            "background": {
+                "ko": "정보보호 박사",
+                "en": "Ph.D. in Information Security"
+            },
+            "major": {
+                "ko": "중앙대학교 융합보안학과",
+                "en": "Security Convergence, CAU"
+            },
+            "interests": [
+                "Federated Learning",
+                "Security & Privacy for ML",
+                "Cyber-Physical System",
+                "Real-time System"
+            ],
             "photo": "phd_shp.jpg"
         }
     ],
     "student": [
         {
-            "name": { "ko": "장예슬", "en": "Yeseul Chang" },
-            "degree": { "ko": "박사과정", "en": "Ph.D. candidate" },
-            "major": { "ko": "중앙대학교 융합보안학과", "en": "Security Convergence, CAU" },
-            "interests": {
-                "ko": ["사이버보안", "데이터 분석"],
-                "en": ["Cybersecurity", "Data Analysis"]
+            "name": {
+                "ko": "장예슬",
+                "en": "Yeseul Chang"
             },
+            "degree": {
+                "ko": "박사과정",
+                "en": "Ph.D. candidate"
+            },
+            "major": {
+                "ko": "중앙대학교 융합보안학과",
+                "en": "Security Convergence, CAU"
+            },
+            "interests": [
+                "Cybersecurity",
+                "Data Analysis"
+            ],
             "photo": "phd_ysc.jpg"
         },
         {
-            "name": { "ko": "Byunghoon Oh", "en": "Byunghoon Oh" },
-            "degree": { "ko": "석사과정", "en": "Master degree course student" },
-            "major": { "ko": "중앙대학교 융합보안학과", "en": "Security Convergence, CAU" },
-            "interests": {
-                "ko": ["데이터 분석", "사이버보안", "자연어처리"],
-                "en": ["Data Analysis", "Cybersecurity", "Natural Language Processing"]
+            "name": {
+                "ko": "오병훈",
+                "en": "Byunghoon Oh"
             },
+            "degree": {
+                "ko": "석사과정",
+                "en": "Master degree course student"
+            },
+            "major": {
+                "ko": "중앙대학교 융합보안학과",
+                "en": "Security Convergence, CAU"
+            },
+            "interests": [
+                "Data Analysis",
+                "Cybersecurity",
+                "Natural Language Processing"
+            ],
             "photo": "ms_bho.jpg"
         }
     ],
     "undergraduate": [
         {
-            "name": { "ko": "Junyoung Park", "en": "Junyoung Park" },
-            "degree": { "ko": "학부연구생", "en": "Undergraduate researcher" },
-            "major": { "ko": "중앙대학교 예술공학부", "en": "Art & Technology, CAU" },
-            "interests": {
-                "ko": ["거대언어모델 안전성", "적대적 강건성", "신뢰할 수 있는 AI"],
-                "en": ["Large Language Model Safety", "Adversarial Robustness", "Trustworthy AI"]
+            "name": {
+                "ko": "박준영",
+                "en": "Junyoung Park"
             },
+            "degree": {
+                "ko": "학부연구생",
+                "en": "Undergraduate researcher"
+            },
+            "major": {
+                "ko": "중앙대학교 예술공학부",
+                "en": "Art & Technology, CAU"
+            },
+            "interests": [
+                "Large Language Model Safety",
+                "Adversarial Robustness",
+                "Trustworthy AI"
+            ],
             "photo": "ur_jyp.jpg"
         },
         {
-            "name": { "ko": "Taerin Ki", "en": "Taerin Ki" },
-            "degree": { "ko": "학부연구생", "en": "Undergraduate researcher" },
-            "major": { "ko": "중앙대학교 산업보안학과", "en": "Industrial Security, CAU" },
-            "interests": {
-                "ko": ["프라이버시 보호 머신러닝", "저작권 침해 방지 및 콘텐츠 보호", "포렌식 워터마킹"],
-                "en": [
-                    "Privacy-Preserving ML",
-                    "Anti Piracy & Content Protection",
-                    "Forensic Watermarking"
-                ]
+            "name": {
+                "ko": "기태린",
+                "en": "Taerin Ki"
             },
+            "degree": {
+                "ko": "학부연구생",
+                "en": "Undergraduate researcher"
+            },
+            "major": {
+                "ko": "중앙대학교 산업보안학과",
+                "en": "Industrial Security, CAU"
+            },
+            "interests": [
+                "Privacy-Preserving ML",
+                "Anti Piracy & Content Protection",
+                "Forensic Watermarking"
+            ],
             "photo": "ur_trk.jpg"
         },
         {
-            "name": { "ko": "Sangwoo Lee", "en": "Sangwoo Lee" },
-            "degree": { "ko": "학부연구생", "en": "Undergraduate researcher" },
-            "major": { "ko": "중앙대학교 산업보안학과", "en": "Industrial Security, CAU" },
-            "interests": {
-                "ko": ["프라이버시 보호 머신러닝", "운영체제 보안", "사이버물리시스템"],
-                "en": ["Privacy-Preserving ML", "OS Security", "Cyber-Physical System"]
+            "name": {
+                "ko": "이상우",
+                "en": "Sangwoo Lee"
             },
+            "degree": {
+                "ko": "학부연구생",
+                "en": "Undergraduate researcher"
+            },
+            "major": {
+                "ko": "중앙대학교 산업보안학과",
+                "en": "Industrial Security, CAU"
+            },
+            "interests": [
+                "Privacy-Preserving ML",
+                "OS Security",
+                "Cyber-Physical System"
+            ],
             "photo": "ur_swl.jpg"
         },
         {
-            "name": { "ko": "김민혁", "en": "Minhyuk Kim" },
-            "degree": { "ko": "학부연구생", "en": "Undergraduate researcher" },
-            "major": { "ko": "", "en": "" },
-            "interests": { "ko": [], "en": [] },
+            "name": {
+                "ko": "김민혁",
+                "en": "Minhyuk Kim"
+            },
+            "degree": {
+                "ko": "학부연구생",
+                "en": "Undergraduate researcher"
+            },
+            "major": {
+                "ko": "",
+                "en": ""
+            },
+            "interests": [],
             "photo": null
         }
     ],
     "admin": [
         {
-            "name": { "ko": "Taerin Ki", "en": "Taerin Ki" },
-            "degree": { "ko": "학부연구생", "en": "Undergraduate researcher" },
-            "major": { "ko": "중앙대학교 산업보안학과", "en": "Industrial Security, CAU" },
-            "interests": {
-                "ko": ["프라이버시 보호 머신러닝", "저작권 침해 방지 및 콘텐츠 보호", "포렌식 워터마킹"],
-                "en": [
-                    "Privacy-Preserving ML",
-                    "Anti Piracy & Content Protection",
-                    "Forensic Watermarking"
-                ]
+            "name": {
+                "ko": "기태린",
+                "en": "Taerin Ki"
             },
+            "degree": {
+                "ko": "학부연구생",
+                "en": "Undergraduate researcher"
+            },
+            "major": {
+                "ko": "중앙대학교 산업보안학과",
+                "en": "Industrial Security, CAU"
+            },
+            "interests": [
+                "Privacy-Preserving ML",
+                "Anti Piracy & Content Protection",
+                "Forensic Watermarking"
+            ],
             "photo": "ur_trk.jpg"
         }
     ]

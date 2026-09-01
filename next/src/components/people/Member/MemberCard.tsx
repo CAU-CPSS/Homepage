@@ -8,7 +8,8 @@ export interface MemberData {
   degree: Localized;
   major: Localized;
   background?: Localized; // optional
-  interests: Localized<string[]>;
+  /** 학술 용어라 번역하지 않는다 — 한/영 모두 영문으로 노출 */
+  interests: string[];
   photo: string | null;
 }
 
@@ -21,7 +22,7 @@ export default function MemberCard({ member }: MemberCardProps) {
   const name = t(member.name);
   const major = t(member.major);
   // 아직 채워지지 않은 항목이 빈 태그로 보이지 않도록 걸러낸다
-  const interests = t(member.interests).filter((interest) => interest.trim());
+  const interests = member.interests.filter((interest) => interest.trim());
 
   return (
     <S.Card>

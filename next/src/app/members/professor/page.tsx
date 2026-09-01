@@ -95,7 +95,7 @@ export default function ProfessorPage() {
             </S.ContactRow>
 
             <S.InterestList>
-              {t(professor.interests).map((interest) => (
+              {professor.interests.map((interest) => (
                 <S.InterestTag key={interest}>{interest}</S.InterestTag>
               ))}
             </S.InterestList>
