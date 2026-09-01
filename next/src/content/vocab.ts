@@ -74,14 +74,3 @@ export const projectTypes = {
 } satisfies Record<string, Localized>;
 
 export type ProjectType = keyof typeof projectTypes;
-
-/** News 카테고리 배지. */
-export const newsCategories = {
-  paper: { ko: "논문", en: "Paper" },
-  career: { ko: "진로", en: "Career" },
-  award: { ko: "수상", en: "Award" },
-  project: { ko: "과제", en: "Project" },
-  notice: { ko: "공지", en: "Notice" },
-} satisfies Record<string, Localized>;
-
-export type NewsCategory = keyof typeof newsCategories;

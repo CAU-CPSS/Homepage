@@ -2,7 +2,6 @@
   {
     "id": "2026-pwc-seongyong-ju",
     "date": "2026.09",
-    "category": "career",
     "title": {
       "ko": "주성용 학부연구생, PwC 입사",
       "en": "Seongyong Ju joins PwC"
@@ -15,7 +14,6 @@
   {
     "id": "2025-jsa-ares",
     "date": "2025",
-    "category": "paper",
     "title": {
       "ko": "ARES, Journal of Systems Architecture 게재 확정",
       "en": "ARES accepted to Journal of Systems Architecture"
@@ -28,7 +26,6 @@
   {
     "id": "2025-ieee-access-odshield",
     "date": "2025",
-    "category": "paper",
     "title": {
       "ko": "OD-SHIELD, IEEE Access 게재 확정",
       "en": "OD-SHIELD accepted to IEEE Access"
@@ -41,7 +38,6 @@
   {
     "id": "2025-aaai-ppai-workshop",
     "date": "2025",
-    "category": "paper",
     "title": {
       "ko": "AAAI Workshop on Privacy-Preserving AI 논문 발표",
       "en": "Paper presented at the AAAI Workshop on Privacy-Preserving AI"
@@ -54,7 +50,6 @@
   {
     "id": "2024-bigdata-elfs",
     "date": "2024",
-    "category": "paper",
     "title": {
       "ko": "ELFS, IEEE BigData 2024 게재 확정",
       "en": "ELFS accepted to IEEE BigData 2024"

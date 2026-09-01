@@ -6,7 +6,7 @@
  */
 
 import type { Localized } from "@/lib/i18n";
-import type { NewsCategory, ProjectType } from "./vocab";
+import type { ProjectType } from "./vocab";
 
 import researchJson from "@/data/research.json";
 import newsJson from "@/data/news.json";
@@ -35,7 +35,6 @@ export interface NewsItem {
   id: string;
   /** "YYYY.MM" 또는 "YYYY" — 정확한 월을 모르면 연도만 적는다. */
   date: string;
-  category: NewsCategory;
   title: Localized;
   body: Localized;
 }
