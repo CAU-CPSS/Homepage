@@ -29,31 +29,6 @@
         }
     ],
     "postdoc": [
-        {
-            "name": {
-                "ko": "박성환",
-                "en": "Sunghwan Park"
-            },
-            "degree": {
-                "ko": "박사후연구원",
-                "en": "Post Doctor"
-            },
-            "background": {
-                "ko": "정보보호 박사",
-                "en": "Ph.D. in Information Security"
-            },
-            "major": {
-                "ko": "중앙대학교 융합보안학과",
-                "en": "Security Convergence, CAU"
-            },
-            "interests": [
-                "Federated Learning",
-                "Security & Privacy for ML",
-                "Cyber-Physical System",
-                "Real-time System"
-            ],
-            "photo": "phd_shp.jpg"
-        }
     ],
     "student": [
         {
