@@ -6,10 +6,12 @@ import Link from "next/link";
 /**
  * 네비게이션.
  *
- * 배경과 blur 는 항상 켜 두고, 스크롤하면 아래 경계선과 그림자만 나타난다.
- * (레퍼런스 IPsecurity-lab/homepage 의 헤더와 같은 방식)
- * backdrop-filter 를 none <-> blur() 로 전환하면 none 이 보간되지 않는 값이라
- * 브라우저에 따라 블러가 아예 적용되지 않는다.
+ * 최상단에서는 완전히 투명하고, 스크롤하면 블러 배경과 경계선·그림자가 나타난다.
+ *
+ * 이때 backdrop-filter 를 none <-> blur() 로 전환하면 안 된다.
+ * none 은 보간할 수 없는 값이라 브라우저에 따라 블러가 아예 걸리지 않는다.
+ * 대신 blur(0px) <-> blur(12px) 로 두면 값이 이어져 안전하게 전환된다.
+ * (blur(0px) + saturate(100%) 는 시각적으로 아무 효과가 없다.)
  *
  * blur 가 실제로 걸리려면 루트에 overflow-x: hidden 이 없어야 한다.
  * globals.css 의 `html { overflow-x: clip }` 주석 참고.
@@ -24,15 +26,18 @@ export const Navbar = styled.header<{ $solid: boolean }>`
   right: 0;
   z-index: 10000;
 
-  background: rgba(10, 14, 26, 0.72);
-  backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background: ${({ $solid }) => ($solid ? "rgba(10, 14, 26, 0.72)" : "transparent")};
+  backdrop-filter: ${({ $solid }) =>
+    $solid ? "blur(12px) saturate(180%)" : "blur(0px) saturate(100%)"};
+  -webkit-backdrop-filter: ${({ $solid }) =>
+    $solid ? "blur(12px) saturate(180%)" : "blur(0px) saturate(100%)"};
 
   border-bottom: 1px solid
     ${({ $solid }) => ($solid ? "rgba(255, 255, 255, 0.14)" : "transparent")};
   box-shadow: ${({ $solid }) =>
     $solid ? "0 1px 20px rgba(0, 0, 0, 0.3)" : "none"};
-  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  transition: background 0.3s var(--ease), backdrop-filter 0.3s var(--ease),
+    border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
 `;
 
 export const Inner = styled.div`
@@ -90,6 +95,7 @@ export const MenuItem = styled.li`
 
 export const NavLink = styled(Link)<{ $active: boolean }>`
   font-family: var(--font-montserrat), sans-serif;
+  position: relative;
   display: inline-block;
   padding: 8px 14px;
   border-radius: var(--r-sm);
@@ -107,10 +113,13 @@ export const NavLink = styled(Link)<{ $active: boolean }>`
 `;
 
 /** 링크 아래에서 좌→우로 늘어나는 밑줄 */
+/* 흐름에서 빼야 링크 높이가 늘어나지 않아 텍스트가 세로 중앙에 온다 */
 export const Underline = styled.span<{ $active: boolean }>`
-  display: block;
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 1px;
   height: 2px;
-  margin-top: 5px;
   border-radius: var(--r-full);
   background: var(--accent-bright);
   transform-origin: left;
