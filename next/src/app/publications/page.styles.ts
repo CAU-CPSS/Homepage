@@ -15,9 +15,6 @@ export const List = styled.ol`
 `;
 
 export const Item = styled.li`
-  display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  gap: 0 18px;
   padding: 22px 0;
   border-bottom: 1px solid var(--line);
 
@@ -26,21 +23,10 @@ export const Item = styled.li`
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: 44px minmax(0, 1fr);
-    gap: 0 12px;
     padding: 20px 0;
   }
 `;
 
-export const Code = styled.span`
-  font-family: var(--font-montserrat), sans-serif;
-  padding-top: 3px;
-  font-size: 0.76rem;
-  font-weight: 700;
-  color: var(--subtle);
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-`;
 
 export const Body = styled.div`
   display: flex;

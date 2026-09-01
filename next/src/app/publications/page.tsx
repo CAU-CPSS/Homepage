@@ -67,7 +67,6 @@ export default function PublicationsPage() {
               <S.List>
                 {items.map((pub) => (
                   <S.Item key={pub.code}>
-                    <S.Code>{pub.code}</S.Code>
                     <S.Body>
                       <S.Title>{pub.title}</S.Title>
                       <S.People>{pub.people}</S.People>
