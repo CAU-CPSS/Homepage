@@ -168,6 +168,20 @@
         },
         {
           "text": {
+            "ko": "세션 좌장",
+            "en": "Session Chair"
+          },
+          "items": {
+            "ko": [
+              "IEEE RTCSA 2024 (Network Session)"
+            ],
+            "en": [
+              "IEEE RTCSA 2024 (Network Session)"
+            ]
+          }
+        },
+        {
+          "text": {
             "ko": "저널 리뷰어",
             "en": "Journal Reviewer"
           },
@@ -175,22 +189,54 @@
             "ko": [
               "IEEE Transactions on Computers (2020)",
               "IEEE Transactions on Computer-Aided Design (2020)",
-              "Wiley CCPE (2020), IEEE Access (2019, 2020)",
-              "Journal of Systems and Software (2016, 2017)",
+              "Wiley CCPE (2020), IEEE Access (2020, 2019)",
+              "Journal of Systems and Software (JSS) (2017, 2016)",
               "ACM Computing Surveys (2016)",
-              "Real-Time Systems (2013–2016)",
-              "Journal of Systems Architecture (2013), LITES (2015), JCSE (2014)",
-              "Embedded Systems Letters (2013), IEEE SMC (2011)"
+              "Real-Time Systems (RTS) (2016, 2015, 2014, 2013)",
+              "Journal of Systems Architecture (JSA) (2013)",
+              "Leibniz Transactions on Embedded Systems (LITES) (2015)",
+              "Journal of Computing Science and Engineering (JCSE) (2014)",
+              "Embedded Systems Letters (2013)",
+              "IEEE Systems, Man, and Cybernetics Society (SMC) (2011)"
             ],
             "en": [
               "IEEE Transactions on Computers (2020)",
               "IEEE Transactions on Computer-Aided Design (2020)",
-              "Wiley CCPE (2020), IEEE Access (2019, 2020)",
-              "Journal of Systems and Software (2016, 2017)",
+              "Wiley CCPE (2020), IEEE Access (2020, 2019)",
+              "Journal of Systems and Software (JSS) (2017, 2016)",
               "ACM Computing Surveys (2016)",
-              "Real-Time Systems (2013–2016)",
-              "Journal of Systems Architecture (2013), LITES (2015), JCSE (2014)",
-              "Embedded Systems Letters (2013), IEEE SMC (2011)"
+              "Real-Time Systems (RTS) (2016, 2015, 2014, 2013)",
+              "Journal of Systems Architecture (JSA) (2013)",
+              "Leibniz Transactions on Embedded Systems (LITES) (2015)",
+              "Journal of Computing Science and Engineering (JCSE) (2014)",
+              "Embedded Systems Letters (2013)",
+              "IEEE Systems, Man, and Cybernetics Society (SMC) (2011)"
+            ]
+          }
+        },
+        {
+          "text": {
+            "ko": "학술대회 리뷰어 (secondary)",
+            "en": "Conference Reviewer (secondary)"
+          },
+          "items": {
+            "ko": [
+              "RTSS (2014, 2013, 2012, 2011, 2010)",
+              "RTAS (2016, 2015, 2014, 2012, 2011)",
+              "ICCPS (2013, 2011, 2010)",
+              "ECRTS (2016, 2015, 2014)",
+              "EMSOFT (2013, 2011)",
+              "RTCSA (2013, 2011, 2010)",
+              "ISORC (2010)"
+            ],
+            "en": [
+              "RTSS (2014, 2013, 2012, 2011, 2010)",
+              "RTAS (2016, 2015, 2014, 2012, 2011)",
+              "ICCPS (2013, 2011, 2010)",
+              "ECRTS (2016, 2015, 2014)",
+              "EMSOFT (2013, 2011)",
+              "RTCSA (2013, 2011, 2010)",
+              "ISORC (2010)"
             ]
           }
         },
