@@ -65,11 +65,6 @@ export const Logo = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
   color: #ffffff;
-  transition: opacity 0.2s var(--ease);
-
-  &:hover {
-    opacity: 0.75;
-  }
 
   @media (max-width: 380px) {
     font-size: 1.15rem;

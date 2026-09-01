@@ -11,10 +11,6 @@ export const site = {
     ko: "중앙대학교 산업보안학과 · 일반대학원 융합보안학과",
     en: "Dept. of Industrial Security & Graduate School of Security Convergence, Chung-Ang University",
   },
-  tagline: {
-    ko: "사이버물리시스템의 안전성과 보안, 그리고 그 위에서 동작하는 AI를 시스템 관점에서 연구합니다.",
-    en: "We study the safety and security of cyber-physical systems, and the AI that runs on top of them, from a systems perspective.",
-  },
   address: {
     ko: "서울시 동작구 흑석로 84, 중앙대학교 310관 1139호",
     en: "Room 1139, Bldg. 310, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul, Republic of Korea",
@@ -87,6 +83,7 @@ export const peoplePathPrefixes = ["/members", "/alumni"];
 export const ui = {
   viewMore: { ko: "자세히 보기", en: "View More" },
   viewAll: { ko: "전체 보기", en: "View All" },
+  menu: { ko: "메뉴", en: "Menu" },
   openMenu: { ko: "메뉴 열기", en: "Open menu" },
   closeMenu: { ko: "메뉴 닫기", en: "Close menu" },
   preparing: { ko: "준비 중입니다", en: "Coming soon" },

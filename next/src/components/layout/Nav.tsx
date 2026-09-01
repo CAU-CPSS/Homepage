@@ -106,7 +106,7 @@ const Nav = () => {
 
         <S.Panel $open={mobileOpen}>
           <S.PanelHead>
-            <S.PanelTitle>{site.shortName}</S.PanelTitle>
+            <S.PanelTitle>{t(ui.menu)}</S.PanelTitle>
             <S.CloseButton type="button" aria-label={t(ui.closeMenu)} onClick={closeMobile}>
               <FiX />
             </S.CloseButton>
