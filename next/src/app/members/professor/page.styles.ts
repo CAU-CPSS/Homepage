@@ -95,9 +95,9 @@ export const Chip = styled.a`
     background 0.2s var(--ease);
 
   &:hover {
-    border-color: var(--navy-100);
-    background: var(--navy-50);
-    color: var(--navy-700);
+    border-color: var(--line-strong);
+    background: var(--surface-2);
+    color: var(--ink);
   }
 `;
 
@@ -109,13 +109,12 @@ export const InterestList = styled.div`
 `;
 
 export const InterestTag = styled.span`
-  padding: 5px 11px;
-  border-radius: var(--r-full);
-  border: 1px solid var(--navy-100);
-  background: var(--navy-50);
-  color: var(--navy-700);
-  font-size: 0.74rem;
-  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: var(--surface-2);
+  color: var(--body);
+  font-size: 11px;
+  font-weight: 500;
   line-height: 1.4;
 `;
 

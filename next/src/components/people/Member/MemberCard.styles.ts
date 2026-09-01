@@ -104,11 +104,11 @@ export const InterestList = styled.div`
 `;
 
 export const InterestTag = styled.span`
-  padding: 4px 9px;
-  border-radius: var(--r-full);
+  padding: 4px 6px;
+  border-radius: 3px;
   background: var(--surface-2);
   color: var(--body);
-  font-size: 0.7rem;
+  font-size: 11px;
   font-weight: 500;
   line-height: 1.4;
 `;

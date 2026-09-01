@@ -108,11 +108,11 @@ export const Card = styled.div`
 /** 회색 배경의 작은 태그 (관심분야·키워드 등) */
 export const Tag = styled.span`
   display: inline-block;
-  padding: 5px 10px;
-  border-radius: var(--r-full);
+  padding: 4px 6px;
+  border-radius: 3px;
   background: var(--surface-2);
   color: var(--body);
-  font-size: 0.72rem;
+  font-size: 11px;
   font-weight: 500;
   line-height: 1.3;
 `;

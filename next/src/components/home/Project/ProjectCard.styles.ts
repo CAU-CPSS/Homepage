@@ -33,24 +33,21 @@ export const CardTitleArea = styled.div`
 `;
 
 export const TypeBadge = styled.span<{ $type?: string | null }>`
-  padding: 4px 10px;
-  border-radius: var(--r-full);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 1.4;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
 
   ${({ $type }) =>
     $type === "principal"
       ? css`
-          color: #8b1e2d;
-          background: rgba(139, 30, 45, 0.07);
-          border: 1px solid rgba(139, 30, 45, 0.28);
+          color: var(--crimson);
+          border: 1px solid var(--crimson);
         `
       : css`
           color: var(--navy-700);
-          background: var(--navy-50);
-          border: 1px solid var(--navy-100);
+          border: 1px solid var(--navy-700);
         `}
 `;
 
@@ -77,12 +74,14 @@ export const CardMeta = styled.dl`
 `;
 
 export const MetaBadge = styled.dt`
-  font-family: var(--font-montserrat), var(--font-pretendard), sans-serif;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--subtle);
+  justify-self: start;
+  padding: 4px 6px;
+  border-radius: 3px;
+  background-color: var(--navy-700);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
 `;
 
 export const MetaText = styled.dd`

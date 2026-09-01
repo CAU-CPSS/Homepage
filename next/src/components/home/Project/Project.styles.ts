@@ -66,7 +66,7 @@ export const ArrowBtn = styled.button`
 
   &:hover {
     color: var(--navy-700);
-    border-color: var(--navy-100);
+    border-color: var(--line-strong);
     box-shadow: var(--shadow-sm);
   }
 

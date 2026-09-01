@@ -102,9 +102,9 @@ export const EmailChip = styled.a`
     color 0.2s var(--ease);
 
   &:hover {
-    border-color: var(--navy-100);
-    background: var(--navy-50);
-    color: var(--navy-700);
+    border-color: var(--line-strong);
+    background: var(--surface-2);
+    color: var(--ink);
   }
 `;
 
@@ -144,14 +144,12 @@ export const SectionTitle = styled.h3`
 `;
 
 export const Badge = styled.span`
-  padding: 4px 10px;
-  border-radius: var(--r-full);
-  border: 1px solid var(--navy-100);
-  background: var(--navy-50);
-  color: var(--navy-700);
-  font-family: var(--font-montserrat), var(--font-pretendard), sans-serif;
-  font-size: 0.7rem;
-  font-weight: 700;
+  padding: 4px 6px;
+  border-radius: 3px;
+  background-color: var(--navy-700);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 500;
   line-height: 1.4;
 `;
 

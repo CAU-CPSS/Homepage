@@ -96,13 +96,12 @@ export const Keywords = styled.div`
 `;
 
 export const Keyword = styled.span`
-  padding: 5px 11px;
-  border-radius: var(--r-full);
-  border: 1px solid var(--navy-100);
-  background: var(--navy-50);
-  color: var(--navy-700);
-  font-size: 0.72rem;
-  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: var(--surface-2);
+  color: var(--body);
+  font-size: 11px;
+  font-weight: 500;
   line-height: 1.4;
 `;
 

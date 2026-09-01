@@ -10,8 +10,9 @@
   --navy-800: #12205a;
   --navy-700: #1a2a6c;
   --navy-600: #2a3d8f;
-  --navy-100: #dfe4f4;
-  --navy-50: #eef1fa;
+
+  /* 개인과제 배지 등에 쓰는 강조색 */
+  --crimson: #8b1e2d;
 
   /* 포인트 컬러 — 히어로/리서치 캔버스의 시안 계열과 맞춘다 */
   --accent: #00a3e0;
@@ -26,7 +27,7 @@
   /* 면·선 */
   --bg: #ffffff;
   --surface: #f7f8fa;
-  --surface-2: #eff1f5;
+  --surface-2: #f3f4f6;
   --line: #e5e7eb;
   --line-strong: #d1d5db;
 
@@ -160,7 +161,7 @@ a {
 }
 
 ::selection {
-  background: var(--navy-100);
+  background: var(--surface-2);
   color: var(--navy-800);
 }
 

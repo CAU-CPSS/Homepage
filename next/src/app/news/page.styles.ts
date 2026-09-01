@@ -21,7 +21,7 @@ export const Item = styled.li`
 
   /* 홈에서 해시로 들어왔을 때 잠깐 강조 */
   &:target {
-    background: var(--navy-50);
+    background: var(--surface-2);
     border-radius: var(--r-md);
     padding-left: 18px;
     padding-right: 18px;
