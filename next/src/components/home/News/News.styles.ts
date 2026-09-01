@@ -6,13 +6,13 @@ import Link from "next/link";
 import { SectionTitle } from "@/components/ui/Common.styles";
 
 /**
- * 히어로에서 Research 로 이어지는 사이의 어두운 섹션.
- * 히어로와 같은 색에서 시작해 Research 캔버스 색(--navy-950)으로 넘어간다.
+ * 밝은 Projects 섹션과 어두운 푸터 사이에 놓이는 섹션.
+ * 아래로 갈수록 푸터 색(--navy-950)에 맞춰져 경계 없이 이어진다.
  */
 export const Section = styled.section`
   position: relative;
   padding: 100px 28px;
-  background: linear-gradient(to bottom, var(--hero-bg) 0%, var(--navy-950) 100%);
+  background: linear-gradient(to bottom, var(--navy-900) 0%, var(--navy-950) 100%);
 
   @media (max-width: 768px) {
     padding: 76px 20px;
@@ -40,6 +40,24 @@ export const ListHead = styled.div`
 export const List = styled.ul`
   list-style: none;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  /*
+    아래로 갈수록 살짝 옅어지게 한다. 섹션 배경이 그라데이션이라
+    덮개를 얹으면 색이 안 맞으므로 mask 로 내용 자체를 흐린다.
+    완전히 투명해지면 마지막 줄을 못 읽으니 40% 까지만 내린다.
+  */
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 62%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 62%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
 `;
 
 export const Item = styled.li`
@@ -78,19 +96,23 @@ export const ItemTitle = styled.p`
 
 export const ViewAll = styled(Link)`
   font-family: var(--font-montserrat), sans-serif;
-  display: inline-block;
-  padding-bottom: 3px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
-  font-size: 0.8rem;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--r-full);
+  font-size: 0.72rem;
+  font-weight: 600;
   letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease),
+    background 0.2s var(--ease);
 
   &:hover {
     color: #ffffff;
-    border-color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
   }
 `;
 

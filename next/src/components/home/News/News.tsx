@@ -6,7 +6,7 @@ import { ui } from "@/content/site";
 import { useT } from "@/lib/i18n";
 
 /** 홈 첫 화면에 노출할 최신 소식 개수 */
-const PREVIEW_COUNT = 5;
+const PREVIEW_COUNT = 4;
 
 export default function News() {
   const t = useT();
