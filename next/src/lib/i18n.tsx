@@ -36,6 +36,17 @@ const DEFAULT_LANG: Lang = "ko";
 const listeners = new Set<() => void>();
 let currentLang: Lang | null = null;
 
+/**
+ * 사용자가 토글을 눌러 언어를 바꿨는지.
+ * 첫 로드 때 저장된 언어로 맞추는 과정은 여기 포함되지 않는다.
+ * (전환 직후에는 등장 애니메이션을 건너뛰기 위해 쓴다)
+ */
+let switchedByUser = false;
+
+export function languageSwitchedByUser() {
+  return switchedByUser;
+}
+
 /** 저장된 값 → 브라우저 언어 → 기본값 순으로 결정 (클라이언트에서 최초 1회만) */
 function resolveInitialLang(): Lang {
   try {
@@ -66,6 +77,7 @@ function getServerSnapshot(): Lang {
 function writeLang(next: Lang) {
   if (currentLang === next) return;
   currentLang = next;
+  switchedByUser = true;
   try {
     window.localStorage.setItem(STORAGE_KEY, next);
   } catch {

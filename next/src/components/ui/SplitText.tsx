@@ -22,6 +22,8 @@ interface SplitTextProps {
   delay?: number;
   duration?: number;
   startDelay?: number;
+  /** false 면 글자를 쪼개지 않고 그대로 한 번에 보여준다 */
+  animate?: boolean;
   onLetterAnimationComplete?: () => void;
 }
 
@@ -30,6 +32,7 @@ const SplitText = ({
   delay = 50,
   duration = 1.25,
   startDelay = 0,
+  animate = true,
   onLetterAnimationComplete,
 }: SplitTextProps) => {
   const chars = text.split('');
@@ -41,6 +44,8 @@ const SplitText = ({
       onLetterAnimationComplete();
     }
   }, [chars.length, onLetterAnimationComplete]);
+
+  if (!animate) return <>{text}</>;
 
   return (
     <>
