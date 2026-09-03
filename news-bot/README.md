@@ -29,8 +29,8 @@ Actions 방식으로 옮기고 싶어지면 `src/publish.js` 를 GitHub API 의
 ## 최초 설정
 
 1. `cp .env.example .env` 후 값 채우기
-   - `DISCORD_TOKEN` / `DISCORD_APP_ID` — [개발자 포털](https://discord.com/developers/applications)
-   - `DISCORD_GUILD_IDS` — 서버 ID. 여러 서버면 쉼표로 구분 (서버 우클릭 → 서버 ID 복사)
+   - `DISCORD_TOKEN` / `DISCORD_APP_ID`
+   - `DISCORD_GUILD_IDS` — 서버 ID. 여러 서버면 쉼표로 구분
    - `ALLOWED_ROLE_IDS` — `/news` 를 쓸 역할 ID. **비워두면 서버 전원이 사용 가능**
 2. `npm ci`
 3. `npm run register` — 슬래시 커맨드 등록 (커맨드 이름/설명 바꿀 때만 다시 실행)
