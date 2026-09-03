@@ -1,0 +1,22 @@
+# 각 하위 프로젝트는 자체 .gitignore 를 가진다. 여기엔 루트 공통만 적는다.
+
+# dependencies
+node_modules/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# build output
+build/
+out/
+.svelte-kit/
+
+# tooling artifacts
+audit.json
+audit_after.json
+
+# editor / os
+.DS_Store
+*.swp

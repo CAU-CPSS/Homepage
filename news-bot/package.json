@@ -1,0 +1,17 @@
+{
+  "name": "news-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "디스코드 슬래시 커맨드로 홈페이지 News 항목을 추가하는 봇",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "register": "node --env-file=.env src/register.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  }
+}
