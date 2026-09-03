@@ -48,9 +48,19 @@ export default function AlumniPage() {
           if (!items?.length) return null;
 
           const order = orders[section.key];
-          const sorted = [...items].sort((a, b) =>
-            order === "desc" ? b.year - a.year : a.year - b.year
-          );
+          /*
+            연도가 같으면 JSON 에 적힌 순서를 따른다.
+            최신순은 그 순서까지 뒤집어야 목록 전체가 오래된순의 정확한 역순이 된다.
+            (정렬이 같은 값의 순서를 그대로 두기 때문에 인덱스를 직접 비교한다)
+          */
+          const sorted = items
+            .map((item, i) => ({ item, i }))
+            .sort((a, b) =>
+              order === "desc"
+                ? b.item.year - a.item.year || b.i - a.i
+                : a.item.year - b.item.year || a.i - b.i
+            )
+            .map(({ item }) => item);
 
           return (
             <S.Section key={section.key}>
