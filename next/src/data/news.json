@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-discord-bot-test",
+    "date": "2026.09",
+    "title": {
+      "ko": "디코봇 테스트",
+      "en": "Discord Bot Test"
+    },
+    "body": {
+      "ko": "테스트입니다.",
+      "en": "This is test."
+    }
+  },
+  {
     "id": "2026-hoseo-sunghwan-park",
     "date": "2026.08",
     "title": {
