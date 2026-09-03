@@ -12,7 +12,6 @@ import {
 import { useT, type Localized } from "@/lib/i18n";
 
 interface Publication {
-  code: string;
   people: string;
   title: string;
   details: string;
@@ -65,8 +64,8 @@ export default function PublicationsPage() {
               </SectionHeader>
 
               <S.List>
-                {items.map((pub) => (
-                  <S.Item key={pub.code}>
+                {items.map((pub, i) => (
+                  <S.Item key={`${section.key}-${i}`}>
                     <S.Body>
                       <S.Title>{pub.title}</S.Title>
                       <S.People>{pub.people}</S.People>
