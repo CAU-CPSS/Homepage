@@ -420,7 +420,7 @@
                 "en": "CAU"
             },
             "status": {
-                "ko": "연세대학교",
+                "ko": "연세대학교 대학원",
                 "en": "Yonsei University"
             }
         },
@@ -443,8 +443,8 @@
                 "en": "CAU"
             },
             "status": {
-                "ko": "삼일회계법인(PWC)",
-                "en": "PWC"
+                "ko": "삼일회계법인(PwC)",
+                "en": "PwC"
             }
         }
     ]
