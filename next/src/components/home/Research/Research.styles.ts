@@ -29,7 +29,7 @@ export const SectionDescriptionUl = styled.ul`
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 620px;
+  max-width: 880px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -47,7 +47,7 @@ export const SectionDescriptionSpan = styled.p`
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
