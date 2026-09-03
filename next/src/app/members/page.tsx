@@ -18,7 +18,6 @@ const SECTIONS: { key: string; label: Localized }[] = [
   { key: "postdoc",       label: { ko: "박사후연구원",       en: "Post Doctor" } },
   { key: "student",       label: { ko: "대학원생",           en: "Students" } },
   { key: "undergraduate", label: { ko: "학부연구생",         en: "Undergraduates" } },
-  { key: "admin",         label: { ko: "홈페이지·서버 관리", en: "Homepage & Server Admin" } },
 ];
 
 export default function MembersPage() {
