@@ -380,29 +380,6 @@
         },
         {
             "name": {
-                "ko": "박상호",
-                "en": "Sangho Park"
-            },
-            "degree": {
-                "ko": "학사",
-                "en": "Bachelor"
-            },
-            "year": 2026,
-            "major": {
-                "ko": "경영학부",
-                "en": "Business Administration"
-            },
-            "school": {
-                "ko": "중앙대학교",
-                "en": "CAU"
-            },
-            "status": {
-                "ko": "연세대학교",
-                "en": "Yonsei University"
-            }
-        },
-        {
-            "name": {
                 "ko": "한윤서",
                 "en": "Yunseo Han"
             },
@@ -422,6 +399,29 @@
             "status": {
                 "ko": "KPMG",
                 "en": "KPMG"
+            }
+        },
+        {
+            "name": {
+                "ko": "박상호",
+                "en": "Sangho Park"
+            },
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
+            "year": 2026,
+            "major": {
+                "ko": "경영학부",
+                "en": "Business Administration"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
+            "status": {
+                "ko": "연세대학교",
+                "en": "Yonsei University"
             }
         },
         {
