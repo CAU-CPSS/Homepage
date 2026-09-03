@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-hoseo-sunghwan-park",
+    "date": "2026.08",
+    "title": {
+      "ko": "박성환 박사, 호서대학교 교수 임용",
+      "en": "Dr. Sunghwan Park appointed professor at Hoseo University"
+    },
+    "body": {
+      "ko": "연구실 박사후연구원 박성환 박사가 호서대학교 교수로 임용되었습니다. 축하합니다!",
+      "en": "Dr. Sunghwan Park, a postdoctoral researcher in our lab, has been appointed professor at Hoseo University. Congratulations!"
+    }
+  },
+  {
+    "id": "2026-emnlp-care",
+    "date": "2026.08",
+    "title": {
+      "ko": "장예슬, EMNLP 2026 Industry Track 논문 게재 확정",
+      "en": "Paper accepted to EMNLP 2026 Industry Track"
+    },
+    "body": {
+      "ko": "장예슬 박사과정의 논문 「CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification」이 EMNLP 2026 Industry Track에 게재 확정되었습니다.",
+      "en": "“CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification” by Ph.D. candidate Yeseul Chang has been accepted to the EMNLP 2026 Industry Track."
+    }
+  },
+  {
+    "id": "2026-cikm-conrac-se",
+    "date": "2026.08",
+    "title": {
+      "ko": "장예슬, CIKM 2026 Short Paper 게재 확정",
+      "en": "Paper accepted to CIKM 2026 (Short Paper)"
+    },
+    "body": {
+      "ko": "장예슬 박사과정의 논문 「ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification」이 CIKM 2026 Short Paper로 게재 확정되었습니다.",
+      "en": "“ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification” by Ph.D. candidate Yeseul Chang has been accepted as a short paper at CIKM 2026."
+    }
+  },
+  {
     "id": "2026-pwc-seongyong-ju",
     "date": "2026.08",
     "title": {
