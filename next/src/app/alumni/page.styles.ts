@@ -24,21 +24,17 @@ export const Grid = styled.div`
   }
 `;
 
-/** 정렬 선택 줄 — 목록 오른쪽 위 */
-export const Toolbar = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-`;
-
+/** 섹션 제목과 같은 줄, 오른쪽 끝에 붙는 정렬 선택 */
 export const SortSelect = styled.select`
   font-family: inherit;
-  padding: 7px 30px 7px 12px;
+  margin-left: auto;
+  align-self: center;
+  padding: 6px 28px 6px 11px;
   border: 1px solid var(--line);
   border-radius: var(--r-sm);
   background: #ffffff;
   color: var(--body);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   cursor: pointer;
 
   /* 기본 화살표를 지우고 같은 모양을 직접 그린다 */
