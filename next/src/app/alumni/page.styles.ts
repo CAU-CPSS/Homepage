@@ -23,3 +23,33 @@ export const Grid = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+/** 정렬 선택 줄 — 목록 오른쪽 위 */
+export const Toolbar = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+`;
+
+export const SortSelect = styled.select`
+  font-family: inherit;
+  padding: 7px 30px 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: #ffffff;
+  color: var(--body);
+  font-size: 0.82rem;
+  cursor: pointer;
+
+  /* 기본 화살표를 지우고 같은 모양을 직접 그린다 */
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%),
+    linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 15px) 52%, calc(100% - 11px) 52%;
+  background-size: 4px 4px, 4px 4px;
+  background-repeat: no-repeat;
+
+  &:hover {
+    border-color: var(--line-strong);
+  }
+`;
