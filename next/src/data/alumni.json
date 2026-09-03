@@ -426,29 +426,6 @@
         },
         {
             "name": {
-                "ko": "나선우",
-                "en": "Sunwoo Na"
-            },
-            "degree": {
-                "ko": "학부",
-                "en": "Undergraduate"
-            },
-            "year": 2025,
-            "major": {
-                "ko": "소프트웨어학부",
-                "en": "Computer Science & Engineering"
-            },
-            "school": {
-                "ko": "성균관대학교",
-                "en": "SKKU"
-            },
-            "status": {
-                "ko": "재학 중",
-                "en": "Undergraduate"
-            }
-        },
-        {
-            "name": {
                 "ko": "주성용",
                 "en": "Seongyong Ju"
             },
@@ -456,7 +433,7 @@
                 "ko": "학부",
                 "en": "Undergraduate"
             },
-            "year": 2025,
+            "year": 2026,
             "major": {
                 "ko": "산업보안학과",
                 "en": "Industrial Security"

@@ -152,27 +152,5 @@
             ],
             "photo": "ur_mhk.jpg"
         }
-    ],
-    "admin": [
-        {
-            "name": {
-                "ko": "기태린",
-                "en": "Taerin Ki"
-            },
-            "degree": {
-                "ko": "학부연구생",
-                "en": "Undergraduate researcher"
-            },
-            "major": {
-                "ko": "중앙대학교 산업보안학과",
-                "en": "Industrial Security, CAU"
-            },
-            "interests": [
-                "Privacy-Preserving ML",
-                "Anti Piracy & Content Protection",
-                "Forensic Watermarking"
-            ],
-            "photo": "ur_trk.jpg"
-        }
     ]
 }
