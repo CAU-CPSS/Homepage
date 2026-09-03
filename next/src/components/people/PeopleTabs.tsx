@@ -56,9 +56,16 @@ const Wrapper = styled.div`
 
 const PAD = 4;
 
+/*
+  inline-flex 는 각 탭이 글자 길이만큼만 차지해 너비가 제각각이 된다.
+  그러면 표시(Thumb)를 3등분으로 옮길 수 없으므로, 폭을 고정하고
+  탭을 flex 로 균등 분할해 표시가 항상 탭 정중앙에 오도록 한다.
+*/
 const TabList = styled.nav`
   position: relative;
-  display: inline-flex;
+  display: flex;
+  width: 100%;
+  max-width: 380px;
   padding: ${PAD}px;
   border: 1px solid var(--line);
   border-radius: var(--r-full);
@@ -84,7 +91,8 @@ const Tab = styled(Link)<{ $active: boolean }>`
   position: relative;
   z-index: 1;
   flex: 1 1 0;
-  padding: 8px 18px;
+  min-width: 0;
+  padding: 8px 10px;
   border-radius: var(--r-full);
   font-size: 0.85rem;
   font-weight: 600;
@@ -99,7 +107,7 @@ const Tab = styled(Link)<{ $active: boolean }>`
   }
 
   @media (max-width: 480px) {
-    padding: 8px 13px;
+    padding: 8px 6px;
     font-size: 0.8rem;
   }
 `;
