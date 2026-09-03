@@ -12,6 +12,18 @@
     }
   },
   {
+    "id": "2026-pwc-seongyong-ju",
+    "date": "2026.08",
+    "title": {
+      "ko": "주성용 학부연구생, PwC 입사",
+      "en": "Seongyong Ju joins PwC"
+    },
+    "body": {
+      "ko": "연구실에서 학부연구생으로 함께한 주성용 학생이 PwC에 입사했습니다. 축하합니다!",
+      "en": "Seongyong Ju, an undergraduate researcher in our lab, has joined PwC. Congratulations!"
+    }
+  },
+  {
     "id": "2026-emnlp-care",
     "date": "2026.08",
     "title": {
@@ -33,18 +45,6 @@
     "body": {
       "ko": "장예슬 박사과정생의 논문 「ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification」이 CIKM 2026 Short Paper로 accept 되었습니다.",
       "en": "“ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification” by Ph.D. candidate Yeseul Chang has been accepted as a short paper at CIKM 2026."
-    }
-  },
-  {
-    "id": "2026-pwc-seongyong-ju",
-    "date": "2026.08",
-    "title": {
-      "ko": "주성용 학부연구생, PwC 입사",
-      "en": "Seongyong Ju joins PwC"
-    },
-    "body": {
-      "ko": "연구실에서 학부연구생으로 함께한 주성용 학생이 PwC에 입사했습니다. 축하합니다!",
-      "en": "Seongyong Ju, an undergraduate researcher in our lab, has joined PwC. Congratulations!"
     }
   }
 ]
