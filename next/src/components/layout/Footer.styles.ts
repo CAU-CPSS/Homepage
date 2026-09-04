@@ -31,12 +31,26 @@ export const FooterGrid = styled.div`
 
 export const Brand = styled.div``;
 
-export const Title = styled.p`
+/**
+ * 푸터 워드마크.
+ *
+ * 이스터에그 1단계의 숨은 버튼이기도 하다. 눌러도 눌린 티가 나지 않아야 하므로
+ * 커서는 기본 화살표를 유지하고, 절반쯤 두드렸을 때만($armed) 자간이 아주 조금
+ * 벌어진다. 빠르게 연타할 때 글자가 선택되지 않도록 user-select 도 끈다.
+ */
+export const Title = styled.p<{ $armed: boolean }>`
   font-family: var(--font-montserrat), sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: ${({ $armed }) => ($armed ? "0.04em" : "-0.02em")};
   color: #ffffff;
+
+  display: inline-block;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: letter-spacing 0.3s var(--ease);
 `;
 
 

@@ -8,6 +8,7 @@ import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import StyledComponentsRegistry from "./StyledComponentsRegistry";
 import { LanguageProvider } from "@/lib/i18n";
+import WikiGate from "@/components/easter-egg/WikiGate";
 
 export const metadata: Metadata = {
   title: "CAU CPSS Lab",
@@ -46,6 +47,8 @@ export default function RootLayout({
             <Nav />
             <main>{children}</main>
             <Footer />
+            {/* 이스터에그 문구 입력창. 열릴 때까지 아무것도 그리지 않는다. */}
+            <WikiGate />
           </LanguageProvider>
         </StyledComponentsRegistry>
       </body>
