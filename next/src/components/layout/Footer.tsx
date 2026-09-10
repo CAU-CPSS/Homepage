@@ -8,7 +8,6 @@ import { REQUIRED_TAPS, tap, useTapCount } from "@/components/easter-egg/secretT
 const Footer = () => {
   const t = useT();
 
-  /* 워드마크는 이스터에그의 숨은 입구다. secretTap 주석 참고. */
   const taps = useTapCount();
 
   return (
