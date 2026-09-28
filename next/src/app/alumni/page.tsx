@@ -16,8 +16,9 @@ import {
 import { useT, type Localized } from "@/lib/i18n";
 
 const SECTIONS: { key: string; label: Localized }[] = [
-  { key: "graduates",      label: { ko: "대학원 졸업생", en: "Graduate Alumni" } },
-  { key: "undergraduates", label: { ko: "학부 졸업생",   en: "Undergraduate Alumni" } },
+  { key: "phd",           label: { ko: "박사 졸업생", en: "Ph.D. Alumni" } },
+  { key: "master",        label: { ko: "석사 졸업생", en: "M.S. Alumni" } },
+  { key: "undergraduate", label: { ko: "학부 졸업생", en: "Undergraduate Alumni" } },
 ];
 
 type Order = "desc" | "asc";
@@ -27,7 +28,7 @@ const ORDERS: { value: Order; label: Localized }[] = [
   { value: "asc", label: { ko: "오래된순", en: "Oldest first" } },
 ];
 
-/** 섹션마다 따로 정렬한다. 둘 다 최신순으로 시작. */
+/** 섹션마다 따로 정렬한다. 모두 최신순으로 시작. */
 const DEFAULT_ORDERS: Record<string, Order> = Object.fromEntries(
   SECTIONS.map((section) => [section.key, "desc" as Order])
 );

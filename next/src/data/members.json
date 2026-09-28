@@ -28,9 +28,8 @@
             "photo": "professor.jpg"
         }
     ],
-    "postdoc": [
-    ],
-    "student": [
+    "postdoc": [],
+    "phd": [
         {
             "name": {
                 "ko": "장예슬",
@@ -49,7 +48,9 @@
                 "Data Analysis"
             ],
             "photo": "phd_ysc.jpg"
-        },
+        }
+    ],
+    "master": [
         {
             "name": {
                 "ko": "오병훈",

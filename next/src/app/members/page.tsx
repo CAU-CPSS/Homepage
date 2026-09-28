@@ -16,7 +16,8 @@ import { useT, type Localized } from "@/lib/i18n";
 // 교수 프로필은 /members/professor 로 분리되어 있어 여기서는 제외한다.
 const SECTIONS: { key: string; label: Localized }[] = [
   { key: "postdoc",       label: { ko: "박사후연구원",       en: "Post Doctor" } },
-  { key: "student",       label: { ko: "대학원생",           en: "Students" } },
+  { key: "phd",           label: { ko: "박사과정",           en: "Ph.D. Students" } },
+  { key: "master",        label: { ko: "석사과정",           en: "M.S. Students" } },
   { key: "undergraduate", label: { ko: "학부연구생",         en: "Undergraduates" } },
 ];
 

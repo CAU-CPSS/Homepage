@@ -1,5 +1,30 @@
 {
-    "graduates": [
+    "phd": [
+        {
+            "name": {
+                "ko": "박성환",
+                "en": "Sunghwan Park"
+            },
+            "degree": {
+                "ko": "박사",
+                "en": "Ph.D"
+            },
+            "year": 2026,
+            "major": {
+                "ko": "융합보안학과",
+                "en": "Security Convergence"
+            },
+            "school": {
+                "ko": "중앙대학교",
+                "en": "CAU"
+            },
+            "status": {
+                "ko": "호서대학교 특임교수",
+                "en": "Professor at Hoseo University"
+            }
+        }
+    ],
+    "master": [
         {
             "name": {
                 "ko": "송용택",
@@ -200,32 +225,9 @@
                 "ko": "한국지역정보개발원",
                 "en": "Korea Local Information Research & Development Institute"
             }
-        },
-        {
-            "name": {
-                "ko": "박성환",
-                "en": "Sunghwan Park"
-            },
-            "degree": {
-                "ko": "박사",
-                "en": "Ph.D"
-            },
-            "year": 2026,
-            "major": {
-                "ko": "융합보안학과",
-                "en": "Security Convergence"
-            },
-            "school": {
-                "ko": "중앙대학교",
-                "en": "CAU"
-            },
-            "status": {
-                "ko": "호서대학교 특임교수",
-                "en": "Professor at Hoseo University"
-            }
         }
     ],
-    "undergraduates": [
+    "undergraduate": [
         {
             "name": {
                 "ko": "최병준",
