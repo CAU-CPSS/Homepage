@@ -1,14 +1,26 @@
 [
   {
+    "id": "2026-accv-unlearnable-faces",
+    "date": "2026.09",
+    "title": {
+      "ko": "오병훈 석사과정 연구원, ACCV 2026 논문 게재 확정",
+      "en": "M.S. Student Byunghoon Oh's Paper Accepted to ACCV 2026"
+    },
+    "body": {
+      "ko": "오병훈 석사과정 연구원의 논문 「Unlearnable Faces: Privacy Protection Surviving Extraction Pipeline」이 ACCV 2026 Main Track에 accept 되었습니다.",
+      "en": "M.S. student Byunghoon Oh's paper, “Unlearnable Faces: Privacy Protection Surviving Extraction Pipeline,” has been accepted to the ACCV 2026 Main Track."
+    }
+  },
+  {
     "id": "2026-undergraduate-researcher-taerin-ki-s",
     "date": "2026.09",
     "title": {
       "ko": "기태린 학부연구생, IEEE BIBM 2026 Short Paper 논문 게재 확정",
-      "en": "Undergraduate Researcher Taerin Ki's Paper Accepted to IEEE BIBM 2026"
+      "en": "Undergraduate Researcher Taerin Ki's Paper Accepted to IEEE BIBM 2026 (Short Paper)"
     },
     "body": {
       "ko": "기태린 학부연구생의 논문 「REAN: Reconstruction-aware ECG Anonymization Based on Privacy–Utility Orthogonality」이 IEEE BIBM 2026 Short Paper에 accept 되었습니다.",
-      "en": "Undergraduate researcher Taerin Ki's paper, \"REAN: Reconstruction-aware ECG Anonymization Based on Privacy–Utility Orthogonality,\" has been accepted as a short paper at IEEE BIBM 2026."
+      "en": "Undergraduate researcher Taerin Ki's paper, “REAN: Reconstruction-aware ECG Anonymization Based on Privacy–Utility Orthogonality,” has been accepted as a short paper at IEEE BIBM 2026."
     }
   },
   {
@@ -20,7 +32,7 @@
     },
     "body": {
       "ko": "기태린 학부연구생과 김문정 학생이 「도로 안전 보완을 위한 WiFi CSI 기반 주차장 사각지대 보행자 감지 인프라 제안」을 주제로 2026학년도 C.O.R.E. 학술제에서 장려상을 수상했습니다.",
-      "en": "Undergraduate researcher Taerin Ki and Munjeong Kim received the Encouragement Award at the 2026 C.O.R.E. Academic Festival for their project, \"WiFi CSI-Based Pedestrian Detection Infrastructure for Parking Lot Blind Spots to Enhance Road Safety.\""
+      "en": "Undergraduate researcher Taerin Ki and Munjeong Kim received the Encouragement Award at the 2026 C.O.R.E. Academic Festival for their project, “WiFi CSI-Based Pedestrian Detection Infrastructure for Parking Lot Blind Spots to Enhance Road Safety.”"
     }
   },
   {
@@ -28,11 +40,11 @@
     "date": "2026.08",
     "title": {
       "ko": "박성환 박사, 호서대학교 특임교수 임용",
-      "en": "Dr. Sunghwan Park appointed professor at Hoseo University"
+      "en": "Dr. Sunghwan Park Appointed Special Professor at Hoseo University"
     },
     "body": {
       "ko": "박성환 박사가 호서대학교 특임교수로 임용되었습니다. 축하합니다!",
-      "en": "Dr. Sunghwan Park has been appointed professor at Hoseo University. Congratulations!"
+      "en": "Dr. Sunghwan Park has been appointed as a special professor at Hoseo University. Congratulations!"
     }
   },
   {
@@ -40,7 +52,7 @@
     "date": "2026.08",
     "title": {
       "ko": "주성용 학부연구생, PwC 입사",
-      "en": "Seongyong Ju joins PwC"
+      "en": "Undergraduate Researcher Seongyong Ju Joins PwC"
     },
     "body": {
       "ko": "연구실에서 학부연구생으로 함께한 주성용 학생이 PwC에 입사했습니다. 축하합니다!",
@@ -51,24 +63,24 @@
     "id": "2026-emnlp-care",
     "date": "2026.08",
     "title": {
-      "ko": "장예슬 박사과정생, EMNLP 2026 Industry Track 논문 게재 확정",
-      "en": "Paper accepted to EMNLP 2026 Industry Track"
+      "ko": "장예슬 박사과정 연구원, EMNLP 2026 Industry Track 논문 게재 확정",
+      "en": "Ph.D. Candidate Yeseul Chang's Paper Accepted to EMNLP 2026 (Industry Track)"
     },
     "body": {
-      "ko": "장예슬 박사과정생의 논문 「CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification」이 EMNLP 2026 Industry Track에 accept 되었습니다.",
-      "en": "“CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification” by Ph.D. candidate Yeseul Chang has been accepted to the EMNLP 2026 Industry Track."
+      "ko": "장예슬 박사과정 연구원의 논문 「CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification」이 EMNLP 2026 Industry Track에 accept 되었습니다.",
+      "en": "Ph.D. candidate Yeseul Chang's paper, “CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification,” has been accepted to the EMNLP 2026 Industry Track."
     }
   },
   {
     "id": "2026-cikm-conrac-se",
     "date": "2026.08",
     "title": {
-      "ko": "장예슬 박사과정생, CIKM 2026 Short Paper 게재 확정",
-      "en": "Paper accepted to CIKM 2026 (Short Paper)"
+      "ko": "장예슬 박사과정 연구원, CIKM 2026 Short Paper 논문 게재 확정",
+      "en": "Ph.D. Candidate Yeseul Chang's Paper Accepted to CIKM 2026 (Short Paper)"
     },
     "body": {
-      "ko": "장예슬 박사과정생의 논문 「ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification」이 CIKM 2026 Short Paper로 accept 되었습니다.",
-      "en": "“ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification” by Ph.D. candidate Yeseul Chang has been accepted as a short paper at CIKM 2026."
+      "ko": "장예슬 박사과정 연구원의 논문 「ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification」이 CIKM 2026 Short Paper에 accept 되었습니다.",
+      "en": "Ph.D. candidate Yeseul Chang's paper, “ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification,” has been accepted as a short paper at CIKM 2026."
     }
   }
 ]
