@@ -46,12 +46,6 @@ export const Year = styled.span`
   color: var(--subtle);
 `;
 
-export const Degree = styled.p`
-  font-size: 0.84rem;
-  font-weight: 600;
-  color: var(--navy-700);
-`;
-
 export const Major = styled.p`
   font-size: 0.84rem;
   color: var(--muted);

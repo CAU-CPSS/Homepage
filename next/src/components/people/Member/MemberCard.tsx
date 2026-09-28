@@ -36,7 +36,6 @@ export default function MemberCard({ member }: MemberCardProps) {
 
       <S.InfoCol>
         <S.Name>{name}</S.Name>
-        <S.Degree>{t(member.degree)}</S.Degree>
 
         {major && <S.Major>{major}</S.Major>}
         {member.background && <S.Background>{t(member.background)}</S.Background>}

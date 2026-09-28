@@ -26,7 +26,6 @@ export default function AlumniCard({ alumni }: AlumniCardProps) {
         <S.Year>{alumni.year}</S.Year>
       </S.TopRow>
 
-      <S.Degree>{t(alumni.degree)}</S.Degree>
       <S.Major>
         {t(alumni.major)}, {t(alumni.school)}
       </S.Major>

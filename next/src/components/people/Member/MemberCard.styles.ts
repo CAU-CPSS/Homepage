@@ -70,12 +70,6 @@ export const Name = styled.h3`
   letter-spacing: -0.01em;
 `;
 
-export const Degree = styled.p`
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--navy-700);
-`;
-
 export const Major = styled.p`
   font-size: 0.85rem;
   color: var(--muted);
