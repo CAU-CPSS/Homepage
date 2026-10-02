@@ -33,13 +33,19 @@ export const Title = styled.h1`
   font-weight: 650;
   letter-spacing: -0.03em;
   color: #ffffff;
+  /* SplitText 가 글자마다 inline-block 으로 쪼개서 단어 중간에서도 줄이 바뀐다 */
+  white-space: nowrap;
 
   @media (max-width: 1024px) {
     font-size: 4.5rem;
   }
 
+  /*
+    좁은 화면에서는 한 줄에 들어가도록 화면 폭에 맞춰 줄인다.
+    제목 폭은 글자 크기의 약 7.1배, 50px 은 Wrapper 좌우 여백이다.
+  */
   @media (max-width: 768px) {
-    font-size: 2.8rem;
+    font-size: min(2.8rem, calc((100vw - 56px) / 7.2));
   }
 `;
 
