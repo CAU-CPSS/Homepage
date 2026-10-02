@@ -408,6 +408,26 @@
         },
         {
             "name": {
+                "ko": "나선우",
+                "en": "Seonwoo Na"
+            },
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
+            "year": 2025,
+            "major": {
+                "ko": "소프트웨어학과",
+                "en": "Software Engineering"
+            },
+            "school": {
+                "ko": "성균관대학교",
+                "en": "SKKU"
+            },
+            "status": null
+        },
+        {
+            "name": {
                 "ko": "박상호",
                 "en": "Sangho Park"
             },
@@ -428,26 +448,6 @@
                 "ko": "연세대학교 대학원",
                 "en": "Yonsei University"
             }
-        },
-        {
-            "name": {
-                "ko": "나선우",
-                "en": "Seonwoo Na"
-            },
-            "degree": {
-                "ko": "학사",
-                "en": "Bachelor"
-            },
-            "year": 2026,
-            "major": {
-                "ko": "소프트웨어학과",
-                "en": "Software Engineering"
-            },
-            "school": {
-                "ko": "성균관대학교",
-                "en": "SKKU"
-            },
-            "status": null
         },
         {
             "name": {
