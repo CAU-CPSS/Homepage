@@ -332,7 +332,10 @@
                 "ko": "중앙대학교",
                 "en": "CAU"
             },
-            "status": null
+            "status": {
+                "ko": "KAIST 정보보호대학원",
+                "en": "KAIST GSIS"
+            }
         },
         {
             "name": {
