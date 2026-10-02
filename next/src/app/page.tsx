@@ -17,9 +17,9 @@ export default function HomePage() {
         </S.Backdrop>
 
         <S.Content>
+          <News />
           <Research />
           <Project />
-          <News />
         </S.Content>
       </S.Sections>
     </>

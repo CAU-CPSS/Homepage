@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 /**
- * Research · Projects · News 를 하나의 배경 위에 얹는 묶음.
+ * News · Research · Projects 를 하나의 배경 위에 얹는 묶음.
  * 세 섹션이 각자 배경을 갖는 대신, 여기 깔린 인터랙티브 캔버스 하나를 공유한다.
  */
 export const Sections = styled.div`
