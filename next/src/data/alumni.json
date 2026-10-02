@@ -431,6 +431,46 @@
         },
         {
             "name": {
+                "ko": "나선우",
+                "en": "Seonwoo Na"
+            },
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
+            "year": 2026,
+            "major": {
+                "ko": "소프트웨어학과",
+                "en": "Software Engineering"
+            },
+            "school": {
+                "ko": "성균관대학교",
+                "en": "SKKU"
+            },
+            "status": null
+        },
+        {
+            "name": {
+                "ko": "장예송",
+                "en": "Yeosong Jang"
+            },
+            "degree": {
+                "ko": "학사",
+                "en": "Bachelor"
+            },
+            "year": 2026,
+            "major": {
+                "ko": "Computer Science",
+                "en": "Computer Science"
+            },
+            "school": {
+                "ko": "San Jose State University",
+                "en": "San Jose State University"
+            },
+            "status": null
+        },
+        {
+            "name": {
                 "ko": "주성용",
                 "en": "Seongyong Ju"
             },
