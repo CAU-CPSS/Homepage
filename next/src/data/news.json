@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-neurips-workshop-aiwild",
+    "date": "2026.09",
+    "title": {
+      "ko": "장예슬 박사과정 연구원, NeurIPS 2026 AIWILD 논문 게재 확정",
+      "en": "Ph.D. Candidate Yeseul Chang's Paper Accepted to NeurIPS 2026 AIWILD"
+    },
+    "body": {
+      "ko": "장예슬 박사과정 연구원의 논문 「SPILLWAY: Separating Authorization from Sanitization to Defend Tool-Using Agents against Prompt Injection」이 NeurIPS 2026 AIWILD에 accept 되었습니다.",
+      "en": "Ph.D. candidate Yeseul Chang's paper, “SPILLWAY: Separating Authorization from Sanitization to Defend Tool-Using Agents against Prompt Injection,” has been accepted to the NeurIPS 2026 AIWILD."
+    }
+  },
+  {
     "id": "2026-accv-unlearnable-faces",
     "date": "2026.09",
     "title": {
