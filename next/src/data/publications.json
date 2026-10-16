@@ -53,7 +53,7 @@
         {
             "people": "Jaewoo Lee, Saravanan Ramanathan, Kieu-My Phan, Arvind Easwaran, Insik Shin, and Insup Lee",
             "title": "MC-Fluid: Multi-core Fluid-based Mixed-Criticality Scheduling",
-            "details": "in the IEEE Transaction on Computers (TC) 2018, SCI (IF: 2.9)"
+            "details": "IEEE Transaction on Computers (TC) 2018, SCI (IF: 2.9)"
         },
         {
             "people": "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
@@ -68,7 +68,7 @@
         {
             "people": "Hyoengboo Baek, Jaewoo Lee(corresponding Author), Yongjae Lee, and Hyunsoo Yoon",
             "title": "Preemptive Real-Time Scheduling Incorporating Security Constraint For Cyber Physical Systems",
-            "details": "in IEICE Transactions on Information and Systems, Vol.E99-D, No.8,pp. 2121-2130,Aug. 2016, SCIE (IF: 0.4)"
+            "details": "IEICE Transactions on Information and Systems, Vol.E99-D, No.8,pp. 2121-2130,Aug. 2016, SCIE (IF: 0.4)"
         },
         {
             "people": "Ohhoon Kwon, Kern Koh, Jaewoo Lee, and Hyokyung Bahn",
@@ -78,6 +78,26 @@
     ],
     "conferences": [
         {
+            "people": "Taerin Ki, Sunghwan Park, Junyoung Park, Jaewoo Lee",
+            "title": "REAN: Reconstruction-aware ECG Anonymization Based on Privacy–Utility Orthogonality",
+            "details": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM), Short Paper, 2026."
+        },
+        {
+            "people": "Byunghoon Oh, Sunghwan Park, Jaewoo Lee",
+            "title": "Unlearnable Faces: Privacy Protection Surviving Extraction Pipeline",
+            "details": "Asian Conference on Computer Vision (ACCV), Main Track, 2026."
+        },
+        {
+            "people": "Yeseul Chang, Woosang Lim, Jaewoo Lee",
+            "title": "CARE: Bounded Selective Evidence-to-Judgment Routing for Cost-Aware Document Security Classification",
+            "details": "Conference on Empirical Methods in Natural Language Processing (EMNLP), Industry Track, 2026."
+        },
+        {
+            "people": "Yeseul Chang, Woosang Lim, Jaewoo Lee",
+            "title": "ConRAC-SE: Evidence-Agreement Routing for Cost-Aware Retrieval-Augmented Security Classification",
+            "details": "ACM International Conference on Information and Knowledge Management (CIKM), Short Paper, 2026."
+        },
+        {
             "people": "Sunghwan Park, Sangho Park, Sunwoo Na, Yeseul Chang and Jaewoo Lee",
             "title": "ELFS: Entropy-based Loss Function Selection for Global Model Accuracy in Federated Learning",
             "details": "2024 IEEE International Conference on Big Data (BigData), 7991-7997"
@@ -85,45 +105,50 @@
         {
             "people": "Jaewoo Lee, Hoon Sung Chwa, Linh T.X. Phan, Insik Shin, and Insup Lee",
             "title": "MC-ADAPT: Adaptive Task Dropping with Task-level Mode Switch in Mixed-Criticality Scheduling,",
-            "details": "in the ACM International Conference on Embedded Software (EMSOFT), 2017. (BK IF:2)"
+            "details": "ACM International Conference on Embedded Software (EMSOFT), 2017. (BK IF:2)"
         },
         {
             "people": "Jaewoo Lee, Kieu-My Phan, Xiaozhe Gu, Jiyeon Lee, Arvind Easwaran, Insik Shin and Insup Lee",
             "title": "MC-Fluid: Fluid Model-based Mixed-Criticality Scheduling on Multiprocessors",
-            "details": "in IEEE International Conference on Real-Time Systems Symposium (RTSS), 2014. Best Paper Award Runner-up (BK IF:4)"
+            "details": "IEEE International Conference on Real-Time Systems Symposium (RTSS), 2014. Best Paper Award Runner-up (BK IF:4)"
         },
         {
             "people": "Linh T. X. Phan, Meng Xu, Jaewoo Lee, Insup Lee and Oleg Sokolsky",
             "title": "Overhead-Aware Compositional Analysis of Real-Time Systems",
-            "details": "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2013. (BK IF:2)"
+            "details": "IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2013. (BK IF:2)"
         },
         {
             "people": "Jaewoo Lee, Sisu Xi, Sanjian Chen, Linh T.X. Phan, Chris Gill, Insup Lee, Chenyang Lu and Oleg Sokolsky",
             "title": "Realizing Compositional Scheduling through Virtualization",
-            "details": "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2012. (BK IF:2)"
+            "details": "IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2012. (BK IF:2)"
         },
         {
             "people": "Sanjian Chen, Linh T.X. Phan, Jaewoo Lee, Insup Lee, and Oleg Sokolsky",
             "title": "Removing Abstraction Overhead in the Composition of Hierarchical Real-Time Systems",
-            "details": "in IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2011. (BK IF:2)"
+            "details": "IEEE International Conference on Real-Time and Embedded Technology and Applications Symposium (RTAS), 2011. (BK IF:2)"
         },
         {
             "people": "Eunkyoung Jee, Shaohui Wang, Jeong Ki Kim, Jaewoo Lee, Oleg Sokolsky and Insup Lee",
             "title": "A Safety-Assured Development Approach for Real-Time Software",
-            "details": "in IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2010."
+            "details": "IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2010."
         },
         {
             "people": "Jaewoo Lee, Kern Koh, and Chang-Gun Lee",
             "title": "Multi-Speed DVS Algorithms for Periodic Tasks with Non-Preemptible Sections",
-            "details": "in IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2007."
+            "details": "IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA), 2007."
         },
         {
             "people": "Ohhoon Kwon, Jaewoo Lee, and Kern Koh",
             "title": "EF-Greedy: A Novel Garbage Collection Policy for Flash Memory Based Embedded Systems",
-            "details": "in International Conference on Computational Science (ICCS 2007),Springer Verlag, Lecture Notes on Computer Science (LNCS) Vol. 4490 (2007), pp.913-920."
+            "details": "International Conference on Computational Science (ICCS 2007),Springer Verlag, Lecture Notes on Computer Science (LNCS) Vol. 4490 (2007), pp.913-920."
         }
     ],
     "others": [
+        {
+            "people": "Woosang Lim, Yeseul Chang, Jaewoo Lee",
+            "title": "SPILLWAY: Separating Authorization from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+            "details": "NeurIPS Workshop (AIWILD), 2026."
+        },
         {
             "people": "Hyunjee Nam, Minjung Kang, Sunghwan Park , Il-Youp Kwak , and Jaewoo Lee",
             "title": "A Benchmark of Unlearnable Examples for Medical Images",
