@@ -1,6 +1,18 @@
 [
   {
     "sponsor": {
+      "ko": "한국연구재단 (NRF)",
+      "en": "National Research Foundation of Korea (NRF)"
+    },
+    "title": {
+      "ko": "VLA 기반 Physical AI에서 Reversible action 기반 실시간 보안 스케줄링 프레임워크",
+      "en": "A Real-Time Security Scheduling Framework Based on Reversible Actions for VLA-Based Physical AI"
+    },
+    "period": "2026 – 2031",
+    "type": null
+  },
+  {
+    "sponsor": {
       "ko": "42dot",
       "en": "42dot"
     },
